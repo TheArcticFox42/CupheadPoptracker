@@ -1,0 +1,290 @@
+[
+    {
+        "name": "The Root Pack Complete",
+          "access_rules":[],
+          "map_locations": [
+            {
+              "map": "isle_1",
+              "x": 1750,
+              "y": 700
+            },
+            {
+              "map": "full_map",
+              "x": 1000,
+              "y": 500
+            }
+        ]
+    },
+    {
+        "name": "Goopy Le Grande Complete",
+          "access_rules":["[duck]","[dash]"],
+          "map_locations": [
+            {
+              "map": "isle_1",
+              "x": 1750,
+              "y": 700
+            },
+            {
+              "map": "full_map",
+              "x": 1000,
+              "y": 500
+            }
+        ]
+    },
+    {
+        "name": "Ribby and Croaks Complete",
+          "access_rules":["parry","p_sugar"],
+          "map_locations": [
+            {
+              "map": "isle_1",
+              "x": 1750,
+              "y": 700
+            },
+            {
+              "map": "full_map",
+              "x": 1000,
+              "y": 500
+            }
+        ]
+    },
+    {
+        "name": "Cagney Carnation Complete",
+          "access_rules":[],
+          "map_locations": [
+            {
+              "map": "isle_1",
+              "x": 1750,
+              "y": 700
+            },
+            {
+              "map": "full_map",
+              "x": 1000,
+              "y": 500
+            }
+        ]
+    },
+    {
+      "name": "Baroness Von Bon Bon Complete",
+        "access_rules":["[parry]","[p_sugar]"],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 1750,
+            "y": 700
+          },
+          {
+            "map": "full_map",
+            "x": 1000,
+            "y": 500
+          }
+      ]
+  },
+  {
+    "name": "Beppi The Clown Complete",
+      "access_rules":["[dash]","[parry]"],
+      "map_locations": [
+        {
+          "map": "isle_2",
+          "x": 1750,
+          "y": 700
+        },
+        {
+          "map": "full_map",
+          "x": 1000,
+          "y": 500
+        }
+    ]
+},
+{
+  "name": "Grim Matchstick Complete",
+    "access_rules":[],
+    "map_locations": [
+      {
+        "map": "isle_2",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Rumor Honeybottoms Complete",
+    "access_rules":[],
+    "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Captain Brineybeard Complete",
+    "access_rules":["duck","parry"],
+    "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Werner Werman",
+    "access_rules":["duck,[parry]","duck,[p_sugar]"],
+    "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Sally Stageplay Complete",
+    "access_rules":["[parry]","p_sugar","smoke_bomb,dash"],
+    "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Phantom Express Complete",
+    "access_rules":["[parry]","p_sugar"],
+    "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "King Dice Complete",
+    "access_rules":["[parry,plane_bullets,]","parry,plane_bombs"],
+    "map_locations": [
+      {
+        "map": "hell",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Hilda Berg Complete",
+      "access_rules":["[plane_bullets]","plane_bombs","coffee,plane_EX", "coffee,plane_super"],
+      "map_locations": [
+      {
+        "map": "isle_1",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Djimmi The Great Complete",
+      "access_rules":["[plane_bullets]","plane_bombs","coffee,plane_EX", "coffee,plane_super"],
+      "map_locations": [
+      {
+        "map": "isle_2",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Wally Warbles Complete",
+      "access_rules":["[plane_bullets,plane_bombs]","plane_bullets","coffee,plane_EX", "coffee,plane_super"],
+      "map_locations": [
+      {
+        "map": "isle_2",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Cala Maria Complete",
+      "access_rules":["[plane_bullets]","plane_bombs","coffee,plane_EX", "coffee,plane_super"],
+      "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+},
+{
+  "name": "Dr. Kahl's Robot Complete",
+      "access_rules":["[parry,plane_bullets]","parry,plane_bombs","parry,plane_EX", "parry,plane_super"],
+      "map_locations": [
+      {
+        "map": "isle_3",
+        "x": 1750,
+        "y": 700
+      },
+      {
+        "map": "full_map",
+        "x": 1000,
+        "y": 500
+      }
+  ]
+}  
+]

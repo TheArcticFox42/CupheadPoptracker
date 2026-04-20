@@ -1,0 +1,67 @@
+{
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "shared_item_grid": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "itemgrid",
+            "item_margin": "10, 10",
+            "h_alignment": "left",
+            "rows": [
+              [
+                "peashooter",
+                "spread",
+                "chaser",
+                "lobber",
+                "charge",
+                "roundabout"
+              ],
+              [
+                "peashooter_EX",
+                "spread_EX",
+                "chaser_EX",
+                "lobber_EX",
+                "charge_EX",
+                "roundabout_EX"
+              ],
+              [
+                "plane_bullets",
+                "plane_bombs",
+                "plane_EX",
+                "plane_super",
+                "plane_shrink",
+                "plane_parry"
+              ],
+              [
+                "heart",
+                "coffee",
+                "smoke_bomb",
+                "p_sugar",
+                "twin_heart",
+                "whetstone"
+              ],
+              [
+                "super_1",
+                "super_2",
+                "super_3",
+                "duck",
+                "dash",
+                "parry",
+                "coin",
+                "contract"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

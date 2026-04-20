@@ -1,0 +1,258 @@
+[
+    {
+    "name": "Coin",
+    "type": "consumable",
+    "img": "images/items/coin.png",
+    "min_quantity": 0,
+    "initial_quantity": 0,
+    "overlay_font_size": 8,
+    "codes": "coin"
+  },
+  {
+    "name": "Contract",
+    "type": "consumable",
+    "img": "images/items/contract.png",
+    "min_quantity": 0,
+    "increment": 1,
+    "initial_quantity": 1,
+    "overlay_font_size": 8,
+    "codes": "contract"
+  },
+  {
+    "name": "Duck",
+    "type": "toggle",
+    "img": "images/items/duck.png",
+    "codes": "duck"
+  },
+  {
+    "name": "Dash",
+    "type": "toggle",
+    "img": "images/items/dash.png",
+    "codes": "dash"
+  },
+  {
+    "name": "Parry",
+    "type": "toggle",
+    "img": "images/items/parry.png",
+    "codes": "parry"
+  },
+  {
+    "name": "Peashooter",
+    "type": "toggle",
+    "img": "images/items/peashooter.png",
+    "codes": "peashooter"
+  },
+  {
+    "name": "Spread",
+    "type": "toggle",
+    "img": "images/items/spread.png",
+    "codes": "spread"
+  },
+  {
+    "name": "Chaser",
+    "type": "toggle",
+    "img": "images/items/chaser.png",
+    "codes": "chaser"
+  },
+  {
+    "name": "Lobber",
+    "type": "toggle",
+    "img": "images/items/lobber.png",
+    "codes": "lobber"
+  },
+  {
+    "name": "Charge",
+    "type": "toggle",
+    "img": "images/items/charge.png",
+    "codes": "charge"
+  },
+  {
+    "name": "Roundabout",
+    "type": "toggle",
+    "img": "images/items/roundabout.png",
+    "codes": "roundabout"
+  },
+  {
+    "name": "Peashooter EX",
+    "type": "toggle",
+    "img": "images/items/peashooter_EX.png",
+    "codes": "peashooter_EX"
+  },
+  {
+    "name": "Spread EX",
+    "type": "toggle",
+    "img": "images/items/spread_EX.png",
+    "codes": "spread_EX"
+  },
+  {
+    "name": "Chaser EX",
+    "type": "toggle",
+    "img": "images/items/chaser_EX.png",
+    "codes": "chaser_EX"
+  },
+  {
+    "name": "Lobber EX",
+    "type": "toggle",
+    "img": "images/items/lobber_EX.png",
+    "codes": "lobber_EX"
+  },
+  {
+    "name": "Charge EX",
+    "type": "toggle",
+    "img": "images/items/charge_EX.png",
+    "codes": "charge_EX"
+  },
+  {
+    "name": "Roundabout EX",
+    "type": "toggle",
+    "img": "images/items/roundabout_EX.png",
+    "codes": "roundabout_EX"
+  },
+  {
+    "name": "Plane Bullets",
+    "type": "toggle",
+    "img": "images/items/plane_bullets.png",
+    "codes": "plane_bullets"
+  },
+  {
+    "name": "Plane Bombs",
+    "type": "toggle",
+    "img": "images/items/plane_bombs.png",
+    "codes": "plane_bombs"
+  },
+  {
+    "name": "Plane EX",
+    "type": "toggle",
+    "img": "images/items/plane_EX.png",
+    "codes": "plane_EX"
+  },
+  {
+    "name": "Plane Super",
+    "type": "toggle",
+    "img": "images/items/plane_super.png",
+    "codes": "plane_super"
+  },
+  {
+    "name": "Plane Shrink",
+    "type": "toggle",
+    "img": "images/items/plane_shrink.png",
+    "codes": "plane_shrink"
+  },
+  {
+    "name": "Plane Parry",
+    "type": "toggle",
+    "img": "images/items/plane_parry.png",
+    "codes": "plane_parry"
+  },
+  {
+    "name": "Super Art I",
+    "type": "toggle",
+    "img": "images/items/super_1.png",
+    "codes": "super_1"
+  },
+  {
+    "name": "Super Art II",
+    "type": "toggle",
+    "img": "images/items/super_2.png",
+    "codes": "super_2"
+  },
+  {
+    "name": "Super Art III",
+    "type": "toggle",
+    "img": "images/items/super_3.png",
+    "codes": "super_3"
+  },
+  {
+    "name": "Heart",
+    "type": "toggle",
+    "img": "images/items/heart.png",
+    "codes": "heart"
+  },
+  {
+    "name": "Coffee",
+    "type": "toggle",
+    "img": "images/items/coffee.png",
+    "codes": "coffee"
+  },
+  {
+    "name": "Smoke Bomb",
+    "type": "toggle",
+    "img": "images/items/smoke_bomb.png",
+    "codes": "smoke_bomb"
+  },
+  {
+    "name": "P. Sugar",
+    "type": "toggle",
+    "img": "images/items/p_sugar.png",
+    "codes": "p_sugar"
+  },
+  {
+    "name": "Twin Heart",
+    "type": "toggle",
+    "img": "images/items/twin_heart.png",
+    "codes": "twin_heart"
+  },
+  {
+    "name": "Whetstone",
+    "type": "toggle",
+    "img": "images/items/whetstone.png",
+    "codes": "whetstone"
+  }
+
+
+
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#items
+  // {
+  //   "name": "Toggle",
+  //   "type": "toggle",
+  //   "img": "images/items/toggle.png",
+  //   "codes": "toggle"
+  // },
+  // {
+  //   "name": "Progressive",
+  //   "type": "progressive",
+  //   "allow_disabled": true,
+  //   "initial_stage_idx": 0,
+  //   "stages": [
+  //     {
+  //       "img": "images/items/progressive.png",
+  //       "codes": "progressive",
+  //       "inherit_codes": false
+  //     },
+  //     {
+  //       "img": "images/items/progressive_2.png",
+  //       "codes": "progressive_2",
+  //       "inherit_codes": false
+  //     }
+  //   ]
+  // },
+  // {
+  //   "name": "Consumable",
+  //   "type": "consumable",
+  //   "img": "images/items/consumable.png",
+  //   "max_quantity": 8,
+  //   "increment": 1,
+  //   "decrement": 1,
+  //   "initial_quantity": 1,
+  //   "overlay_background": "#000000",
+  //   "overlay_font_size": 8,
+  //   "codes": "consumable"
+  // },
+  // {
+  //   "name": "Progressive Toggle",
+  //   "type": "progressive_toggle",
+  //   "initial_stage_idx": 0,
+  //   "stages": [
+  //     {
+  //       "img": "images/items/progressive.png",
+  //       "codes": "progressive_toggle",
+  //       "inherit_codes": false
+  //     },
+  //     {
+  //       "img": "images/items/progressive_2.png",
+  //       "codes": "progressive_toggle_2",
+  //       "inherit_codes": false
+  //     }
+  //   ]
+  // }
+]
