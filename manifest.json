@@ -1,0 +1,19 @@
+{
+    "name": "Cuphead Poptracker",
+    "game_name": "Cuphead",
+    "package_uid": "cuphead_poptracker",
+    "package_version": "1.0",
+    "platform": "PC",
+    "platform_override": "<optional actual platform>",
+    "variants": {
+        "var_0_full": {
+            "display_name": "Full Tracker",
+            "flags": [
+                "ap"
+            ]
+        }
+    },
+    "versions_url": "https://example.com/versions.json",
+    "min_poptracker_version": "0.35.1",
+    "target_poptracker_version": "0.35.1"
+}
