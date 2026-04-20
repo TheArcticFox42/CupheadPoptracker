@@ -3,7 +3,7 @@
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
   "tracker_default": {
     "type": "container",
-    "background": "#000000",
+    "background": "#877373",
     "content": {
       "type": "dock",
       "dropshadow": true,
@@ -68,7 +68,10 @@
               "content": {
                 "type": "map",
                 "maps": [
-                  "full_map"
+                  "isle_1",
+                  "isle_2",
+                  "isle_3",
+                  "hell"
                 ]
               }
             }
@@ -79,7 +82,7 @@
   },
   "tracker_horizontal": {
     "type": "container",
-    "background": "#000000",
+    "background": "#877373",
     "content": {
       "type": "dock",
       "dropshadow": true,
@@ -146,7 +149,10 @@
               "content": {
                 "type": "map",
                 "maps": [
-                  "full_map"
+                  "isle_1",
+                  "isle_2",
+                  "isle_3",
+                  "hell"
                 ]
               }
             }
