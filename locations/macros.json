@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Has Parry or P.Sugar",
+             "access_rules":["parry", "p_sugar"]
+    },
+    {
+        "name": "Can EX or Super",
+             "access_rules":["peashooter_EX","spread_EX","chaser_EX","lobber_EX","charge_EX","roundabout_EX","super_1","super_2","super_3"]
+    },
+    {
+        "name": "Can EX or Super in plane",
+             "access_rules":["plane_EX","plane_super"]
+    }
+]

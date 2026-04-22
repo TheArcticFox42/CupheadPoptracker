@@ -1,0 +1,212 @@
+[
+    {
+        "name": "Shop 1",
+        "children": [
+            {
+                "name": "Shop Weapon 1",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Weapon 1/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_1",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 569,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "name": "Shop Weapon 2",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Weapon 2/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_1",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 589,
+                        "y": 317
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 1",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 1/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_1",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 569,
+                        "y": 335
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 2",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 2/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_1",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 589,
+                        "y": 335
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shop 2",
+        "children": [
+            {
+                "name": "Shop Weapon 3",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Weapon 3/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_2",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 386,
+                        "y": 400
+                    }
+                ]
+            },
+            {
+                "name": "Shop Weapon 4",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Weapon 4/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_2",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 406,
+                        "y": 400
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 3",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 3/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_2",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 386,
+                        "y": 418
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 4",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 4/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_2",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 406,
+                        "y": 418
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shop 3",
+        "children": [
+            {
+                "name": "Shop Weapon 5",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Weapon 5/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_3",
+                        "size": 6,
+                        "x": 260,
+                        "y": 309
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 5",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 5/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_3",
+                        "size": 6,
+                        "x": 254,
+                        "y": 320
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 6",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_map_location|@Shop Charm 6/}"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_3",
+                        "size": 6,
+                        "x": 265,
+                        "y": 320
+                    }
+                ]
+            }
+        ]
+    }
+]
