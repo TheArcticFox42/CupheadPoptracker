@@ -13,3 +13,11 @@ function has_more_then_n_consumable(n)
     end
     return 0 -- 0 => no access
 end
+
+function can_access_map_location(location_path)
+    local can_access = Tracker:FindObjectForCode(location_path).AccessibilityLevel
+    if can_access <= 3 then
+        return 0
+    end
+    return 1
+end

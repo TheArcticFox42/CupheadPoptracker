@@ -2,26 +2,26 @@
   //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#maps
   {
     "name": "isle_1",
-    "location_size": 48,
+    "location_size": 24,
     "location_border_thickness": 4,
     "img": "images/maps/isle_1.png"
   },
   {
     "name": "isle_2",
-    "location_size": 48,
+    "location_size": 24,
     "location_border_thickness": 4,
     "img": "images/maps/isle_2.png"
   },
   {
     "name": "isle_3",
-    "location_size": 48,
-    "location_border_thickness": 4,
+    "location_size": 18,
+    "location_border_thickness": 2,
     "img": "images/maps/isle_3.png"
   },
   {
     "name": "hell",
-    "location_size": 48,
-    "location_border_thickness": 4,
+    "location_size": 16,
+    "location_border_thickness": 2,
     "img": "images/maps/hell.png"
   }
 ]

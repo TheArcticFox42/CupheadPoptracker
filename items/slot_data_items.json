@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Goal - Beat Devil",
+        "type": "toggle",
+        "img": "images/goals/beat_devil.png",
+        "codes": "beat_devil"
+    },
+    {
+        "name": "Goal - Collect Contracts",
+        "type": "consumable",
+        "initial_quantity": 0,
+        "img": "images/goals/collect_contracts.png",
+        "codes": "collect_contracts"
+    },
+        {
+        "name": "Goal - Collect Ingredients",
+        "type": "consumable",
+        "initial_quantity": 0,
+        "img": "images/goals/collect_ingredients.png",
+        "codes": "collect_ingredients"
+    },
+    {
+        "name": "Goal - Buy Out Shop",
+        "type": "toggle",
+        "img": "images/goals/buy_out_shop.png",
+        "codes": "buy_out_shop"
+    },
+    {
+        "name": "Goal - Beat Saltbaker",
+        "type": "toggle",
+        "img": "images/goals/beat_saltbaker.png",
+        "codes": "beat_saltbaker"
+    },
+    {
+        "name": "Use DLC",
+        "type": "toggle",
+        "img": "images/settings/dlc.png",
+        "codes": "use_dlc"
+    },
+    {
+        "name": "Expert Mode",
+        "type": "toggle",
+        "img": "images/settings/expert_mode.png",
+        "codes": "expert_mode"
+    },
+    {
+        "name": "start_weapon_exception",
+        "type": "toggle",
+        "img": "images/items/spread_EX.png",
+        "codes": "start_weapon_exception"
+    },
+    {
+        "name": "Boss Grade Checks",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Boss Grade Checks - Disabled",
+                "img": "images/settings/a_grade.png",
+                "img_mods": "@disabled",
+                "codes": "boss_grade_checks,boss_grades_disabled"
+            },
+            {
+                "name": "Boss Grade Checks - A Minus Grade",
+                "img": "images/settings/a_minus_grade.png",
+                "inherit_codes": false,
+                "codes": "boss_grade_checks,a_minus_grade"
+            },
+            {
+                "name": "Boss Grade Checks - A Grade",
+                "img": "images/settings/a_grade.png",
+                "inherit_codes": false,
+                "codes": "boss_grade_checks,a_grade"
+            },
+            {
+                "name": "Boss Grade Checks - A Plus Grade",
+                "img": "images/settings/a_plus_grade.png",
+                "inherit_codes": false,
+                "codes": "boss_grade_checks,a_plus_grade"
+            },
+            {
+                "name": "Boss Grade Checks - S Grade",
+                "img": "images/settings/s_grade.png",
+                "inherit_codes": false,
+                "codes": "boss_grade_checks,s_grade"
+            }
+        ]
+    },
+    {
+        "name": "Run 'n Gun Grade Checks",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "Run 'n Gun Grade Checks - Disabled",
+                "img": "images/settings/a_grade.png",
+                "img_mods": "@disabled",
+                "codes": "run_n_gun_grade_checks,run_n_gun_grades_disabled"
+            },
+            {
+                "name": "Run 'n Gun Grade Checks - A Minus Grade",
+                "img": "images/settings/a_minus_grade.png",
+                "inherit_codes": false,
+                "codes": "run_n_gun_grade_checks,a_minus_grade"
+            },
+            {
+                "name": "Run 'n Gun Grade Checks - A Grade",
+                "img": "images/settings/a_grade.png",
+                "inherit_codes": false,
+                "codes": "run_n_gun_grade_checks,a_grade"
+            },
+            {
+                "name": "Run 'n Gun Grade Checks - A Plus Grade",
+                "img": "images/settings/a_plus_grade.png",
+                "inherit_codes": false,
+                "codes": "run_n_gun_grade_checks,a_plus_grade"
+            },
+            {
+                "name": "Run 'n Gun Grade Checks - P Grade",
+                "img": "images/settings/p_grade.png",
+                "inherit_codes": false,
+                "codes": "run_n_gun_grade_checks,p_grade"
+            }
+        ]
+    }
+]

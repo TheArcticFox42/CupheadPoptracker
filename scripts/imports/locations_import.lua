@@ -1,0 +1,6 @@
+    Tracker:AddLocations("locations/macros.json")
+    Tracker:AddLocations("locations/bosses.json")
+    Tracker:AddLocations("locations/run_n_guns.json")
+    Tracker:AddLocations("locations/mausoleums.json")
+    Tracker:AddLocations("locations/others.json")
+    Tracker:AddLocations("locations/shop_items.json")

@@ -1,21 +1,118 @@
 {
   //sets the layout for the broadcast view
   "tracker_broadcast": {
-    "type": "array",
-    "orientation": "vertical",
-    "margin": "0,0",
-    "content": [
-      {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
-          {
-            "type": "layout",
-            "key": "shared_item_grid"
-          }
-        ]
-      }
-    ]
+  "background": "#877373",
+  "type": "dock",
+            "dock": "bottom",
+            "content": [
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Weapons and EXs",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Weapons and EXs"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Plane Items",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Plane Items"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Charms",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Charms"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Abilities",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Abilities"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Info",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Info"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Goals",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Goals"
+                    }
+                  }
+                ]
+              }
+            ]
   }
 }

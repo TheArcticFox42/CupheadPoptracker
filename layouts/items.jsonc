@@ -1,64 +1,428 @@
 {
   // sets layouts for shadred items grids
   // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
-  "shared_item_grid": {
+  "Weapons and EXs": {
     "type": "array",
-    "orientation": "vertical",
+    "orientation": "horizontal",
     "margin": "0,0",
     "content": [
       {
-        "type": "array",
-        "orientation": "horizontal",
-        "margin": "0,0",
-        "content": [
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter",
+            "peashooter_EX"
+          ],
+          [
+            "spread",
+            "spread_EX"
+          ],
+          [
+            "chaser",
+            "chaser_EX"
+          ],
+          [
+            "lobber",
+            "lobber_EX"
+          ],
+          [
+            "charge",
+            "charge_EX"
+          ],
+          [
+            "roundabout",
+            "roundabout_EX"
+          ]
+        ]
+      }
+    ]
+  },
+  "Plane Items": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "plane_bullets"
+          ],
+          [
+            "plane_bombs"
+          ],
+          [
+            "plane_EX"
+          ],
+          [
+            "plane_super"
+          ],
+          [
+            "plane_shrink"
+          ],
+          [
+            "plane_parry"
+          ]
+        ]
+      }
+    ]
+  },
+  "Charms": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "heart"
+          ],
+          [
+            "coffee"
+          ],
+          [
+            "smoke_bomb"
+          ],
+          [
+            "p_sugar"
+          ],
+          [
+            "twin_heart"
+          ],
+          [
+            "whetstone"
+          ]
+        ]
+      }
+    ]
+  },
+  "Abilities": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "super_1"
+          ],
+          [
+            "super_2"
+          ],
+          [
+            "super_3"
+          ],
+          [
+            "duck"
+          ],
+          [
+            "dash"
+          ],
+          [
+            "parry"
+          ]
+        ]
+      }
+    ]
+  },
+  "Info": {
+    "type": "array",
+    "orientation": "horizontal",
+    "h_alignment": "center",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "center",
+        "rows": [
+          [
+            "expert_mode"
+          ],
+          [
+            "boss_grade_checks"
+          ],
+          [
+            "run_n_gun_grade_checks"
+          ],
+          [
+            "coin"
+          ],
+          [
+            "contract"
+          ]
+        ]
+      }
+    ]
+  },
+  "Goals": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "beat_devil"
+          ],
+          [
+            "collect_contracts"
+          ],
+          [
+            "buy_out_shop"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Weapons and EXs": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter",
+            "spread",
+            "chaser",
+            "lobber",
+            "charge",
+            "roundabout"
+          ],
+          [
+            "peashooter_EX",
+            "spread_EX",
+            "chaser_EX",
+            "lobber_EX",
+            "charge_EX",
+            "roundabout_EX"
+          ]
+        ]
+      }
+    ]
+  },
+    "Horizontal Weapons": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter",
+            "spread",
+            "chaser",
+            "lobber",
+            "charge",
+            "roundabout"
+          ]
+        ]
+      }
+    ]
+  },
+    "Horizontal EXs": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter_EX",
+            "spread_EX",
+            "chaser_EX",
+            "lobber_EX",
+            "charge_EX",
+            "roundabout_EX"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Plane Items": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "plane_bullets",
+            "plane_bombs",
+            "plane_EX",
+            "plane_super",
+            "plane_shrink",
+            "plane_parry"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Charms": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "heart",
+            "coffee",
+            "smoke_bomb",
+            "p_sugar",
+            "twin_heart",
+            "whetstone"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Abilities": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "super_1",
+            "super_2",
+            "super_3",
+            "duck",
+            "dash",
+            "parry"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Info": {
+    "type": "array",
+    "orientation": "horizontal",
+    "h_alignment": "center",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "center",
+        "rows": [
+          [
+            "expert_mode",
+            "boss_grade_checks",
+            "run_n_gun_grade_checks",
+            "coin",
+            "contract"
+          ]
+        ]
+      }
+    ]
+  },
+  "Horizontal Goals": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "beat_devil",
+            "collect_contracts",
+            "buy_out_shop"
+          ]
+        ]
+      }
+    ]
+  },
+  "Tabbed Map": {
+    "type": "array",
+    "background": "#212121",
+    "content": [
+      {
+        "type": "tabbed",
+        "tabs": [
           {
-            "type": "itemgrid",
-            "item_margin": "10, 10",
-            "h_alignment": "left",
-            "rows": [
-              [
-                "peashooter",
-                "spread",
-                "chaser",
-                "lobber",
-                "charge",
-                "roundabout"
-              ],
-              [
-                "peashooter_EX",
-                "spread_EX",
-                "chaser_EX",
-                "lobber_EX",
-                "charge_EX",
-                "roundabout_EX"
-              ],
-              [
-                "plane_bullets",
-                "plane_bombs",
-                "plane_EX",
-                "plane_super",
-                "plane_shrink",
-                "plane_parry"
-              ],
-              [
-                "heart",
-                "coffee",
-                "smoke_bomb",
-                "p_sugar",
-                "twin_heart",
-                "whetstone"
-              ],
-              [
-                "super_1",
-                "super_2",
-                "super_3",
-                "duck",
-                "dash",
-                "parry",
-                "coin",
-                "contract"
+            "title": "Isle I",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_1"
               ]
-            ]
+            }
+          },
+          {
+            "title": "Isle II",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_2"
+              ]
+            }
+          },
+          {
+            "title": "Isle III",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_3"
+              ]
+            }
+          },
+          {
+            "title": "Inkwell Hell",
+            "content": {
+              "type": "map",
+              "maps": [
+                "hell"
+              ]
+            }
+          },
+          {
+            "title": "Full Map",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_1",
+                "isle_2",
+                "isle_3",
+                "hell"
+              ]
+            }
           }
         ]
       }

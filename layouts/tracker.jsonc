@@ -10,70 +10,157 @@
       "content": [
         {
           "type": "dock",
-          "dock": "left",
-          "v_alignment": "stretch",
+          "background": "#212121",
+          "item_h_alignment": "stretch",
           "content": [
             {
-              "type": "group",
-              "header": "Items",
-              "dock": "top",
-              "content": {
-                "type": "layout",
-                "key": "shared_item_grid"
-              }
+              "type": "layout",
+              "key": "Tabbed Map"
             }
           ]
         },
         {
-          "type": "tabbed",
-          "tabs": [
+          "type": "dock",
+          "dock": "bottom",
+          "v_alignment": "stretch",
+          "content": [
             {
-              "title": "Isle I",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_1"
-                ]
-              }
+              "type": "dock",
+              "dock": "left",
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Weapons",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Weapons"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "EXs",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal EXs"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Abilities",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Abilities"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Goals",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Goals"
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "title": "Isle II",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_2"
-                ]
-              }
-            },
-            {
-              "title": "Isle III",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_3"
-                ]
-              }
-            },
-            {
-              "title": "Inkwell Hell",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "hell"
-                ]
-              }
-            },
-            {
-              "title": "Full Map",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_1",
-                  "isle_2",
-                  "isle_3",
-                  "hell"
-                ]
-              }
+              "type": "dock",
+              "dock": "right",
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Plane Items",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Plane Items"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Charms",
+                      "dock": "right",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Charms"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Info",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Horizontal Info"
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -83,82 +170,138 @@
   "tracker_horizontal": {
     "type": "container",
     "background": "#877373",
-    "content": {
-      "type": "dock",
-      "dropshadow": true,
-      "content": [
-        {
-          "type": "dock",
-          "dock": "bottom",
-          "content": [
-            {
-              "type": "group",
-              "header": "Items",
-              "dock": "left",
-              "margin": "0,0,3,0",
-              "content": {
+    "content": [
+      {
+        "type": "dock",
+        "dropshadow": true,
+        "item_h_alignment": "stretch",
+        "content": [
+          {
+            "type": "dock",
+            "background": "#212121",
+            "content": [
+              {
                 "type": "layout",
-                "h_alignment": "center",
-                "v_alignment": "center",
-                "key": "shared_item_grid"
+                "key": "Tabbed Map"
               }
-            }
-          ]
-        },
-        {
-          "type": "tabbed",
-          "tabs": [
-            {
-              "title": "Isle I",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_1"
+            ]
+          },
+          {
+            "type": "dock",
+            "dock": "bottom",
+            "content": [
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Weapons and EXs",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Weapons and EXs"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Plane Items",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Plane Items"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Charms",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Charms"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Abilities",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Abilities"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Info",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Info"
+                    }
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "group",
+                    "header": "Goals",
+                    "dock": "left",
+                    "margin": "0,0,3,0",
+                    "content": {
+                      "type": "layout",
+                      "h_alignment": "center",
+                      "v_alignment": "center",
+                      "key": "Goals"
+                    }
+                  }
                 ]
               }
-            },
-            {
-              "title": "Isle II",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_2"
-                ]
-              }
-            },
-            {
-              "title": "Isle III",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_3"
-                ]
-              }
-            },
-            {
-              "title": "Inkwell Hell",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "hell"
-                ]
-              }
-            },
-            {
-              "title": "Full Map",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "isle_1",
-                  "isle_2",
-                  "isle_3",
-                  "hell"
-                ]
-              }
-            }
-          ]
-        }
-      ]
-    }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }

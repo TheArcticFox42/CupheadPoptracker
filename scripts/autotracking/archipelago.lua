@@ -4,6 +4,7 @@
 -- addition it will keep track of what items are local items and which one are remote using the globals LOCAL_ITEMS and GLOBAL_ITEMS
 -- this is useful since remote items will not reset but local items might
 -- if you run into issues when touching A LOT of items/locations here, see the comment about Tracker.AllowDeferredLogicUpdate in autotracking.lua
+BASE_LOCATION_ID = 12905168
 ScriptHost:LoadScript("scripts/autotracking/item_mapping.lua")
 ScriptHost:LoadScript("scripts/autotracking/location_mapping.lua")
 -- used for hint tracking to quickly map hint status to a value from the Highlight enum
@@ -49,8 +50,6 @@ function resetItem(item_code, item_type)
 			obj.Active = false
 		elseif item_type == "consumable" then
 			obj.AcquiredCount = 0
-		elseif item_type == "custom" then
-			-- your code for your custom lua items goes here
 		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("resetItem: tried to reset static item %s", item_code))
 		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -83,8 +82,6 @@ function incrementItem(item_code, item_type, multiplier)
 			end
 		elseif item_type == "consumable" then
 			obj.AcquiredCount = obj.AcquiredCount + obj.Increment * multiplier
-		elseif item_type == "custom" then
-			-- your code for your custom lua items goes here
 		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
 			print(string.format("incrementItem: tried to increment static item %s", item_code))
 		elseif item_type == "composite_toggle" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -102,6 +99,82 @@ end
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
+	-- setting the goal
+	if slot_data["mode"] == 2 then Tracker:FindObjectForCode("collect_contracts").AcquiredCount = slot_data["contract_goal_requirements"]
+	elseif slot_data["mode"] == 4 then Tracker:FindObjectForCode("buy_out_shop").Active = true
+	elseif slot_data["mode"] == 8 then 
+		Tracker:FindObjectForCode("beat_saltbaker").Active = true
+	elseif slot_data["mode"] == 9 then 
+		Tracker:FindObjectForCode("beat_devil").Active = true
+		Tracker:FindObjectForCode("beat_saltbaker").Active = true
+	elseif slot_data["mode"] == 16 then Tracker:FindObjectForCode("collect_ingredients").AcquiredCount= slot_data["dlc_ingredient_goal_requirements"]
+	elseif slot_data["mode"] == 18 then 
+		Tracker:FindObjectForCode("collect_contracts").AcquiredCount = slot_data["contract_goal_requirements"]
+		Tracker:FindObjectForCode("collect_ingredients").AcquiredCount = slot_data["dlc_ingredient_goal_requirements"]
+	else 
+		Tracker:FindObjectForCode("beat_devil").Active = true
+	end
+
+	Tracker:FindObjectForCode("use_dlc").Active = slot_data["use_dlc"]
+	Tracker:FindObjectForCode("expert_mode").Active = slot_data["expert_mode"]
+
+	-- checking whether the starting weapon is excepted
+	if slot_data["weapon_mode"] == 1 then Tracker:FindObjectForCode("start_weapon_exception").Active = false
+	elseif slot_data["weapon_mode"] == 5 then 
+		Tracker:FindObjectForCode("start_weapon_exception").Active = true
+	elseif slot_data["weapon_mode"] == 2 then Tracker:FindObjectForCode("start_weapon_exception").Active = false
+	elseif slot_data["weapon_mode"] == 6 then 
+		Tracker:FindObjectForCode("start_weapon_exception").Active = true
+	else Tracker:FindObjectForCode("start_weapon_exception").Active = true
+	end
+	
+	--giving the starting weapon (and EX if needed)
+	if slot_data["start_weapon"] == 0 then 
+		Tracker:FindObjectForCode("peashooter").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("peashooter_EX").Active = true
+		end
+	elseif slot_data["start_weapon"] == 1 then 
+		Tracker:FindObjectForCode("spread").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("spread_EX").Active = true
+		end
+	elseif slot_data["start_weapon"] == 2 then 
+		Tracker:FindObjectForCode("chaser").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("chaser_EX").Active = true
+		end
+	elseif slot_data["start_weapon"] == 3 then 
+		Tracker:FindObjectForCode("lobber").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("lobber_EX").Active = true
+		end
+	elseif slot_data["start_weapon"] == 4 then 
+		Tracker:FindObjectForCode("charge").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("charge_EX").Active = true
+		end
+	elseif slot_data["start_weapon"] == 5 then 
+		Tracker:FindObjectForCode("roundabout").Active = true
+		if Tracker:FindObjectForCode("start_weapon_exception").Active == true then 
+			Tracker:FindObjectForCode("roundabout_EX").Active = true
+		end
+	end
+
+	if slot_data["boss_grade_checks"] == 0 then Tracker:FindObjectForCode("boss_grade_checks").CurrentStage = 0
+	elseif slot_data["boss_grade_checks"] == 2 then Tracker:FindObjectForCode("boss_grade_checks").CurrentStage = 2
+	elseif slot_data["boss_grade_checks"] == 3 then Tracker:FindObjectForCode("boss_grade_checks").CurrentStage = 3
+	elseif slot_data["boss_grade_checks"] == 4 then Tracker:FindObjectForCode("boss_grade_checks").CurrentStage = 4
+	else Tracker:FindObjectForCode("boss_grade_checks").CurrentStage = 1
+	end
+
+	if slot_data["rungun_grade_checks"] == 0 then Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage = 0
+	elseif slot_data["rungun_grade_checks"] == 2 then Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage = 2
+	elseif slot_data["rungun_grade_checks"] == 3 then Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage = 3
+	elseif slot_data["rungun_grade_checks"] == 5 then Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage = 4
+	else Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage = 1 
+	end
+
 end
 
 -- called right after an AP slot is connected
@@ -163,10 +236,6 @@ function onClear(slot_data)
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
-	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions here
-	end
 	-- setup data storage tracking for hint tracking
 	local data_strorage_keys = {}
 	if PopVersion >= "0.32.0" then
@@ -208,6 +277,60 @@ function onItem(index, item_id, item_name, player_number)
 			local multiplier = item_table[3] or 1
 			if item_code then
 				incrementItem(item_code, item_type, multiplier)
+				-- dealing with progressive shots
+				if item_code == "progressive_peashooter" then
+					local stage = Tracker:FindObjectForCode("progressive_peashooter").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("peashooter").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("peashooter_EX").Active = true
+					end
+				end
+
+				if item_code == "progressive_spread" then
+					local stage = Tracker:FindObjectForCode("progressive_spread").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("spread").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("spread_EX").Active = true
+					end
+				end
+
+				if item_code == "progressive_chaser" then
+					local stage = Tracker:FindObjectForCode("progressive_chaser").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("chaser").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("chaser_EX").Active = true
+					end
+				end
+
+				if item_code == "progressive_lobber" then
+					local stage = Tracker:FindObjectForCode("progressive_lobber").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("lobber").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("lobber_EX").Active = true
+					end
+				end
+
+				if item_code == "progressive_charge" then
+					local stage = Tracker:FindObjectForCode("progressive_charge").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("charge").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("charge_EX").Active = true
+					end
+				end
+
+				if item_code == "progressive_roundabout" then
+					local stage = Tracker:FindObjectForCode("progressive_roundabout").CurrentStage
+					if stage == 1 then
+						Tracker:FindObjectForCode("roundabout").Active = true
+					elseif stage == 2 then
+						Tracker:FindObjectForCode("roundabout_EX").Active = true
+					end
+				end
 				-- keep track which items we touch are local and which are global
 				if is_local then
 					if LOCAL_ITEMS[item_code] then
@@ -233,10 +356,6 @@ function onItem(index, item_id, item_name, player_number)
 		print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
 		print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
 	end
-	-- track local items via snes interface
-	if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-		-- add snes interface functions for local item tracking here
-	end
 end
 
 -- called when a location gets cleared
@@ -261,7 +380,12 @@ function onLocation(location_id, location_name)
 				local obj = Tracker:FindObjectForCode(location_code)
 				if obj then
 					if location_code:sub(1, 1) == "@" then
-						obj.AvailableChestCount = obj.AvailableChestCount - 1
+						if not (Tracker:FindObjectForCode("run_n_gun_grade_checks").CurrentStage == 5 and 
+						(location_id == BASE_LOCATION_ID + 51 or location_id == BASE_LOCATION_ID + 59 or location_id == BASE_LOCATION_ID + 67 or
+						location_id == BASE_LOCATION_ID + 75 or location_id == BASE_LOCATION_ID + 83 or location_id == BASE_LOCATION_ID + 91)) then
+							obj.AvailableChestCount = obj.AvailableChestCount - 1
+						else
+						end
 					else
 						-- increment hosted item
 						local item_type = location_table[2]
