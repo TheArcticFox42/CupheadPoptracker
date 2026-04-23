@@ -1,4 +1,6 @@
-Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in [the Cuphead thread on the Archipelago discord server](https://discord.com/channels/731205301247803413/1050929729844297789)
+### Cuphead PopTracker
+
+Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in the [Cuphead thread](https://discord.com/channels/731205301247803413/1050929729844297789) on the Archipelago discord server
 
 Notes:
 - The current version does not yet support anything related to the DLC 
