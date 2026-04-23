@@ -71,7 +71,6 @@ function registerProgressiveWatchers()
                 code,
             function(changed_code)
                 handleProgressiveUpdate(changed_code)
-                print(Tracker:FindObjectForCode(changed_code).CurrentStage)
             end
             )
         end
