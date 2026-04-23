@@ -9,6 +9,7 @@
         "name": "Goal - Collect Contracts",
         "type": "consumable",
         "initial_quantity": 0,
+        "overlay_font_size": 15,
         "img": "images/goals/collect_contracts.png",
         "codes": "collect_contracts"
     },

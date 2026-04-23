@@ -233,6 +233,31 @@ function onClear(slot_data)
 			end
 		end
 	end
+
+	-- reset slot data and progressive weapons
+	local slot_data_items = {
+		"beat_devil",
+		"collect_contracts",
+		"buy_out_shop",
+		"beat_saltbaker",
+		"collect_ingredients",
+		"use_dlc",
+		"expert_mode",
+		"start_weapon_exception",
+		"boss_grade_checks",
+		"run_n_gun_grade_checks",
+		"progressive_peashooter",
+		"progressive_spread",
+		"progressive_chaser",
+		"progressive_lobber",
+		"progressive_charge",
+		"progressive_roundabout"
+	}
+	for _, item_code in ipairs(slot_data_items) do
+		resetItem(item_code,Tracker:FindObjectForCode(item_code).Type)
+	end
+
+	
 	apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
@@ -277,60 +302,6 @@ function onItem(index, item_id, item_name, player_number)
 			local multiplier = item_table[3] or 1
 			if item_code then
 				incrementItem(item_code, item_type, multiplier)
-				-- dealing with progressive shots
-				if item_code == "progressive_peashooter" then
-					local stage = Tracker:FindObjectForCode("progressive_peashooter").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("peashooter").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("peashooter_EX").Active = true
-					end
-				end
-
-				if item_code == "progressive_spread" then
-					local stage = Tracker:FindObjectForCode("progressive_spread").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("spread").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("spread_EX").Active = true
-					end
-				end
-
-				if item_code == "progressive_chaser" then
-					local stage = Tracker:FindObjectForCode("progressive_chaser").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("chaser").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("chaser_EX").Active = true
-					end
-				end
-
-				if item_code == "progressive_lobber" then
-					local stage = Tracker:FindObjectForCode("progressive_lobber").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("lobber").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("lobber_EX").Active = true
-					end
-				end
-
-				if item_code == "progressive_charge" then
-					local stage = Tracker:FindObjectForCode("progressive_charge").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("charge").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("charge_EX").Active = true
-					end
-				end
-
-				if item_code == "progressive_roundabout" then
-					local stage = Tracker:FindObjectForCode("progressive_roundabout").CurrentStage
-					if stage == 1 then
-						Tracker:FindObjectForCode("roundabout").Active = true
-					elseif stage == 2 then
-						Tracker:FindObjectForCode("roundabout_EX").Active = true
-					end
-				end
 				-- keep track which items we touch are local and which are global
 				if is_local then
 					if LOCAL_ITEMS[item_code] then

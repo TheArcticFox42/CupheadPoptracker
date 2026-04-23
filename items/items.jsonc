@@ -1,11 +1,11 @@
 [
-    {
+  {
     "name": "Coin",
     "type": "consumable",
     "img": "images/items/coin.png",
     "min_quantity": 0,
     "initial_quantity": 0,
-    "overlay_font_size": 20,
+    "overlay_font_size": 15,
     "codes": "coin"
   },
   {
@@ -16,7 +16,7 @@
     "max_quantity": 17,
     "increment": 1,
     "initial_quantity": 0,
-    "overlay_font_size": 20,
+    "overlay_font_size": 15,
     "codes": "contract"
   },
   {
@@ -108,6 +108,126 @@
     "type": "toggle",
     "img": "images/items/roundabout_EX.png",
     "codes": "roundabout_EX"
+  },
+  {
+    "name": "progressive_peashooter",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_peashooter,peashooter_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_peashooter,peashooter_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_peashooter,peashooter_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_spread",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_spread,spread_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_spread,spread_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_spread,spread_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_chaser",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_chaser,chaser_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_chaser,chaser_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_chaser,chaser_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_lobber",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_lobber,lobber_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_lobber,lobber_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_lobber,lobber_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_charge",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_charge,charge_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_charge,charge_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_charge,charge_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_roundabout",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_roundabout,roundabout_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_roundabout,roundabout_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_roundabout,roundabout_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
   },
   {
     "name": "Plane Bullets",

@@ -724,7 +724,7 @@
         {
         }
       ],
-          "access_rules":["plane_parry,plane_bullets","[],parry,plane_bombs","[],parry,coffee,plane_EX", "[],parry,coffee,plane_super"],
+          "access_rules":["plane_parry,plane_bullets","[],plane_parry,plane_bombs","[],plane_parry,coffee,plane_EX", "[],plane_parry,coffee,plane_super"],
           "map_locations": [
           {
             "map": "isle_3",

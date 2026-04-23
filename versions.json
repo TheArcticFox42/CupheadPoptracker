@@ -3,9 +3,9 @@
         {
             "package_version": "1.0",
             "download_url": "",
-            "sha256": "",
+            "sha256": "CBF915F20184F59A82218455E9E478750C1FB21CB90BE5A1CEB985D5066FB54B",
             "changelog": [
-				"initial version"
+				"initial implementation"
 			]
        }
 	   ]

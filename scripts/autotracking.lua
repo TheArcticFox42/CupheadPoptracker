@@ -23,4 +23,6 @@ print("")
 
 -- loads the AP autotracking code
 ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
+ScriptHost:LoadScript("scripts/autotracking/progressive_handling.lua")
+registerProgressiveWatchers()
 
