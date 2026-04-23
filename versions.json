@@ -1,0 +1,12 @@
+{
+    "versions": [
+        {
+            "package_version": "1.0.0",
+            "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/releases/tag/v1.0.0",
+            "sha256": "3B600A5DB583E2538120A5C134DEA1D111401F52F19BCC7752C5CE1E58710FF5",
+            "changelog": [
+				"initial implementation"
+			]
+       }
+	   ]
+}
