@@ -9,3 +9,14 @@ Notes:
 - Sequence break logic was manually created by me and so it may have flaws. If you find any sequence break logic then you can let me know and I will add it once I get to it.
 - Due to some current limitations any location that is on the map or in the shop always appears out of logic until it is collected
 - Some maps can slightly cut off when using the vertical variant 
+
+### Requirements
+
+[Poptracker](https://github.com/black-sliver/PopTracker) version 0.35.1 or higher
+
+### Installation
+
+1. Go to the [releases page](https://github.com/TheArcticFox42/CupheadPoptracker/releases) and download the .zip file for the version you want
+2. Put the downloaded file in your packs folder in Poptracker
+3. Launch Poptracker and select CupheadPoptracker in the top left
+4. To connect to your Archipelago game for auto-tracking press the AP button in the top left and enter the room details
