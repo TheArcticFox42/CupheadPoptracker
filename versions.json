@@ -3,7 +3,7 @@
         {
             "package_version": "1.1.0",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.1.0.zip",
-            "sha256": "948BDFBCA8ABA8CE99ADAA0BA4F657952155B2D7865DB4A45FAB65B27EFB14C9",
+            "sha256": "D353E5BC752750F21AF63C22DB8ACECEA5BACAF1B5E38CC0BA4E22246F4DC4A1",
             "changelog": [
                 "Added level shuffle support",
                 "Added logic summary page",
@@ -15,7 +15,7 @@
         {
             "package_version": "1.0.0",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.0.0.zip",
-            "sha256": "78C554D384BF043039539E5DEA83FF4C96B5F8EFDF4750B2FF91A6B1E59E2D89",
+            "sha256": "82AEAF57A6EAB7355B1B884EC81635288F674182229C71D57D11BDCA76EFFA1A",
             "changelog": [
 				"initial implementation"
 			]
