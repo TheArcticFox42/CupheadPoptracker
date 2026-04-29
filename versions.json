@@ -1,6 +1,18 @@
 {
     "versions": [
         {
+            "package_version": "1.1.0",
+            "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.1.0.zip",
+            "sha256": "948BDFBCA8ABA8CE99ADAA0BA4F657952155B2D7865DB4A45FAB65B27EFB14C9",
+            "changelog": [
+                "Added level shuffle support",
+                "Added logic summary page",
+                "Added isle logic",
+                "Cleaned up internal code"
+            ]
+
+        },
+        {
             "package_version": "1.0.0",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.0.0.zip",
             "sha256": "78C554D384BF043039539E5DEA83FF4C96B5F8EFDF4750B2FF91A6B1E59E2D89",
