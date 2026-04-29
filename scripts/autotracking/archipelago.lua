@@ -101,6 +101,8 @@ end
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
 	-- setting the goal
+	print(dump_table(slot_data))
+
 	local goal_handlers = {
 		[2] = function(slot_data)
 				Tracker:FindObjectForCode("collect_contracts").AcquiredCount = 
@@ -120,7 +122,7 @@ function apply_slot_data(slot_data)
 		[9] = function(slot_data)
 				Tracker:FindObjectForCode("beat_devil").Active = true
 				Tracker:FindObjectForCode("beat_saltbaker").Active = true
-				Tracker:FindObjectForCode("collect_contracts").AcquiredCount = slot_data["contract_requirements"][3]
+				Tracker:FindObjectForCode("collect_contracts").AcquiredCount = slot_data["contract_requirements"][1]
 				Tracker:FindObjectForCode("collect_ingredients").AcquiredCount = slot_data["dlc_ingredient_requirements"]
 		end,
 
@@ -141,7 +143,7 @@ function apply_slot_data(slot_data)
 	else
 		Tracker:FindObjectForCode("beat_devil").Active = true
 		Tracker:FindObjectForCode("collect_contracts").AcquiredCount = 
-			slot_data["contract_requirements"][3]
+			slot_data["contract_requirements"][1]
 	end
 
 	Tracker:FindObjectForCode("use_dlc").Active = slot_data["use_dlc"]
@@ -236,9 +238,9 @@ function apply_slot_data(slot_data)
     end
 
 	LEVEL_MAP = slot_data["level_map"]
-	CONTRACT_REQUIREMENT_ISLE_2 = slot_data["contract_requirements"][1]
-	CONTRACT_REQUIREMENT_ISLE_3 = slot_data["contract_requirements"][2]
-	CONTRACT_REQUIREMENT_HELL = slot_data["contract_requirements"][3]
+	CONTRACT_REQUIREMENT_ISLE_2 = slot_data["contract_requirements"][2]
+	CONTRACT_REQUIREMENT_ISLE_3 = slot_data["contract_requirements"][3]
+	CONTRACT_REQUIREMENT_KING_DICE = slot_data["contract_requirements"][1]
 
 end
 
@@ -415,12 +417,12 @@ function onLocation(location_id, location_name)
 	end
 
 	local a_grade_ids = {
-		BASE_LOCATION_ID + 51, 
-		BASE_LOCATION_ID + 59, 
-		BASE_LOCATION_ID + 67,
-		BASE_LOCATION_ID + 75, 
-		BASE_LOCATION_ID + 83, 
-		BASE_LOCATION_ID + 91
+		18000, 
+		18001, 
+		18002,
+		18003, 
+		18004, 
+		18005
 	}
 
 	for _, location_table in pairs(mapping_entry) do

@@ -72,7 +72,7 @@ LEVEL_MAP = {
     -- Default Values
 	CONTRACT_REQUIREMENT_ISLE_2 = 5
 	CONTRACT_REQUIREMENT_ISLE_3 = 10
-    CONTRACT_REQUIREMENT_HELL = 17
+    CONTRACT_REQUIREMENT_KING_DICE = 17
 
 -- Checks whether the map location for level_index is cleared    
 function boss_complete(level_index)
@@ -263,7 +263,7 @@ end
     
     function can_access_king_dice_level()
         local contracts = Tracker:FindObjectForCode("contract").AcquiredCount
-            return can_access_isle("hell") and contracts >= CONTRACT_REQUIREMENT_HELL
+            return can_access_isle("hell") and contracts >= CONTRACT_REQUIREMENT_KING_DICE
         end
 
     function can_access_forest_follies_level()
