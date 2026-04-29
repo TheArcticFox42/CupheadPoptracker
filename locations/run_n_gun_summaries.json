@@ -1,21 +1,22 @@
 [
   {
-    "name": "Forest Follies",
+    "name": "Forest Follies Summary",
     "children": [
       {
         "name": "Forest Follies Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|28"
+          "@Forest Follies Summary/Forest Follies Complete/,parry",
+          "[],@Forest Follies Summary/Forest Follies Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 490,
-            "y": 216,
-            "size": 9,
+            "map": "summary",
+            "x": 1637,
+            "y": 268,
+            "size": 24,
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
@@ -26,126 +27,133 @@
       {
         "name": "Forest Follies Complete",
         "access_rules": [
-          "^$can_beat_rungun|28"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 510,
-            "y": 216,
-            "size": 9,
+            "map": "summary",
+            "x": 1677,
+            "y": 268,
+            "size": 24,
             "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 1",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|1|28"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 530,
-            "y": 216,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1717,
+            "y": 268,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 2",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|2|28"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 550,
-            "y": 216,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1757,
+            "y": 268,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 3",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|3|28"
+          "parry",
+          "[]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 510,
-            "y": 234,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1677,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 4",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|4|28"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 530,
-            "y": 234,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1717,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|28"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 550,
-            "y": 234,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1757,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }
     ]
   },
   {
-    "name": "Treetop Trouble",
+    "name": "Treetop Trouble Summary",
     "children": [
       {
         "name": "Treetop Trouble Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|29"
+          "@Treetop Trouble Summary/Treetop Trouble Complete/,parry",
+          "[],@Treetop Trouble Summary/Treetop Trouble Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 689,
-            "y": 170,
-            "size": 9,
+            "map": "summary",
+            "x": 1947,
+            "y": 268,
+            "size": 24,
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
@@ -156,17 +164,17 @@
       {
         "name": "Treetop Trouble Complete",
         "access_rules": [
-          "^$can_beat_rungun|29"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 709,
-            "y": 170,
-            "size": 9,
+            "map": "summary",
+            "x": 1987,
+            "y": 268,
+            "size": 24,
             "border_thickness": 3
           }
         ]
@@ -174,108 +182,116 @@
       {
         "name": "Treetop Trouble Coin 1",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|1|29"
+          "parry",
+          "[],p_sugar",
+          "[],super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 729,
-            "y": 170,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2027,
+            "y": 268,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Treetop Trouble Coin 2",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|2|29"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 749,
-            "y": 170,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2067,
+            "y": 268,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Treetop Trouble Coin 3",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|3|29"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 709,
-            "y": 188,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1987,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Treetop Trouble Coin 4",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|4|29"
+          "dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 729,
-            "y": 188,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2027,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Treetop Trouble Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|29"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_1",
-            "x": 749,
-            "y": 188,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2067,
+            "y": 305,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }
     ]
   },
   {
-    "name": "Funfair Fever",
+    "name": "Funfair Fever Summary",
     "children": [
       {
         "name": "Funfair Fever Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|30"
+          "@Funfair Fever Summary/Funfair Fever Complete/,parry",
+          "[],@Funfair Fever Summary/Funfair Fever Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 128,
-            "y": 466,
-            "size": 9,
+            "map": "summary",
+            "x": 1637,
+            "y": 588,
+            "size": 24,
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
@@ -286,125 +302,140 @@
       {
         "name": "Funfair Fever Complete",
         "access_rules": [
-          "^$can_beat_rungun|30"
+          "parry",
+          "p_sugar",
+          "[],coffee,super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 148,
-            "y": 466,
-            "size": 9
+            "map": "summary",
+            "x": 1677,
+            "y": 588,
+            "size": 24,
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 1",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|1|30"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 168,
-            "y": 466,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1717,
+            "y": 588,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 2",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|2|30"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 188,
-            "y": 466,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1757,
+            "y": 588,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 3",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|3|30"
+          "parry",
+          "p_sugar",
+          "[],super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 148,
-            "y": 484,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1677,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 4",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|4|30"
+          "parry",
+          "p_sugar",
+          "[],coffee,super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 168,
-            "y": 484,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1717,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|30"
+          "parry",
+          "p_sugar",
+          "[],coffee,super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 188,
-            "y": 484,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1757,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }
     ]
   },
   {
-    "name": "Funhouse Frazzle",
+    "name": "Funhouse Frazzle Summary",
     "children": [
       {
         "name": "Funhouse Frazzle Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|31"
+          "@Funhouse Frazzle Summary/Funhouse Frazzle Complete/,parry",
+          "[],@Funhouse Frazzle Summary/Funhouse Frazzle Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 624,
-            "y": 632,
-            "size": 9,
+            "map": "summary",
+            "x": 1947,
+            "y": 588,
+            "size": 24,
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
@@ -415,129 +446,143 @@
       {
         "name": "Funhouse Frazzle Complete",
         "access_rules": [
-          "^$can_beat_rungun|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 644,
-            "y": 632,
-            "size": 9
+            "map": "summary",
+            "x": 1987,
+            "y": 588,
+            "size": 24,
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 1",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|1|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 664,
-            "y": 632,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2027,
+            "y": 588,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 2",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|2|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 684,
-            "y": 632,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2067,
+            "y": 588,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 3",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|3|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 644,
-            "y": 650,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1987,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 4",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|4|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 664,
-            "y": 650,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2027,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|31"
+          "parry",
+          "p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_2",
-            "x": 684,
-            "y": 650,
-            "size": 12,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 2067,
+            "y": 625,
+            "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }
     ]
   },
   {
-    "name": "Perilous Piers",
+    "name": "Perilous Piers Summary",
     "children": [
       {
         "name": "Perilous Piers Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|32"
+          "@Perilous Piers Summary/Perilous Piers Complete/,parry",
+          "[],@Perilous Piers Summary/Perilous Piers Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 360,
-            "y": 333,
-            "size": 6,
+            "map": "summary",
+            "x": 1800,
+            "y": 868,
+            "size": 20,
+            "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
@@ -547,127 +592,143 @@
       {
         "name": "Perilous Piers Complete",
         "access_rules": [
-          "^$can_beat_rungun|32"
+          "parry,dash",
+          "[],p_sugar,dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 371,
-            "y": 333,
-            "size": 6
+            "map": "summary",
+            "x": 1835,
+            "y": 868,
+            "size": 20,
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 1",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|1|32"
+          "dash",
+          "parry",
+          "p_sugar",
+          "[],super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 384,
-            "y": 333,
-            "size": 9,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1870,
+            "y": 868,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 2",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|2|32"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 395,
-            "y": 333,
-            "size": 9,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1902,
+            "y": 868,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 3",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|3|32"
+          "[parry]",
+          "[p_sugar]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 372,
-            "y": 346,
-            "size": 9,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1835,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 4",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|4|32"
+          "parry",
+          "p_sugar",
+          "[],super_2"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 384,
-            "y": 346,
-            "size": 9,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1870,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|32"
+          "parry,dash",
+          "[],p_sugar,dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
           {
-            "map": "isle_3",
-            "x": 395,
-            "y": 346,
-            "size": 9,
-            "shape": "diamond"
+            "map": "summary",
+            "x": 1902,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }
     ]
   },
   {
-    "name": "Rugged Ridge",
+    "name": "Rugged Ridge Summary",
     "children": [
       {
         "name": "Rugged Ridge Top Grade",
         "access_rules": [
-          "^$can_top_grade_rungun|33"
+          "@Rugged Ridge Summary/Rugged Ridge Complete/,parry",
+          "[],@Rugged Ridge Summary/Rugged Ridge Complete/,p_sugar"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 102,
-            "y": 329,
-            "size": 6,
+                    {
+            "map": "summary",
+            "x": 2053,
+            "y": 868,
+            "size": 20,
+            "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
@@ -677,101 +738,107 @@
       {
         "name": "Rugged Ridge Complete",
         "access_rules": [
-          "^$can_beat_rungun|33"
+          "dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 113,
-            "y": 329,
-            "size": 6
+                    {
+            "map": "summary",
+            "x": 2088,
+            "y": 868,
+            "size": 20,
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 1",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|1|33"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 126,
-            "y": 329,
-            "size": 9,
-            "shape": "diamond"
+                    {
+            "map": "summary",
+            "x": 2121,
+            "y": 868,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 2",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|2|33"
+          "[dash]"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 137,
-            "y": 329,
-            "size": 9,
-            "shape": "diamond"
+                    {
+            "map": "summary",
+            "x": 2155,
+            "y": 868,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 3",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|3|33"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 112,
-            "y": 342,
-            "size": 9,
-            "shape": "diamond"
+                    {
+            "map": "summary",
+            "x": 2088,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 4",
-        "access_rules": ["^$can_get_coin_i_in_rungun_j|4|33"],
+        "access_rules": [],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 124,
-            "y": 342,
-            "size": 9,
-            "shape": "diamond"
+                    {
+            "map": "summary",
+            "x": 2121,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 5",
         "access_rules": [
-          "^$can_get_coin_i_in_rungun_j|5|33"
+          "dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-          {
-            "map": "isle_3",
-            "x": 135,
-            "y": 342,
-            "size": 9,
-            "shape": "diamond"
+                    {
+            "map": "summary",
+            "x": 2155,
+            "y": 905,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       }

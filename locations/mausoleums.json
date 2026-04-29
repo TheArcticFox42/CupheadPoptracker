@@ -1,52 +1,50 @@
 [
-{
-    "name": "Mausoleum I",
-    "access_rules":["parry","[],p_sugar"],
-    "sections": [
-        {
-        }
-    ],
-    "map_locations": [
-        {
-            "map": "isle_1",
-            "x": 825,
-            "y": 457
-
-        }
-    ]
-
-},
-{
-    "name": "Mausoleum II",
-    "access_rules":["parry","[],p_sugar"],
-    "sections": [
-        {
-        }
-    ],
-    "map_locations": [
-        {
-            "map": "isle_2",
-            "x": 359,
-            "y": 291
-
-        }
-    ]
-
-},
-{
-    "name": "Mausoleum III",
-    "access_rules":["parry"],
-    "sections": [
-        {
-        }
-    ],
-    "map_locations": [
-        {
-            "map": "isle_3",
-            "x": 310,
-            "y": 350
-
-        }
-    ]
-}
+    {
+        "name": "Mausoleum I",
+        "access_rules": [
+            "^$can_beat_mausoleum|1"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_1",
+                "x": 825,
+                "y": 457
+            }
+        ]
+    },
+    {
+        "name": "Mausoleum II",
+        "access_rules": [
+            "^$can_beat_mausoleum|2"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_2",
+                "x": 359,
+                "y": 291
+            }
+        ]
+    },
+    {
+        "name": "Mausoleum III",
+        "access_rules": [
+            "^$can_beat_mausoleum|3"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_3",
+                "x": 310,
+                "y": 350
+            }
+        ]
+    }
 ]

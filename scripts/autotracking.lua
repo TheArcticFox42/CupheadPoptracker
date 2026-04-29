@@ -22,7 +22,20 @@ print("")
 -- if Tracker.AllowDeferredLogicUpdate == false then Tracker.AllowDeferredLogicUpdate = true end
 
 -- loads the AP autotracking code
+ScriptHost:LoadScript("scripts/logic/logic.lua")
 ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 ScriptHost:LoadScript("scripts/autotracking/progressive_handling.lua")
 registerProgressiveWatchers()
+
+-- sets up coin counting
+ScriptHost:AddWatchForCode("coin_watcher","coin",
+            function()
+                calculate_coin_count()
+            end
+            )
+ScriptHost:AddOnLocationSectionChangedHandler("coin_handler",
+            function(LocationSection)
+                calculate_coin_count()
+            end
+)
 

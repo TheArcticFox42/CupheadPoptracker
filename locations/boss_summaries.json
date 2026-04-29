@@ -1,0 +1,832 @@
+[
+  {
+    "name": "The Root Pack Summary",
+    "children": [
+      {
+        "name": "The Root Pack Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 114,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "The Root Pack Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@The Root Pack Summary/The Root Pack Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 184,
+            "y": 278,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Root Pack Secret Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@The Root Pack Summary/The Root Pack Complete"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 40,
+            "x": 149,
+            "y": 333,
+            "shape": "trapezoid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Goopy Le Grande Summary",
+    "children": [
+      {
+        "name": "Goopy Le Grande Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "[duck]",
+          "[dash]"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 734,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "Goopy Le Grande Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Goopy Le Grande Summary/Goopy Le Grande Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 804,
+            "y": 278,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ribby And Croaks Summary",
+    "children": [
+      {
+        "name": "Ribby And Croaks Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "parry",
+          "p_sugar"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 424,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "Ribby And Croaks Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Ribby And Croaks Summary/Ribby And Croaks Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 494,
+            "y": 278,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cagney Carnation Summary",
+    "children": [
+      {
+        "name": "Cagney Carnation Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1364,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "Cagney Carnation Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Cagney Carnation Summary/Cagney Carnation Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1434,
+            "y": 278,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Baroness Von Bon Bon Summary",
+    "children": [
+      {
+        "name": "Baroness Von Bon Bon Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "[parry]",
+          "[p_sugar]"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 114,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Baroness Von Bon Bon Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 184,
+            "y": 603,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beppi The Clown Summary",
+    "children": [
+      {
+        "name": "Beppi The Clown Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "[dash]",
+          "[parry]",
+          "[p_sugar]"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1051,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Beppi The Clown Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Beppi The Clown Summary/Beppi The Clown Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1121,
+            "y": 603,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Grim Matchstick Summary",
+    "children": [
+      {
+        "name": "Grim Matchstick Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1364,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Grim Matchstick Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Grim Matchstick Summary/Grim Matchstick Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1434,
+            "y": 603,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rumor Honeybottoms Summary",
+    "children": [
+      {
+        "name": "Rumor Honeybottoms Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 92,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Rumor Honeybottoms Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Rumor Honeybottoms Summary/Rumor Honeybottoms Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 147,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Captain Brineybeard Summary",
+    "children": [
+      {
+        "name": "Captain Brineybeard Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "duck",
+          "parry"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 1096,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Captain Brineybeard Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Captain Brineybeard Summary/Captain Brineybeard Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1151,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Werner Werman Summary",
+    "children": [
+      {
+        "name": "Werner Werman Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "duck,[parry]",
+          "duck,[p_sugar]"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 851,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Werner Werman Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Werner Werman Summary/Werner Werman Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 906,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sally Stageplay Summary",
+    "children": [
+      {
+        "name": "Sally Stageplay Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "parry",
+          "[],p_sugar",
+          "[],smoke_bomb,dash"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 598,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Sally Stageplay Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Sally Stageplay Summary/Sally Stageplay Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 653,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sally Stageplay Secret Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Sally Stageplay Summary/Sally Stageplay Complete,parry",
+          "[],@Sally Stageplay Summary/Sally Stageplay Complete,p_sugar"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 32,
+            "x": 623,
+            "y": 920,
+            "shape": "trapezoid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Phantom Express Summary",
+    "children": [
+      {
+        "name": "Phantom Express Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 1602,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Phantom Express Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Phantom Express Summary/Phantom Express Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1657,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "King Dice Summary",
+    "children": [
+      {
+        "name": "King Dice Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "parry,plane_bullets",
+          "[],parry,plane_bombs"
+        ],
+        "map_locations": [
+                    {
+            "map": "summary",
+            "x": 1203,
+            "y": 1156
+          }
+        ]
+      },
+      {
+        "name": "King Dice Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@King Dice Summary/King Dice Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+                    {
+            "map": "summary",
+            "x": 1273,
+            "y": 1156,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hilda Berg Summary",
+    "children": [
+      {
+        "name": "Hilda Berg Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_bullets",
+          "[],plane_bombs",
+          "[],coffee,plane_EX",
+          "[],coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1051,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "Hilda Berg Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Hilda Berg Summary/Hilda Berg Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1121,
+            "y": 278,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Djimmi The Great Summary",
+    "children": [
+      {
+        "name": "Djimmi The Great Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_bullets",
+          "[],plane_bombs",
+          "[],coffee,plane_EX",
+          "[],coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 734,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Djimmi The Great Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Djimmi The Great Summary/Djimmi The Great Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 804,
+            "y": 603,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Djimmi The Great Secret Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Djimmi The Great Summary/Djimmi The Great Complete,plane_shrink"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 40,
+            "x": 769,
+            "y": 658,
+            "shape": "trapezoid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Wally Warbles Summary",
+    "children": [
+      {
+        "name": "Wally Warbles Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_bullets,plane_bombs",
+          "[],plane_bullets",
+          "[],plane_bombs",
+          "[],coffee,plane_EX",
+          "[],coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 424,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Wally Warbles Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Wally Warbles Summary/Wally Warbles Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 494,
+            "y": 603,
+            "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Cala Maria Summary",
+    "children": [
+      {
+        "name": "Cala Maria Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_bullets",
+          "[],plane_bombs",
+          "[],coffee,plane_EX",
+          "[],coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 1349,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Cala Maria Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Cala Maria Summary/Cala Maria Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 1404,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dr. Kahl's Robot Summary",
+    "children": [
+      {
+        "name": "Dr. Kahl's Robot Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_parry,plane_bullets",
+          "[],plane_parry,plane_bombs",
+          "[],plane_parry,coffee,plane_EX",
+          "[],plane_parry,coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "size": 36,
+            "x": 345,
+            "y": 870
+          }
+        ]
+      },
+      {
+        "name": "Dr. Kahl's Robot Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary",
+            "x": 400,
+            "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

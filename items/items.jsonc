@@ -8,6 +8,12 @@
     "overlay_font_size": 15,
     "codes": "coin"
   },
+    {
+    "name": "current_coin_count",
+    "type": "consumable",
+    "codes": "current_coin_count"
+  },
+
   {
     "name": "Contract",
     "type": "consumable",

@@ -20,3 +20,33 @@ function dump_table(o, depth)
         return tostring(o)
     end
 end
+
+function table_contains_value(table, value)
+    for _, v in ipairs(table) do
+        if v == value then return true end
+    end
+    return false
+end
+
+function calculate_coin_count(changed_code)
+    local total = Tracker:FindObjectForCode("coin").AcquiredCount
+
+    -- subtract charm costs
+    for _, charm_code in ipairs(SHOP_CHARM_CODES) do
+        local charm_location = Tracker:FindObjectForCode(charm_code)
+        if charm_location and charm_location.AccessibilityLevel == AccessibilityLevel["Cleared"] then
+            total = total - 3
+        end
+    end
+
+    -- subtract weapon costs
+    for _, weapon_code in ipairs(SHOP_WEAPON_CODES) do
+        local weapon_location = Tracker:FindObjectForCode(weapon_code)
+        if weapon_location and weapon_location.AccessibilityLevel == AccessibilityLevel["Cleared"] then
+            total = total - 4
+        end
+    end
+
+    Tracker:FindObjectForCode("current_coin_count").AcquiredCount = total
+end
+

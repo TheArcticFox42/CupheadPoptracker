@@ -8,9 +8,6 @@ end
 -- Utility Script for helper functions etc.
 ScriptHost:LoadScript("scripts/utils.lua")
 
--- Logic
-ScriptHost:LoadScript("scripts/logic/logic.lua")
-
 -- Items
 require("scripts/imports/items_import")
 

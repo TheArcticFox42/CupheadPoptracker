@@ -161,6 +161,10 @@
           [
             "contract"
           ]
+          // ,
+          // [
+          //   "freemove_isles"
+          // ]
         ]
       }
     ]
@@ -218,7 +222,7 @@
       }
     ]
   },
-    "Horizontal Weapons": {
+  "Horizontal Weapons": {
     "type": "array",
     "orientation": "horizontal",
     "margin": "0,0",
@@ -240,7 +244,7 @@
       }
     ]
   },
-    "Horizontal EXs": {
+  "Horizontal EXs": {
     "type": "array",
     "orientation": "horizontal",
     "margin": "0,0",
@@ -421,6 +425,15 @@
                 "isle_2",
                 "isle_3",
                 "hell"
+              ]
+            }
+          },
+          {
+            "title": "Summary",
+            "content": {
+              "type": "map",
+              "maps": [
+                "summary"
               ]
             }
           }

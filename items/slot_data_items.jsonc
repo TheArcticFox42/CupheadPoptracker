@@ -45,10 +45,10 @@
         "codes": "expert_mode"
     },
     {
-        "name": "start_weapon_exception",
+        "name": "freemove_isles",
         "type": "toggle",
-        "img": "images/items/spread_EX.png",
-        "codes": "start_weapon_exception"
+        // "img": "images/settings/dlc.png",
+        "codes": "freemove_isles"
     },
     {
         "name": "Boss Grade Checks",

@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Mausoleum I Summary",
+        "access_rules": [
+            "parry",
+            "[],p_sugar"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "summary",
+                "x": 2343,
+                "y": 278
+            }
+        ]
+    },
+    {
+        "name": "Mausoleum II Summary",
+        "access_rules": [
+            "parry",
+            "[],p_sugar"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+                      {
+            "map": "summary",
+            "x": 2343,
+            "y": 603
+          }
+        ]
+    },
+    {
+        "name": "Mausoleum III Summary",
+        "access_rules": [
+            "parry"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+                      {
+            "map": "summary",
+            "size": 36,
+            "x": 2369,
+            "y": 870
+          }
+        ]
+    }
+]

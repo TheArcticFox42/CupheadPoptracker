@@ -2,8 +2,8 @@
 BASE_ITEM_ID = 12905168
 ITEM_MAPPING = {
 	[BASE_ITEM_ID + 00000005] = { { "coin" } },
-	[BASE_ITEM_ID + 00000006] = { { "coin" }, { "coin", nil, 2 }},
-	[BASE_ITEM_ID + 00000007] = { { "coin" }, { "coin", nil, 3 } },
+	[BASE_ITEM_ID + 00000006] = { { "coin", nil, 2 } },
+	[BASE_ITEM_ID + 00000007] = { { "coin", nil, 3 } },
 	[BASE_ITEM_ID + 00000008] = { { "contract" } },
 
 	[BASE_ITEM_ID + 00000009] = { { "plane_bullets" } },

@@ -8,7 +8,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Weapon 1/}"
+                    "{$can_access_shop|1}",
+                    "$can_access_shop|1,$can_buy_item_type|weapon"
                 ],
                 "map_locations": [
                     {
@@ -26,7 +27,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Weapon 2/}"
+                    "{$can_access_shop|1}",
+                    "$can_access_shop|1,$can_buy_item_type|weapon"
                 ],
                 "map_locations": [
                     {
@@ -44,7 +46,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 1/}"
+                    "{$can_access_shop|1}",
+                    "$can_access_shop|1,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {
@@ -62,7 +65,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 2/}"
+                    "{$can_access_shop|1}",
+                    "$can_access_shop|1,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {
@@ -85,7 +89,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Weapon 3/}"
+                    "{$can_access_shop|2}",
+                    "$can_access_shop|2,$can_buy_item_type|weapon"
                 ],
                 "map_locations": [
                     {
@@ -103,7 +108,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Weapon 4/}"
+                    "{$can_access_shop|2}",
+                    "$can_access_shop|2,$can_buy_item_type|weapon"
                 ],
                 "map_locations": [
                     {
@@ -121,7 +127,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 3/}"
+                    "{$can_access_shop|2}",
+                    "$can_access_shop|2,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {
@@ -139,7 +146,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 4/}"
+                    "{$can_access_shop|2}",
+                    "$can_access_shop|2,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {
@@ -162,7 +170,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Weapon 5/}"
+                    "{$can_access_shop|3}",
+                    "$can_access_shop|3,$can_buy_item_type|weapon"
                 ],
                 "map_locations": [
                     {
@@ -179,7 +188,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 5/}"
+                    "{$can_access_shop|3}",
+                    "$can_access_shop|3,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {
@@ -196,7 +206,8 @@
                     {}
                 ],
                 "access_rules": [
-                    "{$can_access_map_location|@Shop Charm 6/}"
+                    "{$can_access_shop|3}",
+                    "$can_access_shop|3,$can_buy_item_type|charm"
                 ],
                 "map_locations": [
                     {

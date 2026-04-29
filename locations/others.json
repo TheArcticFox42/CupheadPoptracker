@@ -22,7 +22,7 @@
     },
     {
         "name": "Isle 1 Secret Coin",
-        "access_rules":["$can_access_map_location|@Isle 1 Secret Coin/"],
+        "access_rules":["$can_access_secret_coin|1"],
         "sections": [
             {
             }
@@ -41,7 +41,7 @@
     },
         {
         "name": "Isle 2 Secret Coin",
-        "access_rules":["$can_access_map_location|@Isle 2 Secret Coin/"],
+        "access_rules":["$can_access_secret_coin|2"],
         "sections": [
             {
             }
@@ -60,7 +60,7 @@
     },
         {
         "name": "Isle 3 Secret Coin",
-        "access_rules":["$can_access_map_location|@Isle 3 Secret Coin/"],
+        "access_rules":["$can_access_secret_coin|3"],
         "sections": [
             {
             }
@@ -79,7 +79,7 @@
     },
         {
         "name": "Inkwell Hell Secret Coin",
-        "access_rules":["$can_access_map_location|@Inkwell Hell Secret Coin/"],
+        "access_rules":["$can_access_secret_coin|hell"],
         "sections": [
             {
             }
@@ -115,7 +115,7 @@
     },
 {
         "name": "Talk To Canteen Hughes",
-        "access_rules":["$can_access_map_location|@Talk To Canteen Hughes/"],
+        "access_rules":["$can_access_canteen_hughes"],
         "sections": [
             {
             }
@@ -134,7 +134,7 @@
     },
         {
         "name": "Buster Quest",
-        "access_rules":["$can_access_map_location|@Buster Quest/"],
+        "access_rules":["$can_complete_buster_quest"],
         "sections": [
             {
             }
@@ -153,7 +153,7 @@
     },
     {
         "name": "Ginger Quest",
-        "access_rules":["$can_access_map_location|@Ginger Quest/"],
+        "access_rules":["$can_complete_ginger_quest"],
         "sections": [
             {
             }
@@ -172,7 +172,7 @@
     },
         {
         "name": "Barbershop Quartet Quest",
-        "access_rules":["$can_access_map_location|@Barbershop Quartet Quest/"],
+        "access_rules":["$can_complete_barbershop_quest"],
         "sections": [
             {
             }
@@ -191,7 +191,7 @@
     },
         {
         "name": "Silverworth Quest",
-        "access_rules":["$can_access_map_location|@Silverworth Quest/"],
+        "access_rules":["$can_complete_silverworth_quest"],
         "sections": [
             {
             }
@@ -210,7 +210,7 @@
     },
         {
         "name": "Pacifist Quest",
-        "access_rules":["$can_access_map_location|@Pacifist Quest/"],
+        "access_rules":["$can_complete_pacifist_quest"],
         "sections": [
             {
             }
