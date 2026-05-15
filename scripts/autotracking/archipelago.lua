@@ -100,9 +100,14 @@ end
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
-	-- setting the goal
-	print(dump_table(slot_data))
 
+
+
+	-- print(dump_table(slot_data))
+
+
+
+	-- setting the goal
 	local goal_handlers = {
 		[2] = function(slot_data)
 				Tracker:FindObjectForCode("collect_contracts").AcquiredCount = 
@@ -150,12 +155,58 @@ function apply_slot_data(slot_data)
 	Tracker:FindObjectForCode("expert_mode").Active = slot_data["expert_mode"]
 	Tracker:FindObjectForCode("freemove_isles").Active = slot_data["freemove_isles"]
 
+	if slot_data["dlc_chalice"] == 1 then
+		Tracker:FindObjectForCode("astral_cookie").Active = true
+	end 
+
+	local kings_leap_mode = slot_data["dlc_kingsleap"]
+	local kings_leap_obj = Tracker:FindObjectForCode("kings_leap")
+
+	if kings_leap_mode == 0 then
+		kings_leap_obj.CurrentStage = 0
+	elseif kings_leap_mode == 3 then
+		kings_leap_obj.CurrentStage = 2
+	else
+		kings_leap_obj.CurrentStage = 1
+	end
+
+	local chalice_mode = slot_data["dlc_chalice"]
+	local chalice_mode_obj = Tracker:FindObjectForCode("chalice_mode")
+
+	if chalice_mode == 0 then
+		chalice_mode_obj.CurrentStage = 0
+	elseif chalice_mode == 1 then
+		chalice_mode_obj.CurrentStage = 1
+		Tracker:FindObjectForCode("astral_cookie").Active = true
+	elseif chalice_mode == 2 then
+		chalice_mode_obj.CurrentStage = 1
+	else
+		chalice_mode_obj.CurrentStage = 2
+	end
+
+	local abilities = {
+		"dash",
+		"duck",
+		"parry",
+		"plane_parry",
+		"plane_shrink",
+		"chalice_double_jump"
+	}
+
+	if slot_data["randomize_abilities"] == 0 then
+		for _, ability in ipairs(abilities) do
+			Tracker:FindObjectForCode(ability).Active = true
+		end
+	end
+
 	-- checking whether the starting weapon is excepted
 	local start_weapon_exception = true
 	if slot_data["weapon_mode"] == 1  or slot_data["weapon_mode"] == 2 then start_weapon_exception = false
 	elseif slot_data["weapon_mode"] == 0 or slot_data["weapon_mode"] == 5 or slot_data["weapon_mode"] == 6  then start_weapon_exception = true
 	else 
 	end
+
+	local is_start_progressive = (slot_data["weapon_mode"] == 1)
 
 	--giving the starting weapon (and EX if needed)
 	local weapons = {
@@ -164,18 +215,29 @@ function apply_slot_data(slot_data)
 		[2] = "chaser",
 		[3] = "lobber",
 		[4] = "charge",
-		[5] = "roundabout"
+		[5] = "roundabout",
+		[6] = "crackshot",
+		[7] = "converge",
+		[8] = "twist_up"
 	}
 
-	for index, weapon in pairs(weapons) do
-		local Weapon = Tracker:FindObjectForCode(weapon)
-		if Weapon then
-			if slot_data["start_weapon"] == index then
-			Weapon.Active = true
-				if start_weapon_exception then
-					local Weapon_EX = Tracker:FindObjectForCode(weapon.."_EX")
-					if Weapon_EX then
-					Weapon_EX.Active = true
+	if slot_data["weapon_mode"] ~= 127 then
+		for index, weapon in pairs(weapons) do
+			local Weapon = Tracker:FindObjectForCode(weapon)
+			if Weapon then
+				if slot_data["start_weapon"] == index then
+				Weapon.Active = true
+					if start_weapon_exception then
+						local Weapon_EX = Tracker:FindObjectForCode(weapon.."_EX")
+						if Weapon_EX then
+						Weapon_EX.Active = true
+						end
+					end
+					if is_start_progressive then
+						local progressive_weapon = Tracker:FindObjectForCode("progressive_"..weapon)
+						if progressive_weapon then
+							progressive_weapon.CurrentStage = 1
+						end
 					end
 				end
 			end
@@ -192,9 +254,28 @@ function apply_slot_data(slot_data)
 		run_n_gun_grade_checks.CurrentStage = slot_data["rungun_grade_checks"]
 	end
 
+
 	--dealing with boss shuffling
-	for original_boss_index = 0, 17 do
-    	local new_boss_index = slot_data["level_map"][tostring(original_boss_index)]
+	local boss_indices = {}
+
+	for i = 0, 17 do
+		table.insert(boss_indices, i)
+	end
+
+	if Tracker:FindObjectForCode("use_dlc").Active then
+		for i = 100, 104 do
+			table.insert(boss_indices, i)
+		end
+	end
+
+	-- if the root pack is shuffled then level shuffle must be on
+	if slot_data["level_map"]["0"] then
+		LEVEL_MAP = slot_data["level_map"]
+		print("saved level map")
+	end
+
+	for _, original_boss_index in ipairs(boss_indices) do
+    	local new_boss_index = LEVEL_MAP[tostring(original_boss_index)]
 
    		if new_boss_index then
         	local original_boss_complete_code = BOSS_COMPLETE_MAP_CODES[original_boss_index]
@@ -212,7 +293,7 @@ function apply_slot_data(slot_data)
 
 	--dealing with run 'n gun shuffling
 	for original_rungun_index = 28, 33 do
-    	local new_rungun_index = slot_data["level_map"][tostring(original_rungun_index)]
+    	local new_rungun_index = LEVEL_MAP[tostring(original_rungun_index)]
 
    		if new_rungun_index then
         	local original_rungun_complete_code = RUNGUN_COMPLETE_MAP_CODES[original_rungun_index]
@@ -237,7 +318,6 @@ function apply_slot_data(slot_data)
 		end
     end
 
-	LEVEL_MAP = slot_data["level_map"]
 	CONTRACT_REQUIREMENT_ISLE_2 = slot_data["contract_requirements"][2]
 	CONTRACT_REQUIREMENT_ISLE_3 = slot_data["contract_requirements"][3]
 	CONTRACT_REQUIREMENT_KING_DICE = slot_data["contract_requirements"][1]

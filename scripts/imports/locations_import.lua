@@ -3,6 +3,8 @@
     Tracker:AddLocations("locations/boss_summaries.json")
     Tracker:AddLocations("locations/run_n_guns.json")
     Tracker:AddLocations("locations/run_n_gun_summaries.json")
+    Tracker:AddLocations("locations/kings_leap.json")
+    Tracker:AddLocations("locations/kings_leap_summaries.json")
     Tracker:AddLocations("locations/mausoleums.json")
     Tracker:AddLocations("locations/mausoleum_summaries.json")
     Tracker:AddLocations("locations/others.json")

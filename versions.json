@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "1.2.0",
+            "download_url": "",
+            "sha256": "",
+            "changelog": [
+                "Added support for DLC locations and items",
+                "Added support for a few game settings",
+                "Fixed logic bugs"
+            ]  
+        },
+        {
             "package_version": "1.1.1",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.1.1.zip",
             "sha256": "E1FB7E8F5D2DEA628C9DE490B43A8E5F145430DE30E20259F9789EECAA7AC04F",

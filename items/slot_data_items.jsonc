@@ -9,14 +9,17 @@
         "name": "Goal - Collect Contracts",
         "type": "consumable",
         "initial_quantity": 0,
+        "max_quantity": 17,
         "overlay_font_size": 15,
         "img": "images/goals/collect_contracts.png",
         "codes": "collect_contracts"
     },
-        {
+    {
         "name": "Goal - Collect Ingredients",
         "type": "consumable",
         "initial_quantity": 0,
+        "max_quantity": 5,
+        "overlay_font_size": 15,
         "img": "images/goals/collect_ingredients.png",
         "codes": "collect_ingredients"
     },
@@ -45,16 +48,68 @@
         "codes": "expert_mode"
     },
     {
+        "name": "chalice_mode",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "chalice_disabled",
+                "img": "images/settings/a_grade.png",
+                "img_mods": "@disabled",
+                "codes": "chalice_mode,chalice_disabled"
+            },
+            {
+                "name": "chalice_enabled",
+                "img": "images/settings/a_grade.png",
+                "inherit_codes": false,
+                "codes": "chalice_mode,chalice_enabled"
+            },
+            {
+                "name": "chalice_randomized",
+                "img": "images/settings/a_plus_grade.png",
+                "inherit_codes": false,
+                "codes": "chalice_mode,chalice_randomized"
+            }
+        ]
+    },
+    {
         "name": "freemove_isles",
         "type": "toggle",
-        // "img": "images/settings/dlc.png",
+        "img": "images/settings/dlc.png",
         "codes": "freemove_isles"
+    },
+    {
+        "name": "kings_leap_mode",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "kings_leap_disabled",
+                "img": "images/settings/a_grade.png",
+                "img_mods": "@disabled",
+                "codes": "kings_leap,kings_leap_disabled"
+            },
+            {
+                "name": "kings_leap_enabled",
+                "img": "images/settings/a_minus_grade.png",
+                "inherit_codes": false,
+                "codes": "kings_leap,kings_leap_enabled"
+            },
+            {
+                "name": "gauntlet_enabled",
+                "img": "images/settings/a_grade.png",
+                "inherit_codes": false,
+                "codes": "kings_leap,kings_leap_enabled,gauntlet_enabled"
+            }
+        ]
     },
     {
         "name": "Boss Grade Checks",
         "type": "progressive",
         "allow_disabled": false,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "stages": [
             {
                 "name": "Boss Grade Checks - Disabled",
@@ -92,7 +147,7 @@
         "name": "Run 'n Gun Grade Checks",
         "type": "progressive",
         "allow_disabled": false,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "stages": [
             {
                 "name": "Run 'n Gun Grade Checks - Disabled",

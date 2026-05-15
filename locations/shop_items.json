@@ -178,7 +178,10 @@
                         "map": "isle_3",
                         "size": 6,
                         "x": 260,
-                        "y": 309
+                        "y": 309,
+                        "force_invisibility_rules": [
+                            "use_dlc"
+                        ]
                     }
                 ]
             },
@@ -215,6 +218,134 @@
                         "size": 6,
                         "x": 265,
                         "y": 320
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shop 3 DLC",
+        "children": [
+            {
+                "name": "Shop Weapon 5",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|3}",
+                    "$can_access_shop|3,$can_buy_item_type|weapon"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_3",
+                        "size": 6,
+                        "x": 254,
+                        "y": 309,
+                        "restrict_visibility_rules": [
+                            "use_dlc"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Shop Weapon 6",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|3}",
+                    "$can_access_shop|3,$can_buy_item_type|weapon"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_3",
+                        "size": 6,
+                        "x": 265,
+                        "y": 309,
+                        "restrict_visibility_rules": [
+                            "use_dlc"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Shop 4",
+        "children": [
+            {
+                "name": "Shop Weapon 7",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|4}",
+                    "$can_access_shop|4,$can_buy_item_type|weapon"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_4",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 474,
+                        "y": 192
+                    }
+                ]
+            },
+            {
+                "name": "Shop Weapon 8",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|4}",
+                    "$can_access_shop|4,$can_buy_item_type|weapon"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_4",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 494,
+                        "y": 192
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 7",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|4}",
+                    "$can_access_shop|4,$can_buy_item_type|charm"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_4",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 474,
+                        "y": 210
+                    }
+                ]
+            },
+            {
+                "name": "Shop Charm 8",
+                "sections": [
+                    {}
+                ],
+                "access_rules": [
+                    "{$can_access_shop|4}",
+                    "$can_access_shop|4,$can_buy_item_type|charm"
+                ],
+                "map_locations": [
+                    {
+                        "map": "isle_4",
+                        "size": 9,
+                        "border_thickness": 3,
+                        "x": 494,
+                        "y": 210
                     }
                 ]
             }

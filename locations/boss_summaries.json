@@ -7,12 +7,20 @@
         "sections": [
           {}
         ],
-        "access_rules": [],
+        "access_rules": [
+          "@Has Weapon"
+        ],
         "map_locations": [
           {
             "map": "summary",
             "x": 114,
             "y": 278
+          },
+          {
+            "map": "summary_dlc",
+            "x": 94,
+            "y": 222,
+            "size": 34
           }
         ]
       },
@@ -30,6 +38,16 @@
             "x": 184,
             "y": 278,
             "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 139,
+            "y": 222,
+            "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -52,6 +70,13 @@
             "x": 149,
             "y": 333,
             "shape": "trapezoid"
+          },
+          {
+            "map": "summary_dlc",
+            "size": 26,
+            "x": 118,
+            "y": 263,
+            "shape": "trapezoid"
           }
         ]
       }
@@ -66,14 +91,19 @@
           {}
         ],
         "access_rules": [
-          "[duck]",
-          "[dash]"
+          "@Has Weapon,[duck]",
+          "@Has Weapon,[dash]"
         ],
         "map_locations": [
           {
             "map": "summary",
             "x": 734,
             "y": 278
+          },
+          {
+            "map": "summary_dlc",
+            "x": 594,
+            "y": 222
           }
         ]
       },
@@ -95,6 +125,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 639,
+            "y": 222,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -109,14 +149,19 @@
           {}
         ],
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Weapon,parry",
+          "@Has Weapon,p_sugar"
         ],
         "map_locations": [
           {
             "map": "summary",
             "x": 424,
             "y": 278
+          },
+          {
+            "map": "summary_dlc",
+            "x": 344,
+            "y": 222
           }
         ]
       },
@@ -138,6 +183,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 389,
+            "y": 222,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -151,12 +206,19 @@
         "sections": [
           {}
         ],
-        "access_rules": [],
+        "access_rules": [
+          "@Has Weapon"
+        ],
         "map_locations": [
           {
             "map": "summary",
             "x": 1364,
             "y": 278
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1094,
+            "y": 222
           }
         ]
       },
@@ -178,6 +240,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1139,
+            "y": 222,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -192,14 +264,19 @@
           {}
         ],
         "access_rules": [
-          "[parry]",
-          "[p_sugar]"
+          "@Has Weapon,[parry]",
+          "@Has Weapon,[p_sugar]"
         ],
         "map_locations": [
           {
             "map": "summary",
             "x": 114,
             "y": 603
+          },
+          {
+            "map": "summary_dlc",
+            "x": 94,
+            "y": 472
           }
         ]
       },
@@ -221,6 +298,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 139,
+            "y": 472,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -235,15 +322,20 @@
           {}
         ],
         "access_rules": [
-          "[dash]",
-          "[parry]",
-          "[p_sugar]"
+          "@Has Weapon,[dash]",
+          "@Has Weapon,[parry]",
+          "@Has Weapon,[p_sugar]"
         ],
         "map_locations": [
           {
             "map": "summary",
             "x": 1051,
             "y": 603
+          },
+          {
+            "map": "summary_dlc",
+            "x": 844,
+            "y": 472
           }
         ]
       },
@@ -265,6 +357,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 889,
+            "y": 472,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -278,12 +380,19 @@
         "sections": [
           {}
         ],
-        "access_rules": [],
+        "access_rules": [
+          "@Has Weapon"
+        ],
         "map_locations": [
           {
             "map": "summary",
             "x": 1364,
             "y": 603
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1094,
+            "y": 472
           }
         ]
       },
@@ -305,6 +414,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1139,
+            "y": 472,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -318,13 +437,21 @@
         "sections": [
           {}
         ],
-        "access_rules": [],
+        "access_rules": [
+          "@Has Weapon"
+        ],
         "map_locations": [
           {
             "map": "summary",
             "size": 36,
             "x": 92,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 75,
+            "y": 680
           }
         ]
       },
@@ -345,6 +472,15 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 115,
+            "y": 680,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -359,8 +495,8 @@
           {}
         ],
         "access_rules": [
-          "duck",
-          "parry"
+          "@Has Weapon,duck",
+          "@Has Weapon,parry"
         ],
         "map_locations": [
           {
@@ -368,6 +504,12 @@
             "size": 36,
             "x": 1096,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 877,
+            "y": 680
           }
         ]
       },
@@ -388,6 +530,15 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 917,
+            "y": 680,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -402,8 +553,8 @@
           {}
         ],
         "access_rules": [
-          "duck,[parry]",
-          "duck,[p_sugar]"
+          "@Has Weapon,duck,[parry]",
+          "@Has Weapon,duck,[p_sugar]"
         ],
         "map_locations": [
           {
@@ -411,6 +562,12 @@
             "size": 36,
             "x": 851,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 677,
+            "y": 680
           }
         ]
       },
@@ -431,6 +588,15 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 717,
+            "y": 680,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -445,9 +611,10 @@
           {}
         ],
         "access_rules": [
-          "parry",
-          "[],p_sugar",
-          "[],smoke_bomb,dash"
+          "@Has Weapon,parry",
+          "[],@Has Weapon,p_sugar",
+          "[],@Has Weapon,smoke_bomb,dash",
+          "[],@Has Weapon,astral_cookie,duck,dash"
         ],
         "map_locations": [
           {
@@ -455,6 +622,12 @@
             "size": 36,
             "x": 598,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 477,
+            "y": 680
           }
         ]
       },
@@ -471,6 +644,15 @@
             "map": "summary",
             "x": 653,
             "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 517,
+            "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -494,6 +676,13 @@
             "x": 623,
             "y": 920,
             "shape": "trapezoid"
+          },
+                    {
+            "map": "summary_dlc",
+            "size": 20,
+            "x": 497,
+            "y": 717,
+            "shape": "trapezoid"
           }
         ]
       }
@@ -508,8 +697,8 @@
           {}
         ],
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Has Weapon,parry",
+          "[],@Has Weapon,p_sugar"
         ],
         "map_locations": [
           {
@@ -517,6 +706,12 @@
             "size": 36,
             "x": 1602,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 20,
+            "x": 1272,
+            "y": 680
           }
         ]
       },
@@ -537,6 +732,15 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1312,
+            "y": 680,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       }
@@ -551,14 +755,19 @@
           {}
         ],
         "access_rules": [
-          "parry,plane_bullets",
-          "[],parry,plane_bombs"
+          "@Has Weapon,parry,plane_bullets",
+          "[],@Has Weapon,parry,plane_bombs"
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 1203,
             "y": 1156
+          },
+          {
+            "map": "summary_dlc",
+            "x": 964,
+            "y": 1169
           }
         ]
       },
@@ -571,11 +780,21 @@
           "@King Dice Summary/King Dice Complete,@Has Parry or P.Sugar,@Can EX or Super"
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 1273,
             "y": 1156,
             "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1014,
+            "y": 1169,
+            "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -604,6 +823,11 @@
             "map": "summary",
             "x": 1051,
             "y": 278
+          },
+          {
+            "map": "summary_dlc",
+            "x": 844,
+            "y": 222
           }
         ]
       },
@@ -621,6 +845,16 @@
             "x": 1121,
             "y": 278,
             "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 889,
+            "y": 222,
+            "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -649,6 +883,11 @@
             "map": "summary",
             "x": 734,
             "y": 603
+          },
+          {
+            "map": "summary_dlc",
+            "x": 594,
+            "y": 472
           }
         ]
       },
@@ -670,6 +909,16 @@
             "force_invisibility_rules": [
               "boss_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 639,
+            "y": 472,
+            "size": 42,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
           }
         ]
       },
@@ -687,6 +936,13 @@
             "size": 40,
             "x": 769,
             "y": 658,
+            "shape": "trapezoid"
+          },
+          {
+            "map": "summary_dlc",
+            "size": 26,
+            "x": 618,
+            "y": 515,
             "shape": "trapezoid"
           }
         ]
@@ -713,6 +969,11 @@
             "map": "summary",
             "x": 424,
             "y": 603
+          },
+          {
+            "map": "summary_dlc",
+            "x": 344,
+            "y": 472
           }
         ]
       },
@@ -730,6 +991,16 @@
             "x": 494,
             "y": 603,
             "size": 60,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 389,
+            "y": 472,
+            "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -759,6 +1030,12 @@
             "size": 36,
             "x": 1349,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1072,
+            "y": 680
           }
         ]
       },
@@ -775,6 +1052,15 @@
             "map": "summary",
             "x": 1404,
             "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1112,
+            "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
@@ -804,6 +1090,12 @@
             "size": 36,
             "x": 345,
             "y": 870
+          },
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 280,
+            "y": 680
           }
         ]
       },
@@ -820,6 +1112,252 @@
             "map": "summary",
             "x": 400,
             "y": 870,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 320,
+            "y": 680,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glumstone The Giant Summary",
+    "children": [
+      {
+        "name": "Glumstone The Giant Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Has Weapon,dash,parry",
+          "@Has Weapon,dash,p_sugar"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 75,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "Glumstone The Giant Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Glumstone The Giant Summary/Glumstone The Giant Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 115,
+            "y": 887,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moonshine Mob Summary",
+    "children": [
+      {
+        "name": "Moonshine Mob Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Has Weapon,duck,[parry]",
+          "@Has Weapon,duck,[p_sugar]"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 877,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "Moonshine Mob Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Moonshine Mob Summary/Moonshine Mob Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 917,
+            "y": 887,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mortimer Freeze Summary",
+    "children": [
+      {
+        "name": "Mortimer Freeze Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Has Weapon,$normal_difficulty",
+          "@Has Weapon,astral_cookie,chalice_double_jump",
+          "@Has Weapon,dash",
+          "[],@Has Weapon"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 280,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "Mortimer Freeze Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Mortimer Freeze Summary/Mortimer Freeze Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 320,
+            "y": 887,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Howling Aces Summary",
+    "children": [
+      {
+        "name": "The Howling Aces Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Has Weapon,duck",
+          "@Has Weapon,dash"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 477,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Howling Aces Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@The Howling Aces Summary/The Howling Aces Complete,@Has Parry or P.Sugar,@Can EX or Super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 517,
+            "y": 887,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Howling Aces Secret Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@The Howling Aces Summary/The Howling Aces Complete"
+        ],
+        "map_locations": [
+{
+            "map": "summary_dlc",
+            "size": 20,
+            "x": 497,
+            "y": 924,
+            "shape": "trapezoid"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Esther Winchester Summary",
+    "children": [
+      {
+        "name": "Esther Winchester Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "plane_bullets",
+          "[],plane_bombs",
+          "[],coffee,plane_EX",
+          "[],coffee,plane_super"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 677,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "Esther Winchester Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Esther Winchester Summary/Esther Winchester Complete,plane_parry,@Can EX or Super in plane"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 717,
+            "y": 887,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"

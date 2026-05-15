@@ -13,6 +13,11 @@
                 "map": "summary",
                 "x": 2343,
                 "y": 278
+            },
+            {
+                "map": "summary_dlc",
+                "x": 1867,
+                "y": 222
             }
         ]
     },
@@ -26,11 +31,16 @@
             {}
         ],
         "map_locations": [
-                      {
-            "map": "summary",
-            "x": 2343,
-            "y": 603
-          }
+            {
+                "map": "summary",
+                "x": 2343,
+                "y": 603
+            },
+            {
+                "map": "summary_dlc",
+                "x": 1867,
+                "y": 472
+            }
         ]
     },
     {
@@ -42,12 +52,18 @@
             {}
         ],
         "map_locations": [
-                      {
-            "map": "summary",
-            "size": 36,
-            "x": 2369,
-            "y": 870
-          }
+            {
+                "map": "summary",
+                "size": 36,
+                "x": 2369,
+                "y": 870
+            },
+            {
+                "map": "summary_dlc",
+                "size": 28,
+                "x": 1888,
+                "y": 680
+            }
         ]
     }
 ]

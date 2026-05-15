@@ -1,0 +1,121 @@
+[
+  {
+    "name": "The King's Leap",
+    "visibility_rules": [
+      "kings_leap_enabled"
+    ],
+    "children": [
+      {
+        "name": "The Pawns Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|107"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 31,
+            "y": 173,
+            "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Knight Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|108"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 51,
+            "y": 173,
+            "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Bishop Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|109"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 71,
+            "y": 173,
+            "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Rook Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|110"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 31,
+            "y": 191,
+            "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Queen Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|111"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 51,
+            "y": 191,
+            "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Gauntlet Complete",
+        "access_rules": [
+          "^$can_beat_chess_boss|112"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 71,
+            "y": 191,
+            "restrict_visibility_rules": [
+              "gauntlet_enabled"
+            ],
+            "size": 12,
+            "shape": "diamond"
+          }
+        ]
+      }
+    ]
+  }
+]

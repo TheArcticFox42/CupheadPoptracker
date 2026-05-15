@@ -1,4 +1,3 @@
-
 BOSS_COMPLETE_IDS = {
     [0]  = 2000,
     [1]  = 2001,
@@ -17,7 +16,13 @@ BOSS_COMPLETE_IDS = {
     [14] = 2015,
     [15] = 2016,
     [16] = 2017,
-    [17] = 2012
+    [17] = 2012,
+
+    [100] = 10006000,
+    [101] = 10006001,
+    [102] = 10006002,
+    [103] = 10006003,
+    [104] = 10006004
 }
 
 BOSS_TOP_GRADE_IDS = {
@@ -38,7 +43,13 @@ BOSS_TOP_GRADE_IDS = {
     [14] = 6015,
     [15] = 6016,
     [16] = 6017,
-    [17] = 6012
+    [17] = 6012,
+
+    [100] = 10010000,
+    [101] = 10010001,
+    [102] = 10010002,
+    [103] = 10010003,
+    [104] = 10010004
 }
 
 BOSS_COMPLETE_MAP_CODES = {
@@ -59,7 +70,13 @@ BOSS_COMPLETE_MAP_CODES = {
     [14] = "@Wally Warbles/Wally Warbles Complete/",
     [15] = "@Cala Maria/Cala Maria Complete/",
     [16] = "@Dr. Kahl's Robot/Dr. Kahl's Robot Complete/",
-    [17] = "@King Dice/King Dice Complete/"
+    [17] = "@King Dice/King Dice Complete/",
+
+    [100] = "@Glumstone The Giant/Glumstone The Giant Complete/",
+    [101] = "@Moonshine Mob/Moonshine Mob Complete/",
+    [102] = "@Mortimer Freeze/Mortimer Freeze Complete/",
+    [103] = "@The Howling Aces/The Howling Aces Complete/",
+    [104] = "@Esther Winchester/Esther Winchester Complete/"
 }
 
 BOSS_TOP_GRADE_MAP_CODES = {
@@ -80,7 +97,13 @@ BOSS_TOP_GRADE_MAP_CODES = {
     [14] = "@Wally Warbles/Wally Warbles Top Grade/",
     [15] = "@Cala Maria/Cala Maria Top Grade/",
     [16] = "@Dr. Kahl's Robot/Dr. Kahl's Robot Top Grade/",
-    [17] = "@King Dice/King Dice Top Grade/"
+    [17] = "@King Dice/King Dice Top Grade/",
+
+    [100] = "@Glumstone The Giant/Glumstone The Giant Top Grade/",
+    [101] = "@Moonshine Mob/Moonshine Mob Top Grade/",
+    [102] = "@Mortimer Freeze/Mortimer Freeze Top Grade/",
+    [103] = "@The Howling Aces/The Howling Aces Top Grade/",
+    [104] = "@Esther Winchester/Esther Winchester Top Grade/"
 }
 
 BOSS_COMPLETE_SUMMARY_CODES = {
@@ -101,7 +124,13 @@ BOSS_COMPLETE_SUMMARY_CODES = {
     [14] = "@Wally Warbles Summary/Wally Warbles Complete",
     [15] = "@Cala Maria Summary/Cala Maria Complete",
     [16] = "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete",
-    [17] = "@King Dice Summary/King Dice Complete"
+    [17] = "@King Dice Summary/King Dice Complete",
+
+    [100] = "@Glumstone The Giant Summary/Glumstone The Giant Complete",
+    [101] = "@Moonshine Mob Summary/Moonshine Mob Complete",
+    [102] = "@Mortimer Freeze Summary/Mortimer Freeze Complete",
+    [103] = "@The Howling Aces Summary/The Howling Aces Complete",
+    [104] = "@Esther Winchester Summary/Esther Winchester Complete"
 }
 
 BOSS_TOP_GRADE_SUMMARY_CODES = {
@@ -122,7 +151,13 @@ BOSS_TOP_GRADE_SUMMARY_CODES = {
     [14] = "@Wally Warbles Summary/Wally Warbles Top Grade",
     [15] = "@Cala Maria Summary/Cala Maria Top Grade",
     [16] = "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Top Grade",
-    [17] = "@King Dice Summary/King Dice Top Grade"
+    [17] = "@King Dice Summary/King Dice Top Grade",
+
+    [100] = "@Glumstone The Giant Summary/Glumstone The Giant Top Grade",
+    [101] = "@Moonshine Mob Summary/Moonshine Mob Top Grade",
+    [102] = "@Mortimer Freeze Summary/Mortimer Freeze Top Grade",
+    [103] = "@The Howling Aces Summary/The Howling Aces Top Grade",
+    [104] = "@Esther Winchester Summary/Esther Winchester Top Grade"
 }
 
 RUNGUN_COMPLETE_MAP_CODES = {
@@ -188,6 +223,8 @@ RUNGUN_COIN_MAP_CODES = {
     },
 }
 
+
+
 RUNGUN_COMPLETE_SUMMARY_CODES = {
     [28] = "@Forest Follies Summary/Forest Follies Complete",
     [29] = "@Treetop Trouble Summary/Treetop Trouble Complete",
@@ -251,12 +288,36 @@ RUNGUN_COIN_SUMMARY_CODES = {
     },
 }
 
+CHESS_BOSSES_COMPLETE_MAP_CODES = {
+    [107] = "@The King's Leap/The Pawns Complete/",
+    [108] = "@The King's Leap/The Knight Complete/",
+    [109] = "@The King's Leap/The Bishop Complete/",
+    [110] = "@The King's Leap/The Rook Complete/",
+    [111] = "@The King's Leap/The Queen Complete/",
+    [112] = "@The King's Leap/The Gauntlet Complete/"
+}
+
+CHESS_BOSSES_COMPLETE_SUMMARY_CODES = {
+    [107] = "@The King's Leap Summary/The Pawns Complete",
+    [108] = "@The King's Leap Summary/The Knight Complete",
+    [109] = "@The King's Leap Summary/The Bishop Complete",
+    [110] = "@The King's Leap Summary/The Rook Complete",
+    [111] = "@The King's Leap Summary/The Queen Complete",
+    [112] = "@The King's Leap Summary/The Gauntlet Complete"
+}
+
+
 SHOP_WEAPON_CODES = {
  "@Shop Weapon 1/",
  "@Shop Weapon 2/",
  "@Shop Weapon 3/",
  "@Shop Weapon 4/",
- "@Shop Weapon 5/"
+ "@Shop 3/Shop Weapon 5/",
+
+ "@Shop 3 DLC/Shop Weapon 5/",
+ "@Shop Weapon 6/",
+ "@Shop Weapon 7",
+ "@Shop Weapon 8"
 }
 
 SHOP_CHARM_CODES = {
@@ -266,6 +327,9 @@ SHOP_CHARM_CODES = {
  "@Shop Charm 4/",
  "@Shop Charm 5/",
  "@Shop Charm 6/",
+
+ "@Shop Charm 7/",
+ "@Shop Charm 8/"
 }
 
 
@@ -338,6 +402,9 @@ LOCATION_MAPPING = {
 	[1000] = { { "@Tutorial/Tutorial Complete" } },
 	[1001] = { { "@Tutorial/Tutorial Coin" } },
 
+    [10001000] = { { "@Recipe For Ms. Chalice/Recipe For Ms. Chalice Complete" } },
+	[10001001] = { { "@Recipe For Ms. Chalice/Recipe For Ms. Chalice Coin" } },
+
 	[2000] = { { "@The Root Pack Summary/The Root Pack Complete/" } },
 	[2001] = { { "@Goopy Le Grande Summary/Goopy Le Grande Complete/" } },
 	[2002] = { { "@Ribby And Croaks Summary/Ribby And Croaks Complete/" } },
@@ -357,6 +424,12 @@ LOCATION_MAPPING = {
 	[2016] = { { "@Cala Maria Summary/Cala Maria Complete/" } },
 	[2017] = { { "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete/" } },
 
+    [10006000] = { { "@Glumstone The Giant Summary/Glumstone The Giant Complete/" } },
+    [10006001] = { { "@Moonshine Mob Summary/Moonshine Mob Complete/" } },
+    [10006002] = { { "@Mortimer Freeze Summary/Mortimer Freeze Complete/" } },
+    [10006003] = { { "@The Howling Aces Summary/The Howling Aces Complete/" } },
+    [10006004] = { { "@Esther Winchester Summary/Esther Winchester Complete/" } },
+
 	[6000] = { { "@The Root Pack Summary/The Root Pack Top Grade/" } },
 	[6001] = { { "@Goopy Le Grande Summary/Goopy Le Grande Top Grade/" } },
 	[6002] = { { "@Ribby And Croaks Summary/Ribby And Croaks Top Grade/" } },
@@ -375,6 +448,12 @@ LOCATION_MAPPING = {
 	[6015] = { { "@Wally Warbles Summary/Wally Warbles Top Grade/" } },
 	[6016] = { { "@Cala Maria Summary/Cala Maria Top Grade/" } },
 	[6017] = { { "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Top Grade/" } },
+
+    [10010000] = { { "@Glumstone The Giant Summary/Glumstone The Giant Top Grade/" } },
+    [10010001] = { { "@Moonshine Mob Summary/Moonshine Mob Top Grade/" } },
+    [10010002] = { { "@Mortimer Freeze Summary/Mortimer Freeze Top Grade/" } },
+    [10010003] = { { "@The Howling Aces Summary/The Howling Aces Top Grade/" } },
+    [10010004] = { { "@Esther Winchester Summary/Esther Winchester Top Grade/" } },
 
 	[30000] = { { "@The Root Pack Summary/The Root Pack Secret Complete/" } },
 	[30001] = { { "@Djimmi The Great Summary/Djimmi The Great Secret Complete/" } },
@@ -435,6 +514,13 @@ LOCATION_MAPPING = {
 	[18005] = { { "@Rugged Ridge Summary/Rugged Ridge Top Grade/" } },
 	[20005] = { { "@Rugged Ridge Summary/Rugged Ridge Top Grade/" } },
 
+    [10026000] = { { "@The King's Leap Summary/The Pawns Complete/" }, { "@The King's Leap/The Pawns Complete/" } },
+	[10026001] = { { "@The King's Leap Summary/The Knight Complete/" },{ "@The King's Leap/The Knight Complete/" } },
+	[10026002] = { { "@The King's Leap Summary/The Bishop Complete/" }, { "@The King's Leap/The Bishop Complete/" } },
+	[10026003] = { { "@The King's Leap Summary/The Rook Complete/" }, { "@The King's Leap/The Rook Complete/" } },
+	[10026004] = { { "@The King's Leap Summary/The Queen Complete/" },{ "@The King's Leap/The Queen Complete/" } },
+    [10026005] = { { "@The King's Leap Summary/The Gauntlet Complete/" }, { "@The King's Leap/The Gauntlet Complete/" } },
+
 	[22000] = { { "@Mausoleum I/" }, { "@Mausoleum I Summary/" } },
 	[22001] = { { "@Mausoleum II/" }, { "@Mausoleum II Summary/" } },
 	[22002] = { { "@Mausoleum III/" }, { "@Mausoleum III Summary/" } },
@@ -446,17 +532,23 @@ LOCATION_MAPPING = {
 	[26004] = { { "@Isle 3 Secret Coin/" } },
 	[26005] = { { "@Inkwell Hell Secret Coin/" } },
 
+    [10038000] = { { "@Buckley's Coins/" } },
+	[10038001] = { { "@Isle 4 Secret Coin/" } },
+    [10042000] = { { "@Arrive at Isle IV/"}},
+
 	[28000] = { { "@Buster Quest/" } },
 	[28001] = { { "@Ginger Quest/" } },
 	[28002] = { { "@Barbershop Quartet Quest/" } },
-	[28004] = { { "@Pacifist Quest/" } },
+	[28004] = { { "@Tully Quest/" } },
 	[28005] = { { "@Silverworth Quest/" } },
+
+    [10040000] = { { "@Senita Quest/" } },
 
 	[24000] = { { "@Shop Weapon 1/" } },
 	[24001] = { { "@Shop Weapon 2/" } },
 	[24002] = { { "@Shop Weapon 3/" } },
 	[24003] = { { "@Shop Weapon 4/" } },
-	[24004] = { { "@Shop Weapon 5/" } },
+	[24004] = { { "@Shop 3/Shop Weapon 5/" }, {"@Shop 3 DLC/Shop Weapon 5/"} },
 	[24005] = { { "@Shop Charm 1/" } },
 	[24006] = { { "@Shop Charm 2/" } },
 	[24007] = { { "@Shop Charm 3/" } },
@@ -464,4 +556,11 @@ LOCATION_MAPPING = {
 	[24009] = { { "@Shop Charm 5/" } },
 	[24010] = { { "@Shop Charm 6/" } },
 	
+    [10034000] = { { "@Shop Weapon 6/" } },
+    [10034001] = { { "@Shop Weapon 7/" } },
+	[10034002] = { { "@Shop Weapon 8/" } },
+	[10034003] = { { "@Shop Charm 7/" } },
+	[10034004] = { { "@Shop Charm 8/" } }
+	
+
 }

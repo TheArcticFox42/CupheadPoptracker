@@ -50,3 +50,9 @@ function calculate_coin_count(changed_code)
     Tracker:FindObjectForCode("current_coin_count").AcquiredCount = total
 end
 
+function update_chalice_cookie()
+    local chalice_mode = Tracker:FindObjectForCode("chalice_mode").CurrentStage
+    if chalice_mode == 1 and can_access_isle_4() then
+        Tracker:FindObjectForCode("astral_cookie").Active = true
+    end
+end

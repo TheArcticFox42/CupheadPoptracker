@@ -25,9 +25,21 @@
     "img": "images/maps/hell.png"
   },
   {
+    "name": "isle_4",
+    "location_size": 24,
+    "location_border_thickness": 4,
+    "img": "images/maps/isle_4.png"
+  },
+  {
     "name": "summary",
     "location_size": 48,
     "location_border_thickness": 4,
     "img": "images/maps/summary.png"
+  },
+  {
+    "name": "summary_dlc",
+    "location_size": 34,
+    "location_border_thickness": 4,
+    "img": "images/maps/summary_dlc.png"
   }
 ]

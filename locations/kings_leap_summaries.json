@@ -1,0 +1,113 @@
+[
+  {
+    "name": "The King's Leap Summary",
+    "visibility_rules": [
+      "kings_leap_enabled"
+    ],
+    "children": [
+      {
+        "name": "The Pawns Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1088,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Knight Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1288,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Bishop Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1488,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Rook Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1688,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Queen Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "size": 28,
+            "x": 1888,
+            "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Gauntlet Complete",
+        "access_rules": [
+          "parry",
+          "[],p_sugar"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {}
+        ]
+      }
+    ]
+  }
+]

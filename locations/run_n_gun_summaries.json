@@ -21,13 +21,23 @@
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1309,
+            "y": 214,
+            "size": 20,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
           }
         ]
       },
       {
         "name": "Forest Follies Complete",
         "access_rules": [
-          "[dash]"
+          "@Has Rungun Weapon,[dash]"
         ],
         "sections": [
           {}
@@ -38,6 +48,13 @@
             "x": 1677,
             "y": 268,
             "size": 24,
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1339,
+            "y": 214,
+            "size": 20,
             "border_thickness": 3
           }
         ]
@@ -56,6 +73,14 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1371,
+            "y": 214,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
@@ -71,6 +96,14 @@
             "x": 1757,
             "y": 268,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1401,
+            "y": 214,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -93,6 +126,14 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1340,
+            "y": 245,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
@@ -112,13 +153,21 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1371,
+            "y": 245,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Forest Follies Coin 5",
         "access_rules": [
-          "[dash]"
+          "@Has Rungun Weapon,[dash]"
         ],
         "sections": [
           {}
@@ -129,6 +178,14 @@
             "x": 1757,
             "y": 305,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1401,
+            "y": 245,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -158,13 +215,23 @@
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1556,
+            "y": 214,
+            "size": 20,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
           }
         ]
       },
       {
         "name": "Treetop Trouble Complete",
         "access_rules": [
-          "[dash]"
+          "@Has Rungun Weapon,[dash]"
         ],
         "sections": [
           {}
@@ -175,6 +242,13 @@
             "x": 1987,
             "y": 268,
             "size": 24,
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1586,
+            "y": 214,
+            "size": 20,
             "border_thickness": 3
           }
         ]
@@ -197,6 +271,14 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1618,
+            "y": 214,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
@@ -214,6 +296,14 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1648,
+            "y": 214,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
@@ -229,6 +319,14 @@
             "x": 1987,
             "y": 305,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1587,
+            "y": 245,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -250,6 +348,14 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1618,
+            "y": 245,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
@@ -267,6 +373,14 @@
             "x": 2067,
             "y": 305,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1648,
+            "y": 245,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -296,14 +410,24 @@
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1309,
+            "y": 464,
+            "size": 20,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
           }
         ]
       },
       {
         "name": "Funfair Fever Complete",
         "access_rules": [
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar",
           "[],coffee,super_2"
         ],
         "sections": [
@@ -315,6 +439,13 @@
             "x": 1677,
             "y": 588,
             "size": 24,
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1339,
+            "y": 464,
+            "size": 20,
             "border_thickness": 3
           }
         ]
@@ -331,6 +462,14 @@
             "x": 1717,
             "y": 588,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1371,
+            "y": 464,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -350,14 +489,23 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1401,
+            "y": 464,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 3",
         "access_rules": [
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar",
+          "@Has Rungun Weapon,chalice_double_jump",
           "[],super_2"
         ],
         "sections": [
@@ -371,14 +519,23 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1340,
+            "y": 495,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 4",
         "access_rules": [
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar",
+          "@Has Rungun Weapon,chalice_double_jump",
           "[],coffee,super_2"
         ],
         "sections": [
@@ -392,14 +549,23 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1371,
+            "y": 495,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funfair Fever Coin 5",
         "access_rules": [
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar",
+          "@Has Rungun Weapon,chalice_double_jump",
           "[],coffee,super_2"
         ],
         "sections": [
@@ -411,6 +577,14 @@
             "x": 1757,
             "y": 625,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1401,
+            "y": 495,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -440,14 +614,24 @@
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1556,
+            "y": 464,
+            "size": 20,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Complete",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar"
         ],
         "sections": [
           {}
@@ -458,6 +642,13 @@
             "x": 1987,
             "y": 588,
             "size": 24,
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1586,
+            "y": 464,
+            "size": 20,
             "border_thickness": 3
           }
         ]
@@ -479,14 +670,22 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1618,
+            "y": 464,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 2",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar"
         ],
         "sections": [
           {}
@@ -499,14 +698,22 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1648,
+            "y": 464,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 3",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar"
         ],
         "sections": [
           {}
@@ -519,14 +726,22 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1587,
+            "y": 495,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 4",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar"
         ],
         "sections": [
           {}
@@ -539,14 +754,22 @@
             "size": 30,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1618,
+            "y": 495,
+            "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Funhouse Frazzle Coin 5",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar"
         ],
         "sections": [
           {}
@@ -557,6 +780,14 @@
             "x": 2067,
             "y": 625,
             "size": 30,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1648,
+            "y": 495,
+            "size": 24,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -586,14 +817,24 @@
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
             ]
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1432,
+            "y": 674,
+            "size": 16,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
           }
         ]
       },
       {
         "name": "Perilous Piers Complete",
         "access_rules": [
-          "parry,dash",
-          "[],p_sugar,dash"
+          "@Has Rungun Weapon,parry,dash",
+          "[],@Has Rungun Weapon,p_sugar,dash"
         ],
         "sections": [
           {}
@@ -605,15 +846,22 @@
             "y": 868,
             "size": 20,
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1461,
+            "y": 674,
+            "size": 16,
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 1",
         "access_rules": [
-          "dash",
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,dash",
+          "@Has Rungun Weapon,parry",
+          "@Has Rungun Weapon,p_sugar",
           "[],super_2"
         ],
         "sections": [
@@ -627,12 +875,22 @@
             "size": 24,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1488,
+            "y": 674,
+            "size": 22,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 2",
-        "access_rules": [],
+        "access_rules": [
+          "@Has Rungun Weapon"
+        ],
         "sections": [
           {}
         ],
@@ -644,14 +902,22 @@
             "size": 24,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1517,
+            "y": 674,
+            "size": 22,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 3",
         "access_rules": [
-          "[parry]",
-          "[p_sugar]"
+          "@Has Rungun Weapon,[parry]",
+          "@Has Rungun Weapon,[p_sugar]"
         ],
         "sections": [
           {}
@@ -664,14 +930,22 @@
             "size": 24,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1461,
+            "y": 701,
+            "size": 22,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 4",
         "access_rules": [
-          "parry",
-          "p_sugar",
+          "@Has Rungun Weapon,parry",
+          "[],@Has Rungun Weapon,p_sugar,dash",
           "[],super_2"
         ],
         "sections": [
@@ -685,14 +959,22 @@
             "size": 24,
             "shape": "diamond",
             "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1488,
+            "y": 701,
+            "size": 22,
+            "shape": "diamond",
+            "border_thickness": 3
           }
         ]
       },
       {
         "name": "Perilous Piers Coin 5",
         "access_rules": [
-          "parry,dash",
-          "[],p_sugar,dash"
+          "@Has Rungun Weapon,parry,dash",
+          "[],@Has Rungun Weapon,p_sugar,dash"
         ],
         "sections": [
           {}
@@ -703,6 +985,14 @@
             "x": 1902,
             "y": 905,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+          {
+            "map": "summary_dlc",
+            "x": 1517,
+            "y": 701,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -723,11 +1013,21 @@
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2053,
             "y": 868,
             "size": 20,
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_n_gun_grades_disabled"
+            ]
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1632,
+            "y": 674,
+            "size": 16,
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
@@ -738,33 +1038,50 @@
       {
         "name": "Rugged Ridge Complete",
         "access_rules": [
-          "dash"
+          "@Has Rungun Weapon,dash"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2088,
             "y": 868,
             "size": 20,
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1661,
+            "y": 674,
+            "size": 16,
             "border_thickness": 3
           }
         ]
       },
       {
         "name": "Rugged Ridge Coin 1",
-        "access_rules": [],
+        "access_rules": [
+          "@Has Rungun Weapon"
+        ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2121,
             "y": 868,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1688,
+            "y": 674,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -773,17 +1090,26 @@
       {
         "name": "Rugged Ridge Coin 2",
         "access_rules": [
-          "[dash]"
+          "@Has Rungun Weapon,[dash]",
+          "@Has Rungun Weapon,astral_cookie,chalice_double_jump"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2155,
             "y": 868,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1717,
+            "y": 674,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -791,16 +1117,26 @@
       },
       {
         "name": "Rugged Ridge Coin 3",
-        "access_rules": [],
+        "access_rules": [
+          "@Has Rungun Weapon"
+        ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2088,
             "y": 905,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1661,
+            "y": 701,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -808,16 +1144,26 @@
       },
       {
         "name": "Rugged Ridge Coin 4",
-        "access_rules": [],
+        "access_rules": [
+          "@Has Rungun Weapon"
+        ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2121,
             "y": 905,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1688,
+            "y": 701,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }
@@ -826,17 +1172,26 @@
       {
         "name": "Rugged Ridge Coin 5",
         "access_rules": [
-          "dash"
+          "@Has Rungun Weapon,dash",
+          "@Has Rungun Weapon,astral_cookie,chalice_double_jump"
         ],
         "sections": [
           {}
         ],
         "map_locations": [
-                    {
+          {
             "map": "summary",
             "x": 2155,
             "y": 905,
             "size": 24,
+            "shape": "diamond",
+            "border_thickness": 3
+          },
+                    {
+            "map": "summary_dlc",
+            "x": 1717,
+            "y": 701,
+            "size": 22,
             "shape": "diamond",
             "border_thickness": 3
           }

@@ -8,12 +8,11 @@
     "overlay_font_size": 15,
     "codes": "coin"
   },
-    {
+  {
     "name": "current_coin_count",
     "type": "consumable",
     "codes": "current_coin_count"
   },
-
   {
     "name": "Contract",
     "type": "consumable",
@@ -24,6 +23,23 @@
     "initial_quantity": 0,
     "overlay_font_size": 15,
     "codes": "contract"
+  },
+  {
+    "name": "Ingredient",
+    "type": "consumable",
+    "img": "images/items/ingredient.png",
+    "min_quantity": 0,
+    "max_quantity": 5,
+    "increment": 1,
+    "initial_quantity": 0,
+    "overlay_font_size": 15,
+    "codes": "ingredient"
+  },
+  {
+    "name": "Boat",
+    "type": "toggle",
+    "img": "images/items/boat.png",
+    "codes": "boat"
   },
   {
     "name": "Duck",
@@ -42,6 +58,12 @@
     "type": "toggle",
     "img": "images/items/parry.png",
     "codes": "parry"
+  },
+  {
+    "name": "Chalice Double Jump",
+    "type": "toggle",
+    "img": "images/items/chalice_double_jump.png",
+    "codes": "chalice_double_jump"
   },
   {
     "name": "Peashooter",
@@ -80,6 +102,24 @@
     "codes": "roundabout"
   },
   {
+    "name": "Crackshot",
+    "type": "toggle",
+    "img": "images/items/crackshot.png",
+    "codes": "crackshot"
+  },
+  {
+    "name": "Converge",
+    "type": "toggle",
+    "img": "images/items/converge.png",
+    "codes": "converge"
+  },
+  {
+    "name": "Twist-Up",
+    "type": "toggle",
+    "img": "images/items/twist_up.png",
+    "codes": "twist_up"
+  },
+  {
     "name": "Peashooter EX",
     "type": "toggle",
     "img": "images/items/peashooter_EX.png",
@@ -114,6 +154,24 @@
     "type": "toggle",
     "img": "images/items/roundabout_EX.png",
     "codes": "roundabout_EX"
+  },
+  {
+    "name": "Crackshot EX",
+    "type": "toggle",
+    "img": "images/items/crackshot_EX.png",
+    "codes": "crackshot_EX"
+  },
+  {
+    "name": "Converge EX",
+    "type": "toggle",
+    "img": "images/items/converge_EX.png",
+    "codes": "converge_EX"
+  },
+  {
+    "name": "Twist-Up EX",
+    "type": "toggle",
+    "img": "images/items/twist_up_EX.png",
+    "codes": "twist_up_EX"
   },
   {
     "name": "progressive_peashooter",
@@ -236,6 +294,66 @@
     ]
   },
   {
+    "name": "progressive_crackshot",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_crackshot,crackshot_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_crackshot,crackshot_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_crackshot,crackshot_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_converge",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_converge,converge_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_converge,converge_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_converge,converge_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
+    "name": "progressive_twist_up",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "uncollected",
+        "codes": "progressive_twist_up,twist_up_uncollected"
+      },
+      {
+        "name": "base_shots",
+        "codes": "progressive_twist_up,twist_up_base_shots",
+        "inherit_codes": false
+      },
+      {
+        "name": "EX",
+        "codes": "progressive_twist_up,twist_up_progressive_EX",
+        "inherit_codes": false
+      }
+    ]
+  },
+  {
     "name": "Plane Bullets",
     "type": "toggle",
     "img": "images/items/plane_bullets.png",
@@ -324,5 +442,23 @@
     "type": "toggle",
     "img": "images/items/whetstone.png",
     "codes": "whetstone"
+  },
+  {
+    "name": "Heart Ring",
+    "type": "toggle",
+    "img": "images/items/heart_ring.png",
+    "codes": "heart_ring"
+  },
+  {
+    "name": "Cursed Relic",
+    "type": "toggle",
+    "img": "images/items/cursed_relic.png",
+    "codes": "cursed_relic"
+  },
+    {
+    "name": "Astral Cookie",
+    "type": "toggle",
+    "img": "images/items/astral_cookie.png",
+    "codes": "astral_cookie"
   }
 ]

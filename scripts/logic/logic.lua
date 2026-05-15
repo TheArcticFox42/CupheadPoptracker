@@ -38,7 +38,13 @@ LEVEL_ID_TO_ISLE_INDEX = {
     ["30"] = "2",
     ["31"] = "2",
     ["32"] = "3",
-    ["33"] = "3"
+    ["33"] = "3",
+
+    ["100"] = "4",
+    ["101"] = "4",
+    ["102"] = "4",
+    ["103"] = "4",
+    ["104"] = "4"
 }
 
 -- Default values
@@ -66,7 +72,13 @@ LEVEL_MAP = {
     ["30"] = 30,
     ["31"] = 31,
     ["32"] = 32,
-    ["33"] = 33
+    ["33"] = 33,
+
+    ["100"] = 100,
+    ["101"] = 101,
+    ["102"] = 102,
+    ["103"] = 103,
+    ["104"] = 104
 }
 
     -- Default Values
@@ -84,8 +96,23 @@ function run_n_gun_complete(level_index)
     return Tracker:FindObjectForCode(RUNGUN_COMPLETE_MAP_CODES[level_index]).AccessibilityLevel == AccessibilityLevel["Cleared"] 
 end
 
+function chess_boss_complete(level_index)
+    return Tracker:FindObjectForCode(CHESS_BOSSES_COMPLETE_MAP_CODES[level_index]).AccessibilityLevel == AccessibilityLevel["Cleared"]
+end
+
+function any_mausoleum_complete()
+        return (Tracker:FindObjectForCode("@Mausoleum I/").AccessibilityLevel == AccessibilityLevel["Cleared"]) or 
+                (Tracker:FindObjectForCode("@Mausoleum II/").AccessibilityLevel == AccessibilityLevel["Cleared"]) or 
+                (Tracker:FindObjectForCode("@Mausoleum III/").AccessibilityLevel == AccessibilityLevel["Cleared"])
+end
+    
+
 function freemove_isles()
     return Tracker:FindObjectForCode("freemove_isles").Active
+end
+
+function normal_difficulty()
+    return not Tracker:FindObjectForCode("expert_mode").Active
 end
 
 function can_access_isle_1()
@@ -106,6 +133,10 @@ function can_access_hell()
     return boss_complete(11)
 end
 
+function can_access_isle_4()
+    return any_mausoleum_complete() and Tracker:FindObjectForCode("boat").Active
+end
+
 local isle_access_funcs = {
     ["1"] = can_access_isle_1,
     ["2"] = can_access_isle_2,
@@ -121,11 +152,15 @@ function get_contract_requirement(isle)
 end
 
 function can_access_isle(isle_index)
-    local contracts = Tracker:FindObjectForCode("contract").AcquiredCount
-    if freemove_isles() then
-        return contracts >= get_contract_requirement(isle_index)
+    if isle_index == "4" then
+        return can_access_isle_4()
     else
-        return isle_access_funcs[isle_index]()
+        local contracts = Tracker:FindObjectForCode("contract").AcquiredCount
+        if freemove_isles() then
+            return contracts >= get_contract_requirement(isle_index)
+        else
+            return isle_access_funcs[isle_index]()
+        end
     end
 end
 
@@ -184,6 +219,18 @@ function can_get_coin_i_in_rungun_j(coin_index,level_index)
     else
         return AccessibilityLevel["None"]
     end    
+end
+
+function can_access_chess_level(level_index)
+    return CHESS_ACCESS_FUNCS[tonumber(level_index)]()
+end
+
+function can_beat_chess_boss(level_index)
+    if can_access_chess_level(level_index) then
+        return Tracker:FindObjectForCode(CHESS_BOSSES_COMPLETE_SUMMARY_CODES[tonumber(level_index)]).AccessibilityLevel
+    else
+        return AccessibilityLevel["None"]
+    end
 end
 
 function can_access_root_pack_level()
@@ -290,6 +337,49 @@ end
             return can_access_cala_maria_level()
         end
     
+    function can_access_glumstone_level()
+        return can_access_isle_4()
+    end
+
+    function can_access_moonshine_mob_level()
+        return can_access_isle_4()
+    end
+
+    function can_access_mortimer_level()
+        return boss_complete(100) or boss_complete(103)
+    end
+
+    function can_access_howling_aces_level()
+        return can_access_isle_4()
+    end
+
+    function can_access_esther_level()
+        return boss_complete(101) or boss_complete(103)
+    end
+
+    function can_access_pawns_level()
+        return can_access_isle_4()
+    end
+
+    function can_access_knight_level()
+        return chess_boss_complete(107)
+    end
+
+    function can_access_bishop_level()
+        return chess_boss_complete(108)
+    end
+
+    function can_access_rook_level()
+        return chess_boss_complete(109)
+    end
+
+    function can_access_queen_level()
+        return chess_boss_complete(110)
+    end
+    
+    function can_access_gauntlet_level()
+        return chess_boss_complete(111)
+    end
 
 ACCESS_FUNCS = {
     [0] = can_access_root_pack_level,
@@ -315,7 +405,22 @@ ACCESS_FUNCS = {
     [30] = can_access_funfair_fever_level,
     [31] = can_access_funhouse_frazzle_level,
     [32] = can_access_perilous_piers_level,
-    [33] = can_access_rugged_ridge_level
+    [33] = can_access_rugged_ridge_level,
+
+    [100] = can_access_glumstone_level,
+    [101] = can_access_moonshine_mob_level,
+    [102] = can_access_mortimer_level,
+    [103] = can_access_howling_aces_level,
+    [104] = can_access_esther_level
+}
+
+CHESS_ACCESS_FUNCS = {
+    [107] = can_access_pawns_level,
+    [108] = can_access_knight_level,
+    [109] = can_access_bishop_level,
+    [110] = can_access_rook_level,
+    [111] = can_access_queen_level,
+    [112] = can_access_gauntlet_level
 }
 
 function can_access_secret_coin(isle_index)
@@ -333,6 +438,8 @@ function can_access_secret_coin(isle_index)
         return can_access_cala_maria_level()
     elseif isle_index == "hell" then
         return can_access_hell()
+    elseif isle_index == "4" then
+        return can_access_isle("4")
     else
         return false
     end
@@ -343,7 +450,7 @@ function can_complete_ginger_quest()
 end
 
 function can_complete_buster_quest()
-    return can_access_level("6") and (Tracker:FindObjectForCode("parry").Active or Tracker:FindObjectForCode("p_sugar").Active)
+    return can_access_level("6") and Tracker:FindObjectForCode("parry").Active
 end
 
 function can_access_canteen_hughes()
@@ -358,7 +465,15 @@ function can_complete_silverworth_quest()
     return false
 end
 
-function can_complete_pacifist_quest()
+function can_complete_tully_quest()
+    return false
+end
+
+function can_access_buckley()
+    return can_access_isle("4")
+end
+
+function can_complete_senita_quest()
     return false
 end
 
@@ -375,6 +490,8 @@ function can_access_shop(shop_index)
                 run_n_gun_complete(31)
     elseif shop_index == "3" then
         return can_access_werner_level()
+    elseif shop_index == "4" then
+        return can_access_isle("4")
     else
         return false
     end

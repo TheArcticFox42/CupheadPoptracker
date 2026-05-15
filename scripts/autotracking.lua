@@ -27,7 +27,7 @@ ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
 ScriptHost:LoadScript("scripts/autotracking/progressive_handling.lua")
 registerProgressiveWatchers()
 
--- sets up coin counting
+-- sets up watchers
 ScriptHost:AddWatchForCode("coin_watcher","coin",
             function()
                 calculate_coin_count()
@@ -36,6 +36,16 @@ ScriptHost:AddWatchForCode("coin_watcher","coin",
 ScriptHost:AddOnLocationSectionChangedHandler("coin_handler",
             function(LocationSection)
                 calculate_coin_count()
+            end
+)
+ScriptHost:AddWatchForCode("boat_watcher","boat",
+            function()
+                update_chalice_cookie()
+            end
+            )
+ScriptHost:AddOnLocationSectionChangedHandler("mausoleum_handler",
+            function()
+                update_chalice_cookie()
             end
 )
 

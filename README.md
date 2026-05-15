@@ -1,12 +1,13 @@
 ### Cuphead PopTracker
 
-Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in the [Cuphead thread](https://discord.com/channels/731205301247803413/1050929729844297789) on the Archipelago discord server
+Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in the [Cuphead channel](https://discord.com/channels/731205301247803413/1050929729844297789) on the Archipelago discord server (we have a channel now!)
 
 Notes:
-- The current version does not yet support anything related to the DLC, games with no starting weapon, and hard logic.
+- The current version does not yet support hard logic.
 - Sequence break logic was manually created by me and so it may have flaws. If you find any sequence break logic then you can let me know and I will add it once I get to it.
 - The current logic is not completely up to date and may be slightly off
-- Due to some current limitations both quests on isle 3 are alway marked as inaccessible
+- Due to some current limitations both quests on isle 3 and the cactus girl quest on isle 4 appear on the map even if they are disabled, and are always marked as inaccessible.
+- Buying items from the shop sometimes marks off the location of a different shop.
 - Some maps can slightly cut off when using the vertical variant 
 
 ### Requirements
@@ -24,8 +25,10 @@ Notes:
 ### Map Key
 - Next to each boss there is a square which indicates the check for completing that boss and a diamond that indicates the check for getting the top grade on that boss.
 - For each run 'n gun the left square indicates the check for getting the top grade, the right square indicates the check for completing the run 'n gun and the diamonds are the coins in their respective order
+- The King's Leap has it's checks on the ladder on the Isle IV map
 - Mausoleums have their check next to them
 - The tutorial checks appear on Elder Kettle's house.
+- The Ms. Chalice tutorial checks appear on the cart where the tutorial is.
 - For each shop the top squares indicate the weapons in the shop and the bottom squares indicate the charms.
 - Secret coins and quests are marked on the map with trapezoids.
 

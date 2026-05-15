@@ -1,7 +1,11 @@
 [
     {
         "name": "Tutorial",
-        "access_rules": ["dash,duck,parry","dash,duck,p_sugar","[],coffee,super_2,duck"],
+        "access_rules": [
+            "@Has Weapon,dash,duck,parry",
+            "@Has Weapon,dash,duck,p_sugar",
+            "[],@Has Weapon,coffee,super_2,duck"
+        ],
         "map_locations": [
             {
                 "map": "isle_1",
@@ -21,11 +25,39 @@
         ]
     },
     {
-        "name": "Isle 1 Secret Coin",
-        "access_rules":["$can_access_secret_coin|1"],
+        "name": "Recipe For Ms. Chalice",
+        "access_rules": [
+            "astral_cookie,$can_access_isle|4"
+        ],
+        "map_locations": [
+            {
+                "map": "isle_4",
+                "x": 377,
+                "y": 188,
+                "size": 16,
+                "border_thickness": 3
+            }
+        ],
         "sections": [
             {
+                "name": "Recipe For Ms. Chalice Complete"
+            },
+            {
+                "name": "Recipe For Ms. Chalice Coin",
+                "access_rules": [
+                    "astral_cookie,dash,parry,duck,chalice_double_jump",
+                    "[],astral_cookie,dash,parry,chalice_double_jump"
+                ]
             }
+        ]
+    },
+    {
+        "name": "Isle 1 Secret Coin",
+        "access_rules": [
+            "$can_access_secret_coin|1"
+        ],
+        "sections": [
+            {}
         ],
         "map_locations": [
             {
@@ -35,16 +67,16 @@
                 "size": 12,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
-        {
+    {
         "name": "Isle 2 Secret Coin",
-        "access_rules":["$can_access_secret_coin|2"],
+        "access_rules": [
+            "$can_access_secret_coin|2"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -54,16 +86,16 @@
                 "size": 14,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
-        {
+    {
         "name": "Isle 3 Secret Coin",
-        "access_rules":["$can_access_secret_coin|3"],
+        "access_rules": [
+            "$can_access_secret_coin|3"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -73,16 +105,16 @@
                 "size": 10,
                 "shape": "trapezoid",
                 "border_thickness": 2
-
             }
         ]
     },
-        {
+    {
         "name": "Inkwell Hell Secret Coin",
-        "access_rules":["$can_access_secret_coin|hell"],
+        "access_rules": [
+            "$can_access_secret_coin|hell"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -92,15 +124,50 @@
                 "size": 10,
                 "shape": "trapezoid",
                 "border_thickness": 2
-
             }
         ]
     },
-        {
+    {
+        "name": "Isle 4 Secret Coin",
+        "access_rules": [
+            "$can_access_secret_coin|4"
+        ],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_4",
+                "x": 228,
+                "y": 134,
+                "size": 14,
+                "shape": "trapezoid",
+                "border_thickness": 3
+            }
+        ]
+    },
+    {
+        "name": "Arrive at Isle IV",
+        "visibility_rules": ["chalice_randomized"],
+        "access_rules": ["$can_access_isle|4"],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_4",
+                "x": 37,
+                "y": 440,
+                "size": 14,
+                "shape": "trapezoid",
+                "border_thickness": 3
+            }
+        ]
+    },
+    {
         "name": "Mac's Coins",
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -113,12 +180,13 @@
             }
         ]
     },
-{
+    {
         "name": "Talk To Canteen Hughes",
-        "access_rules":["$can_access_canteen_hughes"],
+        "access_rules": [
+            "$can_access_canteen_hughes"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -128,16 +196,33 @@
                 "size": 14,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
-        {
-        "name": "Buster Quest",
-        "access_rules":["$can_complete_buster_quest"],
+    {
+        "name": "Buckley's Coins",
+        "access_rules": ["$can_access_buckley"],
         "sections": [
+            {}
+        ],
+        "map_locations": [
             {
+                "map": "isle_4",
+                "x": 432,
+                "y": 250,
+                "size": 14,
+                "shape": "trapezoid",
+                "border_thickness": 3
             }
+        ]
+    },
+    {
+        "name": "Buster Quest",
+        "access_rules": [
+            "$can_complete_buster_quest"
+        ],
+        "sections": [
+            {}
         ],
         "map_locations": [
             {
@@ -147,16 +232,16 @@
                 "size": 14,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
     {
         "name": "Ginger Quest",
-        "access_rules":["$can_complete_ginger_quest"],
+        "access_rules": [
+            "$can_complete_ginger_quest"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -166,16 +251,16 @@
                 "size": 14,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
-        {
+    {
         "name": "Barbershop Quartet Quest",
-        "access_rules":["$can_complete_barbershop_quest"],
+        "access_rules": [
+            "$can_complete_barbershop_quest"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -185,16 +270,16 @@
                 "size": 12,
                 "shape": "trapezoid",
                 "border_thickness": 3
-
             }
         ]
     },
-        {
+    {
         "name": "Silverworth Quest",
-        "access_rules":["$can_complete_silverworth_quest"],
+        "access_rules": [
+            "$can_complete_silverworth_quest"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -204,16 +289,16 @@
                 "size": 10,
                 "shape": "trapezoid",
                 "border_thickness": 2
-
             }
         ]
     },
-        {
-        "name": "Pacifist Quest",
-        "access_rules":["$can_complete_pacifist_quest"],
+    {
+        "name": "Tully Quest",
+        "access_rules": [
+            "$can_complete_tully_quest"
+        ],
         "sections": [
-            {
-            }
+            {}
         ],
         "map_locations": [
             {
@@ -223,7 +308,23 @@
                 "size": 10,
                 "shape": "trapezoid",
                 "border_thickness": 2
-
+            }
+        ]
+    },
+    {
+        "name": "Senita Quest",
+        "access_rules": ["$can_complete_senita_quest"],
+        "sections": [
+            {}
+        ],
+        "map_locations": [
+            {
+                "map": "isle_4",
+                "x": 491,
+                "y": 526,
+                "size": 14,
+                "shape": "trapezoid",
+                "border_thickness": 3
             }
         ]
     }

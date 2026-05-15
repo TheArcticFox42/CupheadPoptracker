@@ -1,0 +1,340 @@
+{
+  //sets the trackers layout
+  //more info: https://github.com/black-sliver/PopTracker/blob/master/doc/PACKS.md#layouts
+  "tracker_default": {
+    "type": "container",
+    "background": "#877373",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "background": "#212121",
+          "item_h_alignment": "stretch",
+          "content": [
+            {
+              "type": "layout",
+              "key": "Tabbed Map"
+            }
+          ]
+        },
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "dock",
+              "dock": "left",
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Weapons",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Weapons"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "EXs",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "EXs"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Charms",
+                      "dock": "right",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Charms"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Goals",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Goals"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "dock",
+              "dock": "right",
+              "content": [
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Abilities",
+                      "dock": "left",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Abilities"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Plane Items",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Plane Items"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "dock",
+                  "dock": "top",
+                  "content": [
+                    {
+                      "type": "group",
+                      "header": "Info",
+                      "dock": "top",
+                      "margin": "0,0,3,0",
+                      "content": {
+                        "type": "layout",
+                        "h_alignment": "center",
+                        "v_alignment": "center",
+                        "key": "Info"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#877373",
+    "content": [
+      {
+        "type": "dock",
+        "dropshadow": true,
+        "item_h_alignment": "stretch",
+        "content": [
+          {
+            "type": "dock",
+            "background": "#212121",
+            "item_h_alignment": "stretch",
+            "content": [
+              {
+                "type": "layout",
+                "key": "Tabbed Map"
+              }
+            ]
+          },
+          {
+            "type": "dock",
+            "dock": "bottom",
+            "v_alignment": "stretch",
+            "content": [
+              {
+                "type": "dock",
+                "dock": "left",
+                "content": [
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Weapons",
+                        "dock": "left",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Weapons"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "EXs",
+                        "dock": "left",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "EXs"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Charms",
+                        "dock": "right",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Charms"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "dock",
+                "dock": "right",
+                "content": [
+                  {
+                    "type": "dock",
+                    "dock": "left",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Goals",
+                        "dock": "top",
+                        "margin": "0,0,3,0",
+                        "background": "#212121",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Vertical Goals"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Abilities",
+                        "dock": "left",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Abilities"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Plane Items",
+                        "dock": "top",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Plane Items"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "dock",
+                    "dock": "top",
+                    "content": [
+                      {
+                        "type": "group",
+                        "header": "Info",
+                        "dock": "top",
+                        "margin": "0,0,3,0",
+                        "content": {
+                          "type": "layout",
+                          "h_alignment": "center",
+                          "v_alignment": "center",
+                          "key": "Info"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

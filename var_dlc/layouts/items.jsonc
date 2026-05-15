@@ -1,0 +1,278 @@
+{
+  // sets layouts for shadred items grids
+  // bigger example: https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/layouts/items.json
+  "Weapons": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter",
+            "spread",
+            "chaser",
+            "lobber",
+            "charge",
+            "roundabout",
+            "crackshot",
+            "converge",
+            "twist_up"
+          ]
+        ]
+      }
+    ]
+  },
+  "EXs": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "peashooter_EX",
+            "spread_EX",
+            "chaser_EX",
+            "lobber_EX",
+            "charge_EX",
+            "roundabout_EX",
+            "crackshot_EX",
+            "converge_EX",
+            "twist_up_EX"
+          ]
+        ]
+      }
+    ]
+  },
+  "Plane Items": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "plane_bullets",
+            "plane_bombs",
+            "plane_EX",
+            "plane_super",
+            "plane_shrink",
+            "plane_parry"
+          ]
+        ]
+      }
+    ]
+  },
+  "Charms": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "heart",
+            "coffee",
+            "smoke_bomb",
+            "p_sugar",
+            "twin_heart",
+            "whetstone",
+            "heart_ring",
+            "cursed_relic",
+            "astral_cookie"
+          ]
+        ]
+      }
+    ]
+  },
+  "Abilities": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "super_1",
+            "super_2",
+            "super_3",
+            "duck",
+            "dash",
+            "parry",
+            "chalice_double_jump"
+          ]
+        ]
+      }
+    ]
+  },
+  "Info": {
+    "type": "array",
+    "orientation": "horizontal",
+    "h_alignment": "center",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "center",
+        "rows": [
+          [
+            "expert_mode",
+            "boss_grade_checks",
+            "run_n_gun_grade_checks",
+            "boat",
+            "coin",
+            "contract",
+            "ingredient"
+            // ,"kings_leap"
+            // ,"use_dlc"
+            // ,"chalice_mode"
+          ]
+        ]
+      }
+    ]
+  },
+  "Goals": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "beat_devil",
+            "collect_contracts",
+            "buy_out_shop",
+            "beat_saltbaker",
+            "collect_ingredients"
+          ]
+        ]
+      }
+    ]
+  },
+  "Vertical Goals": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10, 10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "beat_devil"
+          ],
+          [
+            "collect_contracts"
+          ],
+          [
+            "buy_out_shop"
+          ],
+          [
+            "beat_saltbaker"
+          ],
+          [
+            "collect_ingredients"
+          ]
+        ]
+      }
+    ]
+  },
+  "Tabbed Map": {
+    "type": "array",
+    "background": "#212121",
+    "content": [
+      {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Isle I",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_1"
+              ]
+            }
+          },
+          {
+            "title": "Isle II",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_2"
+              ]
+            }
+          },
+          {
+            "title": "Isle III",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_3"
+              ]
+            }
+          },
+          {
+            "title": "Isle IV",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_4"
+              ]
+            }
+          },
+          {
+            "title": "Full Map",
+            "content": {
+              "type": "map",
+              "maps": [
+                "isle_1",
+                "isle_2",
+                "isle_3",
+                "isle_4"
+              ]
+            }
+          },
+          {
+            "title": "Inkwell Hell",
+            "content": {
+              "type": "map",
+              "maps": [
+                "hell"
+              ]
+            }
+          },
+          {
+            "title": "Summary",
+            "content": {
+              "type": "map",
+              "maps": [
+                "summary_dlc"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

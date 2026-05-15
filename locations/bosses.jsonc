@@ -7,7 +7,9 @@
         "sections": [
           {}
         ],
-        "access_rules": ["^$can_beat_boss|0"],
+        "access_rules": [
+          "^$can_beat_boss|0"
+        ],
         "map_locations": [
           {
             "map": "isle_1",
@@ -152,7 +154,9 @@
         "sections": [
           {}
         ],
-        "access_rules": ["^$can_beat_boss|3"],
+        "access_rules": [
+          "^$can_beat_boss|3"
+        ],
         "map_locations": [
           {
             "map": "isle_1",
@@ -279,7 +283,9 @@
         "sections": [
           {}
         ],
-        "access_rules": ["^$can_beat_boss|6"],
+        "access_rules": [
+          "^$can_beat_boss|6"
+        ],
         "map_locations": [
           {
             "map": "isle_2",
@@ -320,7 +326,9 @@
         "sections": [
           {}
         ],
-        "access_rules": ["^$can_beat_boss|7"],
+        "access_rules": [
+          "^$can_beat_boss|7"
+        ],
         "map_locations": [
           {
             "map": "isle_3",
@@ -751,9 +759,7 @@
             "x": 343,
             "y": 284
           },
-          {
-      
-          }
+          {}
         ]
       },
       {
@@ -814,6 +820,221 @@
             "y": 246,
             "size": 22,
             "border_thickness": 3,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Glumstone The Giant",
+    "children": [
+      {
+        "name": "Glumstone The Giant Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_beat_boss|100"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 679,
+            "y": 197
+          }
+        ]
+      },
+      {
+        "name": "Glumstone The Giant Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_top_grade_boss|100"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 719,
+            "y": 197,
+            "size": 28,
+            "border_thickness": 5,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Moonshine Mob",
+    "children": [
+      {
+        "name": "Moonshine Mob Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_beat_boss|101"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 303,
+            "y": 444
+          }
+        ]
+      },
+      {
+        "name": "Moonshine Mob Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_top_grade_boss|101"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 343,
+            "y": 444,
+            "size": 28,
+            "border_thickness": 5,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mortimer Freeze",
+    "children": [
+      {
+        "name": "Mortimer Freeze Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_beat_boss|102"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 903,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Mortimer Freeze Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_top_grade_boss|102"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 943,
+            "y": 248,
+            "size": 28,
+            "border_thickness": 5,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Howling Aces",
+    "children": [
+      {
+        "name": "The Howling Aces Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_beat_boss|103"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 722,
+            "y": 448
+          }
+        ]
+      },
+      {
+        "name": "The Howling Aces Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_top_grade_boss|103"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 762,
+            "y": 448,
+            "size": 28,
+            "border_thickness": 5,
+            "shape": "diamond",
+            "force_invisibility_rules": [
+              "boss_grades_disabled"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Esther Winchester",
+    "children": [
+      {
+        "name": "Esther Winchester Complete",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_beat_boss|104"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 390,
+            "y": 573
+          }
+        ]
+      },
+      {
+        "name": "Esther Winchester Top Grade",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_top_grade_boss|104"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 430,
+            "y": 573,
+            "size": 28,
+            "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
