@@ -3,7 +3,7 @@
 Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in the [Cuphead channel](https://discord.com/channels/731205301247803413/1050929729844297789) on the Archipelago discord server (we have a channel now!)
 
 Notes:
-- The current version does not yet support hard logic.
+- The current version does not yet support hard logic and chalice checks.
 - Sequence break logic was manually created by me and so it may have flaws. If you find any sequence break logic then you can let me know and I will add it once I get to it.
 - The current logic is not completely up to date and may be slightly off
 - Due to some current limitations both quests on isle 3 and the cactus girl quest on isle 4 appear on the map even if they are disabled, and are always marked as inaccessible.
@@ -20,7 +20,8 @@ Notes:
 1. Go to the [releases page](https://github.com/TheArcticFox42/CupheadPoptracker/releases) and download the .zip file for the version you want
 2. Put the downloaded file in your packs folder in Poptracker
 3. Launch Poptracker and select CupheadPoptracker in the top left
-4. To connect to your Archipelago game for auto-tracking press the AP button in the top left and enter the room details
+4. Choose the variant that you would like to use in the top right
+5. To connect to your Archipelago game for auto-tracking press the AP button in the top left and enter the room details
 
 ### Map Key
 - Next to each boss there is a square which indicates the check for completing that boss and a diamond that indicates the check for getting the top grade on that boss.
