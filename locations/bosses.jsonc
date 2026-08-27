@@ -13,7 +13,7 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 438,
+            "x": 458,
             "y": 425
           }
         ]
@@ -29,13 +29,34 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 478,
+            "x": 498,
             "y": 425,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Root Pack Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|0"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 418,
+            "y": 425,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -74,7 +95,7 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 547,
+            "x": 567,
             "y": 115
           }
         ]
@@ -90,13 +111,34 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 587,
+            "x": 607,
             "y": 115,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goopy Le Grande Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|1"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 527,
+            "y": 115,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -117,7 +159,7 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 533,
+            "x": 553,
             "y": 537
           }
         ]
@@ -133,13 +175,34 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 573,
+            "x": 593,
             "y": 537,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ribby And Croaks Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|2"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 513,
+            "y": 537,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -160,7 +223,7 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 922,
+            "x": 942,
             "y": 256
           }
         ]
@@ -176,13 +239,34 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 962,
+            "x": 982,
             "y": 256,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cagney Carnation Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|3"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 902,
+            "y": 256,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -203,7 +287,7 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 147,
+            "x": 167,
             "y": 627
           }
         ]
@@ -219,13 +303,34 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 187,
+            "x": 207,
             "y": 627,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Baroness Von Bon Bon Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|4"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 127,
+            "y": 627,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -246,7 +351,7 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 570,
+            "x": 590,
             "y": 799
           }
         ]
@@ -262,13 +367,34 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 610,
+            "x": 630,
             "y": 799,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beppi The Clown Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|5"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 550,
+            "y": 799,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -289,7 +415,7 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 697,
+            "x": 717,
             "y": 352
           }
         ]
@@ -305,13 +431,34 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 737,
+            "x": 757,
             "y": 352,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grim Matchstick Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|6"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 677,
+            "y": 352,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -332,7 +479,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 102,
+            "x": 122,
             "y": 414
           }
         ]
@@ -348,13 +495,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 132,
+            "x": 152,
             "y": 414,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rumor Honeybottoms Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|7"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 92,
+            "y": 414,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -375,7 +543,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 368,
+            "x": 388,
             "y": 414
           }
         ]
@@ -391,13 +559,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 398,
+            "x": 418,
             "y": 414,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Captain Brineybeard Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|8"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 358,
+            "y": 414,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -418,7 +607,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 199,
+            "x": 219,
             "y": 397
           }
         ]
@@ -434,13 +623,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 229,
+            "x": 249,
             "y": 397,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Werner Werman Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|9"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 189,
+            "y": 397,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -461,8 +671,8 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 251,
-            "y": 197
+            "x": 271,
+            "y": 207
           }
         ]
       },
@@ -477,13 +687,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 281,
-            "y": 197,
+            "x": 301,
+            "y": 207,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sally Stageplay Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|10"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 241,
+            "y": 207,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -523,7 +754,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 337,
+            "x": 357,
             "y": 159
           }
         ]
@@ -539,13 +770,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 367,
+            "x": 387,
             "y": 159,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phantom Express Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|11"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 327,
+            "y": 159,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -566,7 +818,7 @@
         "map_locations": [
           {
             "map": "hell",
-            "x": 345,
+            "x": 365,
             "y": 189
           }
         ]
@@ -582,13 +834,34 @@
         "map_locations": [
           {
             "map": "hell",
-            "x": 375,
+            "x": 395,
             "y": 190,
             "size": 20,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "King Dice Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|17"
+        ],
+        "map_locations": [
+          {
+            "map": "hell",
+            "x": 335,
+            "y": 190,
+            "size": 18,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -609,7 +882,7 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 832,
+            "x": 852,
             "y": 112
           }
         ]
@@ -625,13 +898,34 @@
         "map_locations": [
           {
             "map": "isle_1",
-            "x": 872,
+            "x": 892,
             "y": 112,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hilda Berg Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|12"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 812,
+            "y": 112,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -652,7 +946,7 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 378,
+            "x": 398,
             "y": 620
           }
         ]
@@ -668,13 +962,34 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 418,
+            "x": 438,
             "y": 620,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Djimmi The Great Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|13"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 358,
+            "y": 620,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -713,7 +1028,7 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 110,
+            "x": 130,
             "y": 347
           }
         ]
@@ -729,13 +1044,34 @@
         "map_locations": [
           {
             "map": "isle_2",
-            "x": 150,
+            "x": 170,
             "y": 347,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wally Warbles Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|14"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 90,
+            "y": 347,
+            "size": 26,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -756,7 +1092,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 343,
+            "x": 363,
             "y": 284
           },
           {}
@@ -773,13 +1109,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 373,
+            "x": 393,
             "y": 284,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cala Maria Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|15"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 333,
+            "y": 284,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -800,7 +1157,7 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 138,
+            "x": 158,
             "y": 246
           }
         ]
@@ -816,13 +1173,34 @@
         "map_locations": [
           {
             "map": "isle_3",
-            "x": 168,
+            "x": 188,
             "y": 246,
             "size": 22,
             "border_thickness": 3,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dr. Kahl's Robot Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|16"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 128,
+            "y": 246,
+            "size": 20,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -843,7 +1221,7 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 679,
+            "x": 699,
             "y": 197
           }
         ]
@@ -859,13 +1237,34 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 719,
+            "x": 739,
             "y": 197,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Glumstone The Giant Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|100"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 659,
+            "y": 197,
+            "size": 24,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -886,7 +1285,7 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 303,
+            "x": 323,
             "y": 444
           }
         ]
@@ -902,13 +1301,34 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 343,
+            "x": 363,
             "y": 444,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Moonshine Mob Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|101"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 283,
+            "y": 444,
+            "size": 24,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -929,7 +1349,7 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 903,
+            "x": 923,
             "y": 248
           }
         ]
@@ -945,13 +1365,34 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 943,
+            "x": 963,
             "y": 248,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortimer Freeze Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|102"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 883,
+            "y": 248,
+            "size": 24,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -972,7 +1413,7 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 722,
+            "x": 742,
             "y": 448
           }
         ]
@@ -988,13 +1429,34 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 762,
+            "x": 782,
             "y": 448,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Howling Aces Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|103"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 702,
+            "y": 448,
+            "size": 24,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1015,7 +1477,7 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 390,
+            "x": 410,
             "y": 573
           }
         ]
@@ -1031,13 +1493,34 @@
         "map_locations": [
           {
             "map": "isle_4",
-            "x": 430,
+            "x": 450,
             "y": 573,
             "size": 28,
             "border_thickness": 5,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Esther Winchester Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "^$can_chalice_boss|104"
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 370,
+            "y": 573,
+            "size": 24,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]

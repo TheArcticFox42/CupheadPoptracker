@@ -2,9 +2,9 @@
     {
         "name": "Tutorial",
         "access_rules": [
-            "@Has Weapon,dash,duck,parry",
-            "@Has Weapon,dash,duck,p_sugar",
-            "[],@Has Weapon,coffee,super_2,duck"
+            "@Has Weapon,@Crouch and Dash and Parry",
+            "[]@Has Weapon,@Crouch and Dash,p_sugar",
+            "[],@Has Weapon,coffee,super_2,crouch"
         ],
         "map_locations": [
             {
@@ -45,8 +45,7 @@
             {
                 "name": "Recipe For Ms. Chalice Coin",
                 "access_rules": [
-                    "astral_cookie,dash,parry,duck,chalice_double_jump",
-                    "[],astral_cookie,dash,parry,chalice_double_jump"
+                    "astral_cookie,dash,parry,chalice_double_jump"
                 ]
             }
         ]

@@ -2,8 +2,7 @@
     {
         "name": "Mausoleum I Summary",
         "access_rules": [
-            "parry",
-            "[],p_sugar"
+            "@Parry or P.Sugar"
         ],
         "sections": [
             {}
@@ -24,8 +23,7 @@
     {
         "name": "Mausoleum II Summary",
         "access_rules": [
-            "parry",
-            "[],p_sugar"
+          "@Parry Logic"
         ],
         "sections": [
             {}
@@ -46,7 +44,7 @@
     {
         "name": "Mausoleum III Summary",
         "access_rules": [
-            "parry"
+          "@Parry Logic"
         ],
         "sections": [
             {}

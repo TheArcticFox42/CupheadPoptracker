@@ -52,6 +52,33 @@ BOSS_TOP_GRADE_IDS = {
     [104] = 10010004
 }
 
+BOSS_CHALICED_IDS = {
+    [0]  = 10002000,
+    [1]  = 10002001,
+    [2]  = 10002002,
+    [3]  = 10002003,
+    [4]  = 10002004,
+    [5]  = 10002005,
+    [6]  = 10002006,
+    [7]  = 10002007,
+    [8]  = 10002008,
+    [9]  = 10002009,
+    [10] = 10002010,
+    [11] = 10002011,
+    [12] = 10002013,
+    [13] = 10002014,
+    [14] = 10002015,
+    [15] = 10002016,
+    [16] = 10002017,
+    [17] = 10002012,
+
+    [100] = 10012000,
+    [101] = 10012001,
+    [102] = 10012002,
+    [103] = 10012003,
+    [104] = 10012004
+}
+
 BOSS_COMPLETE_MAP_CODES = {
     [0]  = "@The Root Pack/The Root Pack Complete/",
     [1]  = "@Goopy Le Grande/Goopy Le Grande Complete/",
@@ -104,6 +131,33 @@ BOSS_TOP_GRADE_MAP_CODES = {
     [102] = "@Mortimer Freeze/Mortimer Freeze Top Grade/",
     [103] = "@The Howling Aces/The Howling Aces Top Grade/",
     [104] = "@Esther Winchester/Esther Winchester Top Grade/"
+}
+
+BOSS_CHALICED_MAP_CODES = {
+    [0]  = "@The Root Pack/The Root Pack Chaliced/",
+    [1]  = "@Goopy Le Grande/Goopy Le Grande Chaliced/",
+    [2]  = "@Ribby And Croaks/Ribby And Croaks Chaliced/",
+    [3]  = "@Cagney Carnation/Cagney Carnation Chaliced/",
+    [4]  = "@Baroness Von Bon Bon/Baroness Von Bon Bon Chaliced/",
+    [5]  = "@Beppi The Clown/Beppi The Clown Chaliced/",
+    [6]  = "@Grim Matchstick/Grim Matchstick Chaliced/",
+    [7]  = "@Rumor Honeybottoms/Rumor Honeybottoms Chaliced/",
+    [8]  = "@Captain Brineybeard/Captain Brineybeard Chaliced/",
+    [9]  = "@Werner Werman/Werner Werman Chaliced/",
+    [10] = "@Sally Stageplay/Sally Stageplay Chaliced/",
+    [11] = "@Phantom Express/Phantom Express Chaliced/",
+    [12] = "@Hilda Berg/Hilda Berg Chaliced/",
+    [13] = "@Djimmi The Great/Djimmi The Great Chaliced/",
+    [14] = "@Wally Warbles/Wally Warbles Chaliced/",
+    [15] = "@Cala Maria/Cala Maria Chaliced/",
+    [16] = "@Dr. Kahl's Robot/Dr. Kahl's Robot Chaliced/",
+    [17] = "@King Dice/King Dice Chaliced/",
+
+    [100] = "@Glumstone The Giant/Glumstone The Giant Chaliced/",
+    [101] = "@Moonshine Mob/Moonshine Mob Chaliced/",
+    [102] = "@Mortimer Freeze/Mortimer Freeze Chaliced/",
+    [103] = "@The Howling Aces/The Howling Aces Chaliced/",
+    [104] = "@Esther Winchester/Esther Winchester Chaliced/"
 }
 
 BOSS_COMPLETE_SUMMARY_CODES = {
@@ -160,6 +214,33 @@ BOSS_TOP_GRADE_SUMMARY_CODES = {
     [104] = "@Esther Winchester Summary/Esther Winchester Top Grade"
 }
 
+BOSS_CHALICED_SUMMARY_CODES = {
+    [0]  = "@The Root Pack Summary/The Root Pack Chaliced",
+    [1]  = "@Goopy Le Grande Summary/Goopy Le Grande Chaliced",
+    [2]  = "@Ribby And Croaks Summary/Ribby And Croaks Chaliced",
+    [3]  = "@Cagney Carnation Summary/Cagney Carnation Chaliced",
+    [4]  = "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Chaliced",
+    [5]  = "@Beppi The Clown Summary/Beppi The Clown Chaliced",
+    [6]  = "@Grim Matchstick Summary/Grim Matchstick Chaliced",
+    [7]  = "@Rumor Honeybottoms Summary/Rumor Honeybottoms Chaliced",
+    [8]  = "@Captain Brineybeard Summary/Captain Brineybeard Chaliced",
+    [9]  = "@Werner Werman Summary/Werner Werman Chaliced",
+    [10] = "@Sally Stageplay Summary/Sally Stageplay Chaliced",
+    [11] = "@Phantom Express Summary/Phantom Express Chaliced",
+    [12] = "@Hilda Berg Summary/Hilda Berg Chaliced",
+    [13] = "@Djimmi The Great Summary/Djimmi The Great Chaliced",
+    [14] = "@Wally Warbles Summary/Wally Warbles Chaliced",
+    [15] = "@Cala Maria Summary/Cala Maria Chaliced",
+    [16] = "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Chaliced",
+    [17] = "@King Dice Summary/King Dice Chaliced",
+
+    [100] = "@Glumstone The Giant Summary/Glumstone The Giant Chaliced",
+    [101] = "@Moonshine Mob Summary/Moonshine Mob Chaliced",
+    [102] = "@Mortimer Freeze Summary/Mortimer Freeze Chaliced",
+    [103] = "@The Howling Aces Summary/The Howling Aces Chaliced",
+    [104] = "@Esther Winchester Summary/Esther Winchester Chaliced"
+}
+
 RUNGUN_COMPLETE_MAP_CODES = {
     [28] = "@Forest Follies/Forest Follies Complete/",
     [29] = "@Treetop Trouble/Treetop Trouble Complete/",
@@ -176,6 +257,15 @@ RUNGUN_TOP_GRADE_MAP_CODES = {
     [31] = "@Funhouse Frazzle/Funhouse Frazzle Top Grade/",
     [32] = "@Perilous Piers/Perilous Piers Top Grade/",
     [33] = "@Rugged Ridge/Rugged Ridge Top Grade/",
+}
+
+RUNGUN_CHALICED_MAP_CODES = {
+    [28] = "@Forest Follies/Forest Follies Chaliced/",
+    [29] = "@Treetop Trouble/Treetop Trouble Chaliced/",
+    [30] = "@Funfair Fever/Funfair Fever Chaliced/",
+    [31] = "@Funhouse Frazzle/Funhouse Frazzle Chaliced/",
+    [32] = "@Perilous Piers/Perilous Piers Chaliced/",
+    [33] = "@Rugged Ridge/Rugged Ridge Chaliced/",
 }
 
 RUNGUN_COIN_MAP_CODES = {
@@ -241,6 +331,15 @@ RUNGUN_TOP_GRADE_SUMMARY_CODES = {
     [31] = "@Funhouse Frazzle Summary/Funhouse Frazzle Top Grade",
     [32] = "@Perilous Piers Summary/Perilous Piers Top Grade",
     [33] = "@Rugged Ridge Summary/Rugged Ridge Top Grade",
+}
+
+RUNGUN_CHALICED_SUMMARY_CODES = {
+    [28] = "@Forest Follies Summary/Forest Follies Chaliced",
+    [29] = "@Treetop Trouble Summary/Treetop Trouble Chaliced",
+    [30] = "@Funfair Fever Summary/Funfair Fever Chaliced",
+    [31] = "@Funhouse Frazzle Summary/Funhouse Frazzle Chaliced",
+    [32] = "@Perilous Piers Summary/Perilous Piers Chaliced",
+    [33] = "@Rugged Ridge Summary/Rugged Ridge Chaliced",
 }
 
 RUNGUN_COIN_SUMMARY_CODES = {
@@ -351,6 +450,15 @@ RUNGUN_TOP_GRADE_IDS = {
     [33] = { 18005, 20005 },
 }
 
+RUNGUN_CHALICED_IDS = {
+    [28] = 10024000,
+    [29] = 10024001,
+    [30] = 10024002,
+    [31] = 10024003,
+    [32] = 10024004,
+    [33] = 10024005,
+}
+
 RUNGUN_COIN_IDS = {
     [28] = {
         16001,
@@ -398,7 +506,7 @@ RUNGUN_COIN_IDS = {
 
 
 
-LOCATION_MAPPING = {
+BASE_LOCATION_MAPPING = {
 	[1000] = { { "@Tutorial/Tutorial Complete" } },
 	[1001] = { { "@Tutorial/Tutorial Coin" } },
 
@@ -455,9 +563,37 @@ LOCATION_MAPPING = {
     [10010003] = { { "@The Howling Aces Summary/The Howling Aces Top Grade/" } },
     [10010004] = { { "@Esther Winchester Summary/Esther Winchester Top Grade/" } },
 
+    [10002000] = { { "@The Root Pack Summary/The Root Pack Chaliced/" } },
+	[10002001] = { { "@Goopy Le Grande Summary/Goopy Le Grande Chaliced/" } },
+	[10002002] = { { "@Ribby And Croaks Summary/Ribby And Croaks Chaliced/" } },
+	[10002003] = { { "@Cagney Carnation Summary/Cagney Carnation Chaliced/" } },
+	[10002004] = { { "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Chaliced/" } },
+	[10002005] = { { "@Beppi The Clown Summary/Beppi The Clown Chaliced/" } },
+	[10002006] = { { "@Grim Matchstick Summary/Grim Matchstick Chaliced/" } },
+	[10002007] = { { "@Rumor Honeybottoms Summary/Rumor Honeybottoms Chaliced/" } },
+	[10002008] = { { "@Captain Brineybeard Summary/Captain Brineybeard Chaliced/" } },
+	[10002009] = { { "@Werner Werman Summary/Werner Werman Chaliced/" } },
+	[10002010] = { { "@Sally Stageplay Summary/Sally Stageplay Chaliced/" } },
+	[10002011] = { { "@Phantom Express Summary/Phantom Express Chaliced/" } },
+	[10002012] = { { "@King Dice Summary/King Dice Chaliced/" } },
+	[10002013] = { { "@Hilda Berg Summary/Hilda Berg Chaliced/" } },
+	[10002014] = { { "@Djimmi The Great Summary/Djimmi The Great Chaliced/" } },
+	[10002015] = { { "@Wally Warbles Summary/Wally Warbles Chaliced/" } },
+	[10002016] = { { "@Cala Maria Summary/Cala Maria Chaliced/" } },
+	[10002017] = { { "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Chaliced/" } },
+
+    [10012000] = { { "@Glumstone The Giant Summary/Glumstone The Giant Chaliced/" } },
+    [10012001] = { { "@Moonshine Mob Summary/Moonshine Mob Chaliced/" } },
+    [10012002] = { { "@Mortimer Freeze Summary/Mortimer Freeze Chaliced/" } },
+    [10012003] = { { "@The Howling Aces Summary/The Howling Aces Chaliced/" } },
+    [10012004] = { { "@Esther Winchester Summary/Esther Winchester Chaliced/" } },
+
+
 	[30000] = { { "@The Root Pack Summary/The Root Pack Secret Complete/" } },
 	[30001] = { { "@Djimmi The Great Summary/Djimmi The Great Secret Complete/" } },
 	[30002] = { { "@Sally Stageplay Summary/Sally Stageplay Secret Complete/" } },
+    
+    [10036000] = { { "@The Howling Aces Summary/The Howling Aces Secret Complete/" } },
 
 	[16000] = { { "@Forest Follies Summary/Forest Follies Complete/" } },
 	[16001] = { { "@Forest Follies Summary/Forest Follies Coin 1/" } },
@@ -514,6 +650,14 @@ LOCATION_MAPPING = {
 	[18005] = { { "@Rugged Ridge Summary/Rugged Ridge Top Grade/" } },
 	[20005] = { { "@Rugged Ridge Summary/Rugged Ridge Top Grade/" } },
 
+    [10024000] = { { "@Forest Follies Summary/Forest Follies Chaliced/" } },
+	[10024001] = { { "@Treetop Trouble Summary/Treetop Trouble Chaliced/" } },
+	[10024002] = { { "@Funfair Fever Summary/Funfair Fever Chaliced/" } },
+	[10024003] = { { "@Funhouse Frazzle Summary/Funhouse Frazzle Chaliced/" } },
+	[10024004] = { { "@Perilous Piers Summary/Perilous Piers Chaliced/" } },
+	[10024005] = { { "@Rugged Ridge Summary/Rugged Ridge Chaliced/" } },
+
+
     [10026000] = { { "@The King's Leap Summary/The Pawns Complete/" }, { "@The King's Leap/The Pawns Complete/" } },
 	[10026001] = { { "@The King's Leap Summary/The Knight Complete/" },{ "@The King's Leap/The Knight Complete/" } },
 	[10026002] = { { "@The King's Leap Summary/The Bishop Complete/" }, { "@The King's Leap/The Bishop Complete/" } },
@@ -564,3 +708,5 @@ LOCATION_MAPPING = {
 	
 
 }
+
+LOCATION_MAPPING = {}

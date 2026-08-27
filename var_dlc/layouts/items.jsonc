@@ -112,7 +112,7 @@
             "super_1",
             "super_2",
             "super_3",
-            "duck",
+            "crouch",
             "dash",
             "parry",
             "chalice_double_jump"
@@ -136,6 +136,8 @@
             "expert_mode",
             "boss_grade_checks",
             "run_n_gun_grade_checks",
+            "boss_chalice_checks",
+            "run_gun_chalice_checks",
             "boat",
             "coin",
             "contract",

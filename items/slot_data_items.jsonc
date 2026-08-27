@@ -48,6 +48,11 @@
         "codes": "expert_mode"
     },
     {
+        "name": "Hard Logic",
+        "type": "toggle",
+        "codes": "hard_logic"
+    },
+    {
         "name": "chalice_mode",
         "type": "progressive",
         "allow_disabled": false,
@@ -178,6 +183,58 @@
                 "img": "images/settings/p_grade.png",
                 "inherit_codes": false,
                 "codes": "run_n_gun_grade_checks,p_grade"
+            }
+        ]
+    },
+        {
+        "name": "Boss Chalice Checks",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Boss Chalice Checks - Disabled",
+                "img": "images/settings/boss_chalice.png",
+                "img_mods": "@disabled",
+                "codes": "boss_chalice_checks,boss_chalice_disabled"
+            },
+            {
+                "name": "Boss Chalice Checks - Enabled",
+                "img": "images/settings/boss_chalice.png",
+                "inherit_codes": false,
+                "codes": "boss_chalice_checks,boss_chalice_enabled"
+            },
+            {
+                "name": "Boss Grade Checks - Grade Required",
+                "img": "images/settings/boss_chalice_grade_required.png",
+                "inherit_codes": false,
+                "codes": "boss_chalice_checks,boss_chalice_grade_required"
+            }
+        ]
+    },
+            {
+        "name": "Run 'n Gun Chalice Checks",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "Run 'n Gun Chalice Checks - Disabled",
+                "img": "images/settings/run_gun_chalice.png",
+                "img_mods": "@disabled",
+                "codes": "run_gun_chalice_checks,run_gun_chalice_disabled"
+            },
+            {
+                "name": "Run 'n Gun Chalice Checks - Enabled",
+                "img": "images/settings/run_gun_chalice.png",
+                "inherit_codes": false,
+                "codes": "run_gun_chalice_checks,run_gun_chalice_enabled"
+            },
+            {
+                "name": "Run 'n Gun Grade Checks - Grade Required",
+                "img": "images/settings/run_gun_chalice_grade_required.png",
+                "inherit_codes": false,
+                "codes": "run_gun_chalice_checks,run_gun_chalice_grade_required"
             }
         ]
     }

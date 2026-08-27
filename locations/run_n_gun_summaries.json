@@ -5,8 +5,9 @@
       {
         "name": "Forest Follies Top Grade",
         "access_rules": [
-          "@Forest Follies Summary/Forest Follies Complete/,parry",
-          "[],@Forest Follies Summary/Forest Follies Complete/,p_sugar"
+          "[dash],p_grade,@Parry or P.Sugar",
+          "@Forest Follies Summary/Forest Follies Complete/,@Can Top Grade Rungun,@Parry or P.Sugar",
+          "hard_logic,@Forest Follies Summary/Forest Follies Complete/,@Can Top Grade Rungun,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -35,9 +36,31 @@
         ]
       },
       {
+        "name": "Forest Follies Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Forest Follies Summary/Forest Follies Complete,@Can Chalice Rungun"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1309,
+            "y": 245,
+            "shape": "trapezoid",
+            "size": 22,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Forest Follies Complete",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]"
+          "@Has Rungun Weapon,[dash]",
+          "@Forest Follies Summary/Forest Follies Top Grade/"
         ],
         "sections": [
           {}
@@ -112,8 +135,7 @@
       {
         "name": "Forest Follies Coin 3",
         "access_rules": [
-          "parry",
-          "[]"
+          "@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -199,8 +221,8 @@
       {
         "name": "Treetop Trouble Top Grade",
         "access_rules": [
-          "@Treetop Trouble Summary/Treetop Trouble Complete/,parry",
-          "[],@Treetop Trouble Summary/Treetop Trouble Complete/,p_sugar"
+          "@Has Rungun Weapon,[dash],@Can Top Grade Rungun",
+          "p_grade,[dash]"
         ],
         "sections": [
           {}
@@ -229,9 +251,31 @@
         ]
       },
       {
+        "name": "Treetop Trouble Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Has Rungun Weapon,@Can Chalice Rungun,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1556,
+            "y": 245,
+            "shape": "trapezoid",
+            "size": 22,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Treetop Trouble Complete",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]"
+          "@Has Rungun Weapon,[dash]",
+          "@Treetop Trouble Summary/Treetop Trouble Top Grade"
         ],
         "sections": [
           {}
@@ -256,8 +300,8 @@
       {
         "name": "Treetop Trouble Coin 1",
         "access_rules": [
-          "parry",
-          "[],p_sugar",
+          "@Parry or P.Sugar",
+          "@Can Double Jump",
           "[],super_2"
         ],
         "sections": [
@@ -394,8 +438,11 @@
       {
         "name": "Funfair Fever Top Grade",
         "access_rules": [
-          "@Funfair Fever Summary/Funfair Fever Complete/,parry",
-          "[],@Funfair Fever Summary/Funfair Fever Complete/,p_sugar"
+          "@Funfair Fever Summary/Funfair Fever Complete/",
+          "p_grade,hard_logic,@Parry or P.Sugar",
+          "p_grade,hard_logic,@Can Double Jump",
+          "p_grade,@Parry or P.Sugar,dash",
+          "p_grade,@Can Double Jump,dash"
         ],
         "sections": [
           {}
@@ -424,10 +471,34 @@
         ]
       },
       {
+        "name": "Funfair Fever Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "hard_logic,@Funfair Fever Summary/Funfair Fever Complete,@Can Chalice Rungun,@Dash and Parry",
+          "@Funfair Fever Summary/Funfair Fever Complete,@Can Chalice Rungun,@Dash and Parry,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1309,
+            "y": 495,
+            "shape": "trapezoid",
+            "size": 22,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Funfair Fever Complete",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar",
+          "hard_logic,@Has Rungun Weapon,@Parry or P.Sugar",
+          "hard_logic,@Has Rungun Weapon,@Can Double Jump",
+          "@Has Rungun Weapon,@Parry or P.Sugar,dash",
+          "@Has Rungun Weapon,@Can Double Jump,dash",
           "[],coffee,super_2"
         ],
         "sections": [
@@ -503,10 +574,7 @@
       {
         "name": "Funfair Fever Coin 3",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar",
-          "@Has Rungun Weapon,chalice_double_jump",
-          "[],super_2"
+          "@Funfair Fever Summary/Funfair Fever Complete/"
         ],
         "sections": [
           {}
@@ -533,10 +601,7 @@
       {
         "name": "Funfair Fever Coin 4",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar",
-          "@Has Rungun Weapon,chalice_double_jump",
-          "[],coffee,super_2"
+          "@Funfair Fever Summary/Funfair Fever Complete/"
         ],
         "sections": [
           {}
@@ -563,10 +628,7 @@
       {
         "name": "Funfair Fever Coin 5",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar",
-          "@Has Rungun Weapon,chalice_double_jump",
-          "[],coffee,super_2"
+          "@Funfair Fever Summary/Funfair Fever Complete/"
         ],
         "sections": [
           {}
@@ -598,8 +660,8 @@
       {
         "name": "Funhouse Frazzle Top Grade",
         "access_rules": [
-          "@Funhouse Frazzle Summary/Funhouse Frazzle Complete/,parry",
-          "[],@Funhouse Frazzle Summary/Funhouse Frazzle Complete/,p_sugar"
+          "@Funhouse Frazzle Summary/Funhouse Frazzle Complete/",
+          "p_grade,@Parry or P.Sugar,dash"
         ],
         "sections": [
           {}
@@ -628,10 +690,31 @@
         ]
       },
       {
+        "name": "Funhouse Frazzle Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Funhouse Frazzle Summary/Funhouse Frazzle Complete,@Can Chalice Rungun"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1556,
+            "y": 495,
+            "shape": "trapezoid",
+            "size": 22,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Funhouse Frazzle Complete",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar"
+          "@Has Rungun Weapon,@Parry or P.Sugar,dash",
+          "@Funhouse Frazzle Summary/Funhouse Frazzle Top Grade/"
         ],
         "sections": [
           {}
@@ -656,8 +739,8 @@
       {
         "name": "Funhouse Frazzle Coin 1",
         "access_rules": [
-          "parry",
-          "p_sugar"
+          "@Parry or P.Sugar",
+          "@Can Double Jump"
         ],
         "sections": [
           {}
@@ -684,8 +767,7 @@
       {
         "name": "Funhouse Frazzle Coin 2",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar"
+          "@Has Rungun Weapon,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -712,8 +794,7 @@
       {
         "name": "Funhouse Frazzle Coin 3",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar"
+          "@Has Rungun Weapon,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -740,8 +821,7 @@
       {
         "name": "Funhouse Frazzle Coin 4",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar"
+          "@Has Rungun Weapon,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -768,8 +848,7 @@
       {
         "name": "Funhouse Frazzle Coin 5",
         "access_rules": [
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar"
+          "@Funhouse Frazzle Summary/Funhouse Frazzle Complete/"
         ],
         "sections": [
           {}
@@ -801,8 +880,9 @@
       {
         "name": "Perilous Piers Top Grade",
         "access_rules": [
-          "@Perilous Piers Summary/Perilous Piers Complete/,parry",
-          "[],@Perilous Piers Summary/Perilous Piers Complete/,p_sugar"
+          "@Perilous Piers Summary/Perilous Piers Complete/",
+          "p_grade,parry,dash",
+          "[hard_logic],p_grade,p_sugar,dash"
         ],
         "sections": [
           {}
@@ -831,10 +911,32 @@
         ]
       },
       {
+        "name": "Perilous Piers Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Perilous Piers Summary/Perilous Piers Complete,@Can Chalice Rungun,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1432,
+            "y": 701,
+            "shape": "trapezoid",
+            "size": 20,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Perilous Piers Complete",
         "access_rules": [
           "@Has Rungun Weapon,parry,dash",
-          "[],@Has Rungun Weapon,p_sugar,dash"
+          "[hard_logic],@Has Rungun Weapon,p_sugar,dash",
+          "@Perilous Piers Summary/Perilous Piers Top Grade"
         ],
         "sections": [
           {}
@@ -859,9 +961,8 @@
       {
         "name": "Perilous Piers Coin 1",
         "access_rules": [
-          "@Has Rungun Weapon,dash",
-          "@Has Rungun Weapon,parry",
-          "@Has Rungun Weapon,p_sugar",
+          "@Has Rungun Weapon,@Dash or Parry or P.Sugar",
+          "[],@Has Rungun Weapon,@Can Double Jump",
           "[],super_2"
         ],
         "sections": [
@@ -916,8 +1017,7 @@
       {
         "name": "Perilous Piers Coin 3",
         "access_rules": [
-          "@Has Rungun Weapon,[parry]",
-          "@Has Rungun Weapon,[p_sugar]"
+          "@Has Rungun Weapon,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -945,7 +1045,7 @@
         "name": "Perilous Piers Coin 4",
         "access_rules": [
           "@Has Rungun Weapon,parry",
-          "[],@Has Rungun Weapon,p_sugar,dash",
+          "[hard_logic],@Has Rungun Weapon,p_sugar,dash",
           "[],super_2"
         ],
         "sections": [
@@ -973,8 +1073,7 @@
       {
         "name": "Perilous Piers Coin 5",
         "access_rules": [
-          "@Has Rungun Weapon,parry,dash",
-          "[],@Has Rungun Weapon,p_sugar,dash"
+          "@Perilous Piers Summary/Perilous Piers Complete/"
         ],
         "sections": [
           {}
@@ -1006,8 +1105,9 @@
       {
         "name": "Rugged Ridge Top Grade",
         "access_rules": [
-          "@Rugged Ridge Summary/Rugged Ridge Complete/,parry",
-          "[],@Rugged Ridge Summary/Rugged Ridge Complete/,p_sugar"
+          "@Rugged Ridge Summary/Rugged Ridge Complete/,@Can Top Grade Rungun",
+          "p_grade,dash",
+          "p_grade,@Can Double Jump"
         ],
         "sections": [
           {}
@@ -1023,7 +1123,7 @@
               "run_n_gun_grades_disabled"
             ]
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1632,
             "y": 674,
@@ -1036,9 +1136,32 @@
         ]
       },
       {
+        "name": "Rugged Ridge Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Rugged Ridge Summary/Rugged Ridge Complete,@Can Chalice Rungun"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1632,
+            "y": 701,
+            "shape": "trapezoid",
+            "size": 20,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
+      {
         "name": "Rugged Ridge Complete",
         "access_rules": [
-          "@Has Rungun Weapon,dash"
+          "@Has Rungun Weapon,dash",
+          "@Has Rungun Weapon,@Can Double Jump",
+          "@Rugged Ridge Summary/Rugged Ridge Complete/"
         ],
         "sections": [
           {}
@@ -1051,7 +1174,7 @@
             "size": 20,
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1661,
             "y": 674,
@@ -1077,7 +1200,7 @@
             "shape": "diamond",
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1688,
             "y": 674,
@@ -1090,8 +1213,7 @@
       {
         "name": "Rugged Ridge Coin 2",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]",
-          "@Has Rungun Weapon,astral_cookie,chalice_double_jump"
+          "@Has Rungun Weapon,@Dash or Double Jump"
         ],
         "sections": [
           {}
@@ -1105,7 +1227,7 @@
             "shape": "diamond",
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1717,
             "y": 674,
@@ -1132,7 +1254,7 @@
             "shape": "diamond",
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1661,
             "y": 701,
@@ -1159,7 +1281,7 @@
             "shape": "diamond",
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1688,
             "y": 701,
@@ -1172,8 +1294,7 @@
       {
         "name": "Rugged Ridge Coin 5",
         "access_rules": [
-          "@Has Rungun Weapon,dash",
-          "@Has Rungun Weapon,astral_cookie,chalice_double_jump"
+          "@Has Rungun Weapon,@Dash or Double Jump"
         ],
         "sections": [
           {}
@@ -1187,7 +1308,7 @@
             "shape": "diamond",
             "border_thickness": 3
           },
-                    {
+          {
             "map": "summary_dlc",
             "x": 1717,
             "y": 701,

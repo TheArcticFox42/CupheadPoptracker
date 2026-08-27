@@ -18,7 +18,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 94,
+            "x": 114,
             "y": 222,
             "size": 34
           }
@@ -30,7 +30,7 @@
           {}
         ],
         "access_rules": [
-          "@The Root Pack Summary/The Root Pack Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@The Root Pack Summary/The Root Pack Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -45,12 +45,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 139,
+            "x": 159,
             "y": 222,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Root Pack Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@The Root Pack Summary/The Root Pack Complete,@Can Chalice Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 69,
+            "y": 222,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -91,8 +112,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[duck]",
-          "@Has Weapon,[dash]"
+          "@Has Weapon,[@Crouch or Dash]"
         ],
         "map_locations": [
           {
@@ -102,7 +122,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 594,
+            "x": 614,
             "y": 222
           }
         ]
@@ -113,7 +133,7 @@
           {}
         ],
         "access_rules": [
-          "@Goopy Le Grande Summary/Goopy Le Grande Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Goopy Le Grande Summary/Goopy Le Grande Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -128,12 +148,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 639,
+            "x": 659,
             "y": 222,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goopy Le Grande Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Goopy Le Grande Summary/Goopy Le Grande Complete,@Can Chalice Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 569,
+            "y": 222,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -149,8 +190,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,parry",
-          "@Has Weapon,p_sugar"
+          "@Has Weapon,@Parry or P.Sugar"
         ],
         "map_locations": [
           {
@@ -160,7 +200,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 344,
+            "x": 364,
             "y": 222
           }
         ]
@@ -171,7 +211,7 @@
           {}
         ],
         "access_rules": [
-          "@Ribby And Croaks Summary/Ribby And Croaks Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Ribby And Croaks Summary/Ribby And Croaks Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -186,12 +226,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 389,
+            "x": 409,
             "y": 222,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ribby And Croaks Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Ribby And Croaks Summary/Ribby And Croaks Complete,@Can Chalice Boss With Parry"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 319,
+            "y": 222,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -217,7 +278,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1094,
+            "x": 1114,
             "y": 222
           }
         ]
@@ -228,7 +289,7 @@
           {}
         ],
         "access_rules": [
-          "@Cagney Carnation Summary/Cagney Carnation Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Cagney Carnation Summary/Cagney Carnation Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -243,12 +304,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1139,
+            "x": 1159,
             "y": 222,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cagney Carnation Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Cagney Carnation Summary/Cagney Carnation Complete,@Can Chalice Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1069,
+            "y": 222,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -264,8 +346,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[parry]",
-          "@Has Weapon,[p_sugar]"
+          "@Has Weapon,[@Parry or P.Sugar]"
         ],
         "map_locations": [
           {
@@ -275,7 +356,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 94,
+            "x": 114,
             "y": 472
           }
         ]
@@ -286,7 +367,7 @@
           {}
         ],
         "access_rules": [
-          "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -301,12 +382,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 139,
+            "x": 159,
             "y": 472,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Baroness Von Bon Bon Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Baroness Von Bon Bon Summary/Baroness Von Bon Bon Complete,@Can Chalice Boss With Parry,@Can Double Jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 69,
+            "y": 472,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -322,8 +424,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[dash]",
-          "@Has Weapon,[parry]",
+          "@Has Weapon,[@Dash or Parry]",
           "@Has Weapon,[p_sugar]"
         ],
         "map_locations": [
@@ -334,7 +435,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 844,
+            "x": 864,
             "y": 472
           }
         ]
@@ -345,7 +446,7 @@
           {}
         ],
         "access_rules": [
-          "@Beppi The Clown Summary/Beppi The Clown Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Beppi The Clown Summary/Beppi The Clown Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -360,12 +461,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 889,
+            "x": 909,
             "y": 472,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Beppi The Clown Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Beppi The Clown Summary/Beppi The Clown Complete,@Can Chalice Boss With Parry"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 819,
+            "y": 472,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -381,7 +503,9 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon"
+          "hard_logic,@Has Weapon",
+          "@Has Weapon,dash",
+          "@Has Weapon,@Can Double Jump"
         ],
         "map_locations": [
           {
@@ -391,7 +515,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1094,
+            "x": 1114,
             "y": 472
           }
         ]
@@ -402,7 +526,9 @@
           {}
         ],
         "access_rules": [
-          "@Grim Matchstick Summary/Grim Matchstick Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Has Weapon,dash,@Can Top Grade",
+          "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -417,12 +543,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1139,
+            "x": 1159,
             "y": 472,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grim Matchstick Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Grim Matchstick Summary/Grim Matchstick Complete,@Can Chalice Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1069,
+            "y": 472,
+            "size": 34,
+            "shape": "trapezoid",
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -438,7 +585,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon"
+          "hard_logic,@Has Weapon",
+          "@Has Weapon,@Dash or Double Jump"
         ],
         "map_locations": [
           {
@@ -450,7 +598,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 75,
+            "x": 95,
             "y": 680
           }
         ]
@@ -461,7 +609,9 @@
           {}
         ],
         "access_rules": [
-          "@Rumor Honeybottoms Summary/Rumor Honeybottoms Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Has Weapon,dash,@Can Top Grade",
+          "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -475,11 +625,32 @@
           },
           {
             "map": "summary_dlc",
-            "x": 115,
+            "x": 135,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Rumor Honeybottoms Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Rumor Honeybottoms Summary/Rumor Honeybottoms Complete,@Can Chalice Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 55,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -495,8 +666,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,duck",
-          "@Has Weapon,parry"
+          "@Has Weapon,crouch",
+          "@Has Weapon,[dash],parry"
         ],
         "map_locations": [
           {
@@ -508,7 +679,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 877,
+            "x": 897,
             "y": 680
           }
         ]
@@ -519,7 +690,7 @@
           {}
         ],
         "access_rules": [
-          "@Captain Brineybeard Summary/Captain Brineybeard Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Captain Brineybeard Summary/Captain Brineybeard Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -533,11 +704,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 917,
+            "x": 937,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Captain Brineybeard Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Captain Brineybeard Summary/Captain Brineybeard Complete,@Can Chalice Boss,crouch",
+          "@Captain Brineybeard Summary/Captain Brineybeard Complete,@Can Chalice Boss With Parry,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 857,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -553,8 +746,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,duck,[parry]",
-          "@Has Weapon,duck,[p_sugar]"
+          "@Has Weapon,crouch,[@Parry or P.Sugar]",
+          "@Has Weapon,crouch,[dash,smoke_bomb]"
         ],
         "map_locations": [
           {
@@ -566,7 +759,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 677,
+            "x": 697,
             "y": 680
           }
         ]
@@ -577,7 +770,7 @@
           {}
         ],
         "access_rules": [
-          "@Werner Werman Summary/Werner Werman Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Werner Werman Summary/Werner Werman Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -591,11 +784,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 717,
+            "x": 737,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Werner Werman Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Werner Werman Summary/Werner Werman Complete,@Can Chalice Boss With Parry,chalice_double_jump",
+          "[],@Werner Werman Summary/Werner Werman Complete,@Can Chalice Boss,@Chalice Dodge Roll,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 657,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -612,9 +827,9 @@
         ],
         "access_rules": [
           "@Has Weapon,parry",
+          "@Has Weapon,@Chalice Dodge Roll",
           "[],@Has Weapon,p_sugar",
-          "[],@Has Weapon,smoke_bomb,dash",
-          "[],@Has Weapon,astral_cookie,duck,dash"
+          "[],@Has Weapon,smoke_bomb,dash"
         ],
         "map_locations": [
           {
@@ -626,7 +841,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 477,
+            "x": 497,
             "y": 680
           }
         ]
@@ -637,7 +852,10 @@
           {}
         ],
         "access_rules": [
-          "@Sally Stageplay Summary/Sally Stageplay Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Has Weapon,parry,@Can Top Grade",
+          "[],@Has Weapon,p_sugar,@Can Top Grade",
+          "[],@Has Weapon,smoke_bomb,dash,@Can Top Grade",
+          "boss_chalice_disabled,@Has Weapon,@Chalice Dodge Roll,@Chalice Parry,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -651,11 +869,34 @@
           },
           {
             "map": "summary_dlc",
-            "x": 517,
+            "x": 537,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Sally Stageplay Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Sally Stageplay Summary/Sally Stageplay Complete,@Can Chalice Boss With Parry,chalice_double_jump",
+          "@Sally Stageplay Summary/Sally Stageplay Complete,@Can Chalice Boss With Parry,@Chalice Dodge Roll",
+          "[],@Sally Stageplay Summary/Sally Stageplay Complete,@Can Chalice Boss,@Chalice Dodge Roll"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 457,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -666,8 +907,8 @@
           {}
         ],
         "access_rules": [
-          "@Sally Stageplay Summary/Sally Stageplay Complete,parry",
-          "[],@Sally Stageplay Summary/Sally Stageplay Complete,p_sugar"
+          "@Has Weapon,parry",
+          "[],@Has Weapon,p_sugar"
         ],
         "map_locations": [
           {
@@ -677,7 +918,7 @@
             "y": 920,
             "shape": "trapezoid"
           },
-                    {
+          {
             "map": "summary_dlc",
             "size": 20,
             "x": 497,
@@ -709,8 +950,8 @@
           },
           {
             "map": "summary_dlc",
-            "size": 20,
-            "x": 1272,
+            "size": 28,
+            "x": 1292,
             "y": 680
           }
         ]
@@ -721,7 +962,7 @@
           {}
         ],
         "access_rules": [
-          "@Phantom Express Summary/Phantom Express Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Phantom Express Summary/Phantom Express Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -735,11 +976,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1312,
+            "x": 1332,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Phantom Express Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "hard_logic,@Phantom Express Summary/Phantom Express Complete,@Can Chalice Boss With Parry",
+          "@Phantom Express Summary/Phantom Express Complete,@Can Chalice Boss With Parry,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1252,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -755,8 +1018,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,parry,plane_bullets",
-          "[],@Has Weapon,parry,plane_bombs"
+          "@Has Weapon,@Parry or P.Sugar,@Has Plane Weapon,[dash],parry"
         ],
         "map_locations": [
           {
@@ -766,7 +1028,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 964,
+            "x": 984,
             "y": 1169
           }
         ]
@@ -777,7 +1039,7 @@
           {}
         ],
         "access_rules": [
-          "@King Dice Summary/King Dice Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@King Dice Summary/King Dice Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -792,12 +1054,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1014,
+            "x": 1034,
             "y": 1169,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "King Dice Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@King Dice Summary/King Dice Complete,@Can Chalice Boss With Parry"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 939,
+            "y": 1169,
+            "shape": "trapezoid",
+            "size": 34,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -813,10 +1096,7 @@
           {}
         ],
         "access_rules": [
-          "plane_bullets",
-          "[],plane_bombs",
-          "[],coffee,plane_EX",
-          "[],coffee,plane_super"
+          "@Has Plane Weapon"
         ],
         "map_locations": [
           {
@@ -826,7 +1106,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 844,
+            "x": 864,
             "y": 222
           }
         ]
@@ -837,7 +1117,7 @@
           {}
         ],
         "access_rules": [
-          "@Hilda Berg Summary/Hilda Berg Complete,plane_parry,@Can EX or Super in plane"
+          "@Hilda Berg Summary/Hilda Berg Complete,plane_parry,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
@@ -852,12 +1132,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 889,
+            "x": 909,
             "y": 222,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hilda Berg Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Hilda Berg Summary/Hilda Berg Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 819,
+            "y": 222,
+            "shape": "trapezoid",
+            "size": 34,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -873,10 +1174,7 @@
           {}
         ],
         "access_rules": [
-          "plane_bullets",
-          "[],plane_bombs",
-          "[],coffee,plane_EX",
-          "[],coffee,plane_super"
+          "@Has Plane Weapon"
         ],
         "map_locations": [
           {
@@ -886,7 +1184,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 594,
+            "x": 614,
             "y": 472
           }
         ]
@@ -897,7 +1195,7 @@
           {}
         ],
         "access_rules": [
-          "@Djimmi The Great Summary/Djimmi The Great Complete,plane_parry,@Can EX or Super in plane"
+          "@Djimmi The Great Summary/Djimmi The Great Complete,plane_parry,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
@@ -912,12 +1210,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 639,
+            "x": 659,
             "y": 472,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Djimmi The Great Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Djimmi The Great Summary/Djimmi The Great Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 569,
+            "y": 472,
+            "shape": "trapezoid",
+            "size": 34,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -958,11 +1277,8 @@
           {}
         ],
         "access_rules": [
-          "plane_bullets,plane_bombs",
-          "[],plane_bullets",
-          "[],plane_bombs",
-          "[],coffee,plane_EX",
-          "[],coffee,plane_super"
+          "[hard_logic],@Has Plane Weapon",
+          "@Has Plane Weapon,plane_bombs"
         ],
         "map_locations": [
           {
@@ -972,7 +1288,7 @@
           },
           {
             "map": "summary_dlc",
-            "x": 344,
+            "x": 364,
             "y": 472
           }
         ]
@@ -983,7 +1299,7 @@
           {}
         ],
         "access_rules": [
-          "@Wally Warbles Summary/Wally Warbles Complete,plane_parry,@Can EX or Super in plane"
+          "@Wally Warbles Summary/Wally Warbles Complete,plane_parry,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
@@ -998,12 +1314,33 @@
           },
           {
             "map": "summary_dlc",
-            "x": 389,
+            "x": 409,
             "y": 472,
             "size": 42,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wally Warbles Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Wally Warbles Summary/Wally Warbles Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 319,
+            "y": 472,
+            "shape": "trapezoid",
+            "size": 34,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1019,10 +1356,7 @@
           {}
         ],
         "access_rules": [
-          "plane_bullets",
-          "[],plane_bombs",
-          "[],coffee,plane_EX",
-          "[],coffee,plane_super"
+          "@Has Plane Weapon"
         ],
         "map_locations": [
           {
@@ -1034,7 +1368,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1072,
+            "x": 1092,
             "y": 680
           }
         ]
@@ -1045,7 +1379,7 @@
           {}
         ],
         "access_rules": [
-          "@Cala Maria Summary/Cala Maria Complete,plane_parry,@Can EX or Super in plane"
+          "@Cala Maria Summary/Cala Maria Complete,plane_parry,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
@@ -1059,11 +1393,32 @@
           },
           {
             "map": "summary_dlc",
-            "x": 1112,
+            "x": 1132,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cala Maria Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Cala Maria Summary/Cala Maria Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1052,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1079,10 +1434,7 @@
           {}
         ],
         "access_rules": [
-          "plane_parry,plane_bullets",
-          "[],plane_parry,plane_bombs",
-          "[],plane_parry,coffee,plane_EX",
-          "[],plane_parry,coffee,plane_super"
+          "@Has Plane Weapon"
         ],
         "map_locations": [
           {
@@ -1094,7 +1446,7 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 280,
+            "x": 300,
             "y": 680
           }
         ]
@@ -1105,7 +1457,7 @@
           {}
         ],
         "access_rules": [
-          "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete,plane_parry,@Can EX or Super in plane"
+          "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete,plane_parry,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
@@ -1119,11 +1471,32 @@
           },
           {
             "map": "summary_dlc",
-            "x": 320,
+            "x": 340,
             "y": 680,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dr. Kahl's Robot Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Dr. Kahl's Robot Summary/Dr. Kahl's Robot Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 260,
+            "y": 680,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1139,14 +1512,13 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,dash,parry",
-          "@Has Weapon,dash,p_sugar"
+          "@Has Weapon,dash,@Parry or P.Sugar"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 75,
+            "x": 95,
             "y": 887
           }
         ]
@@ -1157,16 +1529,37 @@
           {}
         ],
         "access_rules": [
-          "@Glumstone The Giant Summary/Glumstone The Giant Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Glumstone The Giant Summary/Glumstone The Giant Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
-            "x": 115,
+            "x": 135,
             "y": 887,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Glumstone The Giant Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Glumstone The Giant Summary/Glumstone The Giant Complete,@Can Chalice Boss With Parry"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 55,
+            "y": 887,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1182,14 +1575,13 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,duck,[parry]",
-          "@Has Weapon,duck,[p_sugar]"
+          "@Has Weapon,crouch,[parry]"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 877,
+            "x": 897,
             "y": 887
           }
         ]
@@ -1200,16 +1592,38 @@
           {}
         ],
         "access_rules": [
-          "@Moonshine Mob Summary/Moonshine Mob Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@Moonshine Mob Summary/Moonshine Mob Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
-            "x": 917,
+            "x": 937,
             "y": 887,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Moonshine Mob Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Moonshine Mob Summary/Moonshine Mob Complete,@Can Chalice Boss With Parry,chalice_double_jump",
+          "[],@Moonshine Mob Summary/Moonshine Mob Complete,@Can Chalice Boss,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 857,
+            "y": 887,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1225,10 +1639,10 @@
           {}
         ],
         "access_rules": [
+          "hard_logic,@Has Weapon",
           "@Has Weapon,$normal_difficulty",
-          "@Has Weapon,astral_cookie,chalice_double_jump",
-          "@Has Weapon,dash",
-          "[],@Has Weapon"
+          "@Has Weapon,@Can Double Jump",
+          "@Has Weapon,dash"
         ],
         "map_locations": [
           {
@@ -1245,7 +1659,10 @@
           {}
         ],
         "access_rules": [
-          "@Mortimer Freeze Summary/Mortimer Freeze Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Has Weapon,$normal_difficulty,@Can Top Grade",
+          "@Has Weapon,dash,@Can Top Grade",
+          "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
         ],
         "map_locations": [
           {
@@ -1255,6 +1672,28 @@
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mortimer Freeze Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "hard_logic,@Mortimer Freeze Summary/Mortimer Freeze Complete,@Can Chalice Boss",
+          "@Mortimer Freeze Summary/Mortimer Freeze Complete,@Can Chalice Boss,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 240,
+            "y": 887,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1270,14 +1709,13 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,duck",
-          "@Has Weapon,dash"
+          "@Has Weapon,@Crouch or Dash"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 477,
+            "x": 497,
             "y": 887
           }
         ]
@@ -1288,16 +1726,39 @@
           {}
         ],
         "access_rules": [
-          "@The Howling Aces Summary/The Howling Aces Complete,@Has Parry or P.Sugar,@Can EX or Super"
+          "@The Howling Aces Summary/The Howling Aces Complete,@Can Top Grade"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
-            "x": 517,
+            "x": 537,
             "y": 887,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "The Howling Aces Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "hard_logic,@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,@Crouch Or Dash",
+          "@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,crouch",
+          "@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,dash,chalice_double_jump"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 457,
+            "y": 887,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]
@@ -1311,7 +1772,7 @@
           "@The Howling Aces Summary/The Howling Aces Complete"
         ],
         "map_locations": [
-{
+          {
             "map": "summary_dlc",
             "size": 20,
             "x": 497,
@@ -1331,16 +1792,13 @@
           {}
         ],
         "access_rules": [
-          "plane_bullets",
-          "[],plane_bombs",
-          "[],coffee,plane_EX",
-          "[],coffee,plane_super"
+          "@Has Plane Weapon"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 677,
+            "x": 697,
             "y": 887
           }
         ]
@@ -1351,16 +1809,37 @@
           {}
         ],
         "access_rules": [
-          "@Esther Winchester Summary/Esther Winchester Complete,plane_parry,@Can EX or Super in plane"
+          "@Esther Winchester Summary/Esther Winchester Complete,@Can Top Grade Plane"
         ],
         "map_locations": [
           {
             "map": "summary_dlc",
-            "x": 717,
+            "x": 737,
             "y": 887,
             "shape": "diamond",
             "force_invisibility_rules": [
               "boss_grades_disabled"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Esther Winchester Chaliced",
+        "sections": [
+          {}
+        ],
+        "access_rules": [
+          "@Esther Winchester Summary/Esther Winchester Complete,@Can Chalice Plane Boss"
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 657,
+            "y": 887,
+            "shape": "trapezoid",
+            "size": 28,
+            "force_invisibility_rules": [
+              "boss_chalice_disabled"
             ]
           }
         ]

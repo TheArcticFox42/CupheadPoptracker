@@ -105,8 +105,6 @@ function apply_slot_data(slot_data)
 
 	-- print(dump_table(slot_data))
 
-
-
 	-- setting the goal
 	local goal_handlers = {
 		[2] = function(slot_data)
@@ -153,6 +151,7 @@ function apply_slot_data(slot_data)
 
 	Tracker:FindObjectForCode("use_dlc").Active = slot_data["use_dlc"]
 	Tracker:FindObjectForCode("expert_mode").Active = slot_data["expert_mode"]
+	Tracker:FindObjectForCode("hard_logic").Active = slot_data["logic_mode"]
 	Tracker:FindObjectForCode("freemove_isles").Active = slot_data["freemove_isles"]
 
 	if slot_data["dlc_chalice"] == 1 then
@@ -183,6 +182,26 @@ function apply_slot_data(slot_data)
 	else
 		chalice_mode_obj.CurrentStage = 2
 	end
+
+	local boss_chalice_checks_mode = slot_data["dlc_boss_chalice_checks"]
+	local run_gun_chalice_checks_mode = slot_data["dlc_rungun_chalice_checks"]
+	local boss_chalice_checks_mode_obj = Tracker:FindObjectForCode("boss_chalice_checks")
+	local run_gun_chalice_checks_mode_obj = Tracker:FindObjectForCode("run_gun_chalice_checks")
+	
+		if chalice_mode == 0 or boss_chalice_checks_mode == 0 then
+			boss_chalice_checks_mode_obj.CurrentStage = 0
+		elseif boss_chalice_checks_mode == 4 or boss_chalice_checks_mode == 6 then
+			boss_chalice_checks_mode_obj.CurrentStage = 2
+		end
+
+		if chalice_mode == 0 or run_gun_chalice_checks_mode == 0 then
+			run_gun_chalice_checks_mode_obj.CurrentStage = 0
+		elseif run_gun_chalice_checks_mode == 4 or run_gun_chalice_checks_mode == 6 then
+			run_gun_chalice_checks_mode_obj.CurrentStage = 2
+		end
+
+
+
 
 	local abilities = {
 		"dash",
@@ -254,6 +273,8 @@ function apply_slot_data(slot_data)
 		run_n_gun_grade_checks.CurrentStage = slot_data["rungun_grade_checks"]
 	end
 
+	--resetting LOCATION_MAPPING to a clean version
+	LOCATION_MAPPING = deep_copy(BASE_LOCATION_MAPPING)
 
 	--dealing with boss shuffling
 	local boss_indices = {}
@@ -271,7 +292,6 @@ function apply_slot_data(slot_data)
 	-- if the root pack is shuffled then level shuffle must be on
 	if slot_data["level_map"]["0"] then
 		LEVEL_MAP = slot_data["level_map"]
-		print("saved level map")
 	end
 
 	for _, original_boss_index in ipairs(boss_indices) do
@@ -280,6 +300,7 @@ function apply_slot_data(slot_data)
    		if new_boss_index then
         	local original_boss_complete_code = BOSS_COMPLETE_MAP_CODES[original_boss_index]
 			local original_boss_top_grade_code = BOSS_TOP_GRADE_MAP_CODES[original_boss_index]
+			local original_boss_chaliced_code = BOSS_CHALICED_MAP_CODES[original_boss_index]
 
         	-- Normal completion shuffle
         	local new_boss_complete_id = BOSS_COMPLETE_IDS[new_boss_index]
@@ -288,6 +309,10 @@ function apply_slot_data(slot_data)
         	-- Top grade shuffle
         	local new_boss_top_grade_id = BOSS_TOP_GRADE_IDS[new_boss_index]
         	table.insert(LOCATION_MAPPING[new_boss_top_grade_id], { original_boss_top_grade_code })
+
+			-- Chalice completion shuffle
+        	local new_boss_chaliced_id = BOSS_CHALICED_IDS[new_boss_index]
+        	table.insert(LOCATION_MAPPING[new_boss_chaliced_id], { original_boss_chaliced_code })
 		end
     end
 
@@ -298,6 +323,7 @@ function apply_slot_data(slot_data)
    		if new_rungun_index then
         	local original_rungun_complete_code = RUNGUN_COMPLETE_MAP_CODES[original_rungun_index]
 			local original_rungun_top_grade_code = RUNGUN_TOP_GRADE_MAP_CODES[original_rungun_index]
+			local original_rungun_chaliced_code = RUNGUN_CHALICED_MAP_CODES[original_rungun_index]
 
         	-- Normal completion shuffle
         	local new_rungun_complete_id = RUNGUN_COMPLETE_IDS[new_rungun_index]
@@ -308,6 +334,10 @@ function apply_slot_data(slot_data)
         	local new_rungun_top_grade_id = RUNGUN_TOP_GRADE_IDS[new_rungun_index][i]
         	table.insert(LOCATION_MAPPING[new_rungun_top_grade_id], { original_rungun_top_grade_code })
 			end
+
+        	-- Chalice completion shuffle
+        	local new_rungun_chaliced_id = RUNGUN_CHALICED_IDS[new_rungun_index]
+        	table.insert(LOCATION_MAPPING[new_rungun_chaliced_id], { original_rungun_chaliced_code })
 
 			-- Coin shuffle
 			for i = 1, 5 do

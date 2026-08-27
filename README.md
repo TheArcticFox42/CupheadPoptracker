@@ -3,9 +3,8 @@
 Work in progress version of a poptracker for cuphead. this is my first time making a pack so it might not work perfectly. For any question/suggestions you can send them to me @TheArcticFox in the [Cuphead channel](https://discord.com/channels/731205301247803413/1050929729844297789) on the Archipelago discord server (we have a channel now!)
 
 Notes:
-- The current version does not yet support hard logic and chalice checks.
 - Sequence break logic was manually created by me and so it may have flaws. If you find any sequence break logic then you can let me know and I will add it once I get to it.
-- The current logic is not completely up to date and may be slightly off
+- The logic system was recently overhauled so some logic may be wrong. please let me know if you find any incorrect logic.
 - Due to some current limitations both quests on isle 3 and the cactus girl quest on isle 4 appear on the map even if they are disabled, and are always marked as inaccessible.
 - Buying items from the shop sometimes marks off the location of a different shop.
 - Some maps can slightly cut off when using the vertical variant 
@@ -24,8 +23,8 @@ Notes:
 5. To connect to your Archipelago game for auto-tracking press the AP button in the top left and enter the room details
 
 ### Map Key
-- Next to each boss there is a square which indicates the check for completing that boss and a diamond that indicates the check for getting the top grade on that boss.
-- For each run 'n gun the left square indicates the check for getting the top grade, the right square indicates the check for completing the run 'n gun and the diamonds are the coins in their respective order
+- Next to each boss there is a square which indicates the check for completing that boss a diamond that indicates the check for getting the top grade on that boss and a trapezoid that indicates getting the chalice check for that boss.
+- For each run 'n gun the left square indicates the check for getting the top grade, the right square indicates the check for completing the run 'n gun, the trapezoid indicates the chalice check for the run 'n gun and the diamonds are the coins in their respective order
 - The King's Leap has it's checks on the ladder on the Isle IV map
 - Mausoleums have their check next to them
 - The tutorial checks appear on Elder Kettle's house.

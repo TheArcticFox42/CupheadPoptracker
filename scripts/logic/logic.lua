@@ -193,6 +193,15 @@ function can_top_grade_boss(level_index)
     end
 end
 
+function can_chalice_boss(level_index)
+    local boss_index = LEVEL_MAP[level_index]
+    if can_access_level(level_index) then
+        return Tracker:FindObjectForCode(BOSS_CHALICED_SUMMARY_CODES[boss_index]).AccessibilityLevel
+    else
+        return AccessibilityLevel["None"]
+    end
+end
+
 function can_beat_rungun(level_index)
     local rungun_index = LEVEL_MAP[level_index]
     if can_access_level(level_index) then 
@@ -210,6 +219,16 @@ function can_top_grade_rungun(level_index)
         return AccessibilityLevel["None"]
     end
 end
+
+function can_chalice_rungun(level_index)
+    local rungun_index = LEVEL_MAP[level_index]
+    if can_access_level(level_index) then 
+        return Tracker:FindObjectForCode(RUNGUN_CHALICED_SUMMARY_CODES[rungun_index]).AccessibilityLevel
+    else
+        return AccessibilityLevel["None"]
+    end
+end
+
 
 function can_get_coin_i_in_rungun_j(coin_index,level_index)
     local rungun_index = LEVEL_MAP[level_index]

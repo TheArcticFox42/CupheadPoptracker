@@ -8,8 +8,7 @@
       {
         "name": "The Pawns Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Parry Logic"
         ],
         "sections": [
           {}
@@ -44,8 +43,7 @@
       {
         "name": "The Bishop Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Parry Logic"
         ],
         "sections": [
           {}
@@ -62,8 +60,7 @@
       {
         "name": "The Rook Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Parry Logic"
         ],
         "sections": [
           {}
@@ -80,8 +77,7 @@
       {
         "name": "The Queen Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Parry Logic"
         ],
         "sections": [
           {}

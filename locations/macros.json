@@ -1,6 +1,6 @@
 [
     {
-        "name": "Has Weapon",
+        "name": "Has Shot",
         "access_rules": [
             "peashooter",
             "spread",
@@ -14,21 +14,7 @@
         ]
     },
     {
-        "name": "Has Rungun Weapon",
-        "access_rules": [
-            "@Has Weapon",
-            "@Can EX,coffee"
-        ]
-    },
-    {
-        "name": "Has Parry or P.Sugar",
-        "access_rules": [
-            "parry",
-            "p_sugar"
-        ]
-    },
-    {
-        "name": "Can EX",
+        "name": "Has EX",
         "access_rules": [
             "peashooter_EX",
             "spread_EX",
@@ -42,27 +28,183 @@
         ]
     },
     {
-        "name": "Can EX or Super",
+        "name": "Has Super",
         "access_rules": [
-            "peashooter_EX",
-            "spread_EX",
-            "chaser_EX",
-            "lobber_EX",
-            "charge_EX",
-            "roundabout_EX",
-            "crackshot_EX",
-            "converge_EX",
-            "twist_up_EX",
             "super_1",
             "super_2",
             "super_3"
         ]
     },
     {
-        "name": "Can EX or Super in plane",
+        "name": "Has Weapon",
         "access_rules": [
-            "plane_EX",
-            "plane_super"
+            "@Has Shot",
+            "@Has EX,coffee",
+            "hard_logic,parry,whetstone",
+            "[],@Has Super,coffee"
+        ]
+    },
+    {
+        "name": "Has Rungun Weapon",
+        "access_rules": [
+            "@Has Shot",
+            "@Has EX,coffee",
+            "hard_logic,parry,whetstone"
+        ]
+    },
+    {
+        "name": "Has Plane Weapon",
+        "access_rules": [
+            "[hard_logic],plane_bombs",
+            "plane_bullets",
+            "[],plane_EX,coffee",
+            "[],plane_super,coffee"
+        ]
+    },
+    {
+        "name": "Crouch or Dash",
+        "access_rules": [
+            "crouch",
+            "dash"
+        ]
+    },
+    {
+        "name": "Crouch and Dash",
+        "access_rules": [
+            "crouch,dash"
+        ]
+    },
+    {
+        "name": "Parry or P.Sugar",
+        "access_rules": [
+            "parry",
+            "p_sugar"
+        ]
+    },
+    {
+        "name": "Parry Logic",
+        "access_rules": [
+            "parry",
+            "[hard_logic],p_sugar"
+        ]
+    },
+    {
+        "name": "Dash or Parry",
+        "access_rules": [
+            "dash",
+            "parry"
+        ]
+    },
+    {
+        "name": "Dash and Parry",
+        "access_rules": [
+            "dash,parry"
+        ]
+    },
+    {
+        "name": "Dash or Parry or P.Sugar",
+        "access_rules": [
+            "dash",
+            "parry",
+            "p_sugar"
+        ]
+    },
+    {
+        "name": "Crouch and Parry",
+        "access_rules": [
+            "crouch,parry"
+        ]
+    },
+    {
+        "name": "Crouch and Dash and Parry",
+        "access_rules": [
+            "crouch,dash,parry"
+        ]
+    },
+    {
+        "name": "Can Double Jump",
+        "access_rules": [
+            "astral_cookie,chalice_double_jump"
+        ]
+    },
+    {
+        "name": "Dash or Double Jump",
+        "access_rules": [
+            "dash",
+            "@Can Double Jump"
+        ]
+    },
+    {
+        "name": "Dash and Double Jump",
+        "access_rules": [
+            "dash,@Can Double Jump"
+        ]
+    },
+    {
+        "name": "Chalice Parry",
+        "access_rules": [
+            "astral_cookie,dash,parry"
+        ]
+    },
+    {
+        "name": "Chalice Dodge Roll",
+        "access_rules": [
+            "astral_cookie,dash,crouch"
+        ]
+    },
+    {
+        "name": "Can Top Grade",
+        "access_rules": [
+            "@Parry or P.Sugar,@Has Super",
+            "@Parry or P.Sugar,@Has EX"
+        ]
+    },
+    {
+        "name": "Can Top Grade Plane",
+        "access_rules": [
+            "plane_parry,plane_super",
+            "plane_parry,plane_EX"
+        ]
+    },
+    {
+        "name": "Can Top Grade Rungun",
+        "access_rules": [
+            "@Parry or P.Sugar"
+        ]
+    },
+    {
+        "name": "Can Chalice Boss",
+        "access_rules": [
+            "boss_chalice_enabled,astral_cookie",
+            "boss_chalice_grade_required,astral_cookie,@Can Top Grade,@Dash and Parry"
+        ]
+    },
+    {
+        "name": "Can Chalice Plane Boss",
+        "access_rules": [
+            "boss_chalice_enabled,astral_cookie",
+            "astral_cookie,@Can Top Grade Plane"
+        ]
+    },
+    {
+        "name": "Can Chalice Boss With Parry",
+        "access_rules": [
+            "boss_chalice_enabled,@Can Chalice Boss,@Dash and Parry",
+            "boss_chalice_grade_required,@Can Chalice Boss"
+        ]
+    },
+    {
+        "name": "Can Chalice Rungun",
+        "access_rules": [
+            "run_gun_chalice_enabled,astral_cookie",
+            "astral_cookie,@Can Top Grade Rungun,@Dash and Parry"
+        ]
+    },
+    {
+        "name": "Can Chalice Rungun With Parry",
+        "access_rules": [
+            "run_gun_chalice_enabled,@Can Chalice Rungun,@Dash and Parry",
+            "@Can Chalice Rungun"
         ]
     }
 ]

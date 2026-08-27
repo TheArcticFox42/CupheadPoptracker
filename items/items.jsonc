@@ -42,10 +42,10 @@
     "codes": "boat"
   },
   {
-    "name": "Duck",
+    "name": "Crouch",
     "type": "toggle",
-    "img": "images/items/duck.png",
-    "codes": "duck"
+    "img": "images/items/crouch.png",
+    "codes": "crouch"
   },
   {
     "name": "Dash",

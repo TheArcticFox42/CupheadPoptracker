@@ -56,3 +56,16 @@ function update_chalice_cookie()
         Tracker:FindObjectForCode("astral_cookie").Active = true
     end
 end
+
+function deep_copy(tbl)
+    local copy = {}
+    for k, v in pairs(tbl) do
+        if type(v) == "table" then
+            copy[k] = deep_copy(v)
+        else
+            copy[k] = v
+        end
+    end
+    return copy
+end
+

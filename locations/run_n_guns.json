@@ -23,6 +23,28 @@
           }
         ]
       },
+                  {
+        "name": "Forest Follies Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|28"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 490,
+            "y": 234,
+            "size": 11,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
       {
         "name": "Forest Follies Complete",
         "access_rules": [
@@ -149,6 +171,28 @@
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
+            ]
+          }
+        ]
+      },
+                  {
+        "name": "Treetop Trouble Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|29"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_1",
+            "x": 689,
+            "y": 188,
+            "size": 11,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
             ]
           }
         ]
@@ -283,6 +327,28 @@
           }
         ]
       },
+                  {
+        "name": "Funfair Fever Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|30"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 128,
+            "y": 484,
+            "size": 12,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
       {
         "name": "Funfair Fever Complete",
         "access_rules": [
@@ -408,6 +474,28 @@
             "border_thickness": 3,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
+            ]
+          }
+        ]
+      },
+                  {
+        "name": "Funhouse Frazzle Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|31"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_2",
+            "x": 624,
+            "y": 650,
+            "size": 12,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
             ]
           }
         ]
@@ -544,6 +632,28 @@
           }
         ]
       },
+                  {
+        "name": "Perilous Piers Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|32"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 360,
+            "y": 346,
+            "size": 8,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
+            ]
+          }
+        ]
+      },
       {
         "name": "Perilous Piers Complete",
         "access_rules": [
@@ -670,6 +780,28 @@
             "size": 6,
             "force_invisibility_rules": [
               "run_n_gun_grades_disabled"
+            ]
+          }
+        ]
+      },
+                  {
+        "name": "Rugged Ridge Chaliced",
+        "access_rules": [
+          "^$can_chalice_rungun|33"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_3",
+            "x": 102,
+            "y": 342,
+            "size": 8,
+            "shape": "trapezoid",
+            "border_thickness": 3,
+            "force_invisibility_rules": [
+              "run_gun_chalice_disabled"
             ]
           }
         ]
