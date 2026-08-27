@@ -1,6 +1,16 @@
 {
     "versions": [
         {
+            "package_version": "1.2.1",
+            "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.2.1.zip",
+            "sha256": "166E6A3223F3F04BBAE19D2C15BA49B3F1CC827220063983637C1B608F784CA1",
+            "changelog": [
+                "Added tracking for the chalice checks for both bosses and run 'n guns",
+                "Added support for hard logic",
+                "Overhauled the logic system"
+            ]
+        },
+        {
             "package_version": "1.2.0",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.2.0.zip",
             "sha256": "9217E95E7F9504E7356955AB2B000B60177455D283EF6E01C608F398F08199BC",
@@ -8,7 +18,7 @@
                 "Added support for DLC locations and items",
                 "Added support for a few game settings",
                 "Fixed logic bugs"
-            ]  
+            ]
         },
         {
             "package_version": "1.1.1",
@@ -16,7 +26,7 @@
             "sha256": "E1FB7E8F5D2DEA628C9DE490B43A8E5F145430DE30E20259F9789EECAA7AC04F",
             "changelog": [
                 "Updated to support APworld alpha03"
-            ]  
+            ]
         },
         {
             "package_version": "1.1.0",
@@ -28,15 +38,14 @@
                 "Added isle logic",
                 "Cleaned up internal code"
             ]
-
         },
         {
             "package_version": "1.0.0",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.0.0.zip",
             "sha256": "82AEAF57A6EAB7355B1B884EC81635288F674182229C71D57D11BDCA76EFFA1A",
             "changelog": [
-				"initial implementation"
-			]
-       }
-	   ]
+                "initial implementation"
+            ]
+        }
+    ]
 }
