@@ -1,6 +1,19 @@
 {
     "versions": [
         {
+            "package_version": "1.2.2",
+            "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.2.2.zip",
+            "sha256": "0F13E14D69F5B33A01B5309C63045F98D451A09414339BB64573FCBA06DDD000",
+            "changelog": [
+                "Added settings page",
+                "Added auto-tabbing",
+                "Added custom logic toggles",
+                "Added quest progress tracking", 
+                "Added tracking of remaining deaths until next deathlink",
+                "Added tracking of King's Leap chalice checks"
+            ]
+        },
+        {
             "package_version": "1.2.1",
             "download_url": "https://github.com/TheArcticFox42/CupheadPoptracker/archive/refs/tags/v1.2.1.zip",
             "sha256": "166E6A3223F3F04BBAE19D2C15BA49B3F1CC827220063983637C1B608F784CA1",
