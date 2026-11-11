@@ -2,9 +2,8 @@
     {
         "name": "Tutorial",
         "access_rules": [
-            "@Has Weapon,@Crouch and Dash and Parry",
-            "[]@Has Weapon,@Crouch and Dash,p_sugar",
-            "[],@Has Weapon,coffee,super_2,crouch"
+            "@Has Weapon,@Crouch and Dash,@Parry or P.Sugar",
+            "[],super_2_ool,@Has Weapon,coffee,super_2,crouch"
         ],
         "map_locations": [
             {
@@ -45,7 +44,8 @@
             {
                 "name": "Recipe For Ms. Chalice Coin",
                 "access_rules": [
-                    "astral_cookie,dash,parry,chalice_double_jump"
+                    "astral_cookie,dash,parry,chalice_double_jump",
+                    "[],@Can Double Jump,dash"
                 ]
             }
         ]
@@ -147,8 +147,12 @@
     },
     {
         "name": "Arrive at Isle IV",
-        "visibility_rules": ["chalice_randomized"],
-        "access_rules": ["$can_access_isle|4"],
+        "visibility_rules": [
+            "chalice_randomized"
+        ],
+        "access_rules": [
+            "$can_access_isle|4"
+        ],
         "sections": [
             {}
         ],
@@ -200,7 +204,9 @@
     },
     {
         "name": "Buckley's Coins",
-        "access_rules": ["$can_access_buckley"],
+        "access_rules": [
+            "$can_access_buckley"
+        ],
         "sections": [
             {}
         ],
@@ -277,6 +283,9 @@
         "access_rules": [
             "$can_complete_silverworth_quest"
         ],
+        "visibility_rules": [
+            "silverworth_quest"
+        ],
         "sections": [
             {}
         ],
@@ -296,6 +305,9 @@
         "access_rules": [
             "$can_complete_tully_quest"
         ],
+        "visibility_rules": [
+            "pacifist_quest"
+        ],
         "sections": [
             {}
         ],
@@ -312,7 +324,12 @@
     },
     {
         "name": "Senita Quest",
-        "access_rules": ["$can_complete_senita_quest"],
+        "access_rules": [
+            "$can_complete_senita_quest"
+        ],
+        "visibility_rules": [
+            "cactus_girl_quest"
+        ],
         "sections": [
             {}
         ],

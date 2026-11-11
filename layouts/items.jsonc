@@ -147,24 +147,20 @@
         "h_alignment": "center",
         "rows": [
           [
-            "expert_mode"
-          ],
-          [
-            "boss_grade_checks"
-          ],
-          [
-            "run_n_gun_grade_checks"
-          ],
-          [
             "coin"
           ],
           [
             "contract"
+          ],
+          [
+            "silverworth_quest_progress"
+          ],
+          [
+            "tully_quest_progress"
+          ],
+          [
+            "deaths_left"
           ]
-          // ,
-          // [
-          //   "freemove_isles"
-          // ]
         ]
       }
     ]
@@ -344,11 +340,11 @@
         "h_alignment": "center",
         "rows": [
           [
-            "expert_mode",
-            "boss_grade_checks",
-            "run_n_gun_grade_checks",
             "coin",
-            "contract"
+            "contract",
+            "silverworth_quest_progress",
+            "tully_quest_progress",
+            "deaths_left"
           ]
         ]
       }
@@ -368,6 +364,120 @@
             "beat_devil",
             "collect_contracts",
             "buy_out_shop"
+          ]
+        ]
+      }
+    ]
+  },
+  "Checks": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "boss_grade_checks",
+            "run_n_gun_grade_checks",
+            "boss_secret_checks"
+          ]
+        ]
+      }
+    ]
+  },
+  "Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "randomize_abilities",
+            "hard_logic",
+            "freemove_isles",
+            "expert_mode",
+            "ducklock_platdrop"
+          ]
+        ]
+      }
+    ]
+  },
+  "Deathlink": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "deathlink"
+          ]
+        ]
+      }
+    ]
+  },
+  "Quests": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "silverworth_quest",
+            "pacifist_quest"
+          ]
+        ]
+      }
+    ]
+  },
+  "Logic Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "hard_logic_ool",
+            "p_sugar_ool",
+            "ignore_abilities_ool",
+            "coffee_ool",
+            "super_2_ool",
+            "damage_tanks_ool"
+          ]
+        ]
+      }
+    ]
+  },
+  "Other Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "auto_tab_mode"
           ]
         ]
       }

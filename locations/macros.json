@@ -1,5 +1,12 @@
 [
     {
+        "name": "Hard Logic",
+        "access_rules": [
+            "hard_logic",
+            "[],hard_logic_ool"
+        ]
+    },
+    {
         "name": "Has Shot",
         "access_rules": [
             "peashooter",
@@ -40,8 +47,9 @@
         "access_rules": [
             "@Has Shot",
             "@Has EX,coffee",
-            "hard_logic,parry,whetstone",
-            "[],@Has Super,coffee"
+            "@Hard Logic,parry,whetstone",
+            "[],coffee_ool,super_1,coffee",
+            "[],coffee_ool,super_3,coffee"
         ]
     },
     {
@@ -49,16 +57,16 @@
         "access_rules": [
             "@Has Shot",
             "@Has EX,coffee",
-            "hard_logic,parry,whetstone"
+            "@Hard Logic,parry,whetstone"
         ]
     },
     {
         "name": "Has Plane Weapon",
         "access_rules": [
-            "[hard_logic],plane_bombs",
+            "@Hard Logic,plane_bombs",
             "plane_bullets",
-            "[],plane_EX,coffee",
-            "[],plane_super,coffee"
+            "[],coffee_ool,plane_EX,coffee",
+            "[],coffee_ool,plane_super,coffee"
         ]
     },
     {
@@ -85,7 +93,7 @@
         "name": "Parry Logic",
         "access_rules": [
             "parry",
-            "[hard_logic],p_sugar"
+            "@Hard Logic,p_sugar"
         ]
     },
     {
@@ -153,6 +161,13 @@
         ]
     },
     {
+        "name": "Kings Leap Parry",
+        "access_rules": [
+            "@Parry or P.Sugar,kings_leap_p_sugar",
+            "parry"
+        ]
+    },
+    {
         "name": "Can Top Grade",
         "access_rules": [
             "@Parry or P.Sugar,@Has Super",
@@ -191,6 +206,12 @@
         "access_rules": [
             "boss_chalice_enabled,@Can Chalice Boss,@Dash and Parry",
             "boss_chalice_grade_required,@Can Chalice Boss"
+        ]
+    },
+    {
+        "name": "Can Chalice Chess Boss",
+        "access_rules": [
+            "astral_cookie,parry,dash"
         ]
     },
     {

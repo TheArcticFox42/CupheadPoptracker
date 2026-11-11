@@ -48,63 +48,144 @@
         "codes": "expert_mode"
     },
     {
-        "name": "Hard Logic",
-        "type": "toggle",
-        "codes": "hard_logic"
+        "name": "Logic Mode",
+        "type": "progressive",
+        "allow_disabled": false,
+        "stages": [
+            {
+                "name": "Normal Logic",
+                "img": "images/settings/normal_logic.png",
+                "codes": "logic_mode,normal_logic"
+            },
+            {
+                "name": "Hard Logic",
+                "img": "images/settings/hard_logic.png",
+                "inherit_codes": false,
+                "codes": "logic_mode,hard_logic"
+            }
+        ]
     },
     {
-        "name": "chalice_mode",
+        "name": "Deathlink Grace Count",
+        "type": "consumable",
+        "max_quantity": 1000,
+        "img": "images/settings/deathlink.png",
+        "codes": "deathlink"
+    },
+    {
+        "name": "Crouchless Platform Drops",
+        "type": "toggle",
+        "img": "images/items/crouch.png",
+        "codes": "ducklock_platdrop"
+    },
+    {
+        "name": "Ranodmize Abilites",
+        "type": "toggle",
+        "initial_active_state": true,
+        "img": "images/settings/randomize_abilities.png",
+        "codes": "randomize_abilities"
+    },
+    {
+        "name": "Start Max Health P1",
+        "type": "toggle",
+        "img": "images/settings/max_health.png",
+        "codes": "start_maxhealth_p1"
+    },
+    {
+        "name": "Start Max Health P2",
+        "type": "toggle",
+        "img": "images/settings/max_health.png",
+        "codes": "start_maxhealth_p2"
+    },
+    {
+        "name": "Silverworth Quest",
+        "type": "toggle",
+        "img": "images/settings/silverworth_quest.png",
+        "codes": "silverworth_quest"
+    },
+    {
+        "name": "Tully Quest",
+        "type": "toggle",
+        "img": "images/settings/tully_quest.png",
+        "codes": "pacifist_quest"
+    },
+    {
+        "name": "Senita Quest",
+        "type": "toggle",
+        "img": "images/settings/senita_quest.png",
+        "codes": "cactus_girl_quest"
+    },
+    {
+        "name": "Boss Secret Checks",
+        "type": "toggle",
+        "img": "images/settings/boss_secret_checks.png",
+        "codes": "boss_secret_checks"
+    },
+    {
+        "name": "Chalice Mode",
         "type": "progressive",
         "allow_disabled": false,
         "initial_stage_idx": 3,
         "stages": [
             {
-                "name": "chalice_disabled",
-                "img": "images/settings/a_grade.png",
+                "name": "Chalice Disabled",
+                "img": "images/items/astral_cookie.png",
                 "img_mods": "@disabled",
                 "codes": "chalice_mode,chalice_disabled"
             },
             {
-                "name": "chalice_enabled",
-                "img": "images/settings/a_grade.png",
+                "name": "Chalice Start",
+                "img": "images/settings/chalice_start.png",
                 "inherit_codes": false,
-                "codes": "chalice_mode,chalice_enabled"
+                "codes": "chalice_mode,chalice_start"
             },
             {
-                "name": "chalice_randomized",
-                "img": "images/settings/a_plus_grade.png",
+                "name": "Chalice Vanilla",
+                "img": "images/items/astral_cookie.png",
+                "inherit_codes": false,
+                "codes": "chalice_mode,chalice_vanilla"
+            },
+            {
+                "name": "Chalice Randomized",
+                "img": "images/settings/chalice_randomized.png",
                 "inherit_codes": false,
                 "codes": "chalice_mode,chalice_randomized"
             }
         ]
     },
     {
-        "name": "freemove_isles",
+        "name": "Freemove Isles",
         "type": "toggle",
-        "img": "images/settings/dlc.png",
+        "img": "images/settings/freemove_isles.png",
         "codes": "freemove_isles"
     },
     {
-        "name": "kings_leap_mode",
+        "name": "Allow P. Sugar In Kings Leap",
+        "type": "toggle",
+        "img": "images/items/p_sugar.png",
+        "codes": "kings_leap_p_sugar"
+    },
+    {
+        "name": "Kings Leap Mode",
         "type": "progressive",
         "allow_disabled": false,
         "initial_stage_idx": 1,
         "stages": [
             {
-                "name": "kings_leap_disabled",
-                "img": "images/settings/a_grade.png",
+                "name": "Kings Leap Disabled",
+                "img": "images/settings/kings_leap_enabled.png",
                 "img_mods": "@disabled",
                 "codes": "kings_leap,kings_leap_disabled"
             },
             {
-                "name": "kings_leap_enabled",
-                "img": "images/settings/a_minus_grade.png",
+                "name": "Kings Leap Enabled",
+                "img": "images/settings/kings_leap_enabled.png",
                 "inherit_codes": false,
                 "codes": "kings_leap,kings_leap_enabled"
             },
             {
-                "name": "gauntlet_enabled",
-                "img": "images/settings/a_grade.png",
+                "name": "Gauntlet Enabled",
+                "img": "images/settings/gauntlet_enabled.png",
                 "inherit_codes": false,
                 "codes": "kings_leap,kings_leap_enabled,gauntlet_enabled"
             }
@@ -186,7 +267,7 @@
             }
         ]
     },
-        {
+    {
         "name": "Boss Chalice Checks",
         "type": "progressive",
         "allow_disabled": false,
@@ -205,14 +286,14 @@
                 "codes": "boss_chalice_checks,boss_chalice_enabled"
             },
             {
-                "name": "Boss Grade Checks - Grade Required",
+                "name": "Boss Chalice Checks - Grade Required",
                 "img": "images/settings/boss_chalice_grade_required.png",
                 "inherit_codes": false,
                 "codes": "boss_chalice_checks,boss_chalice_grade_required"
             }
         ]
     },
-            {
+    {
         "name": "Run 'n Gun Chalice Checks",
         "type": "progressive",
         "allow_disabled": false,
@@ -231,11 +312,17 @@
                 "codes": "run_gun_chalice_checks,run_gun_chalice_enabled"
             },
             {
-                "name": "Run 'n Gun Grade Checks - Grade Required",
+                "name": "Run 'n Gun Chalice Checks - Grade Required",
                 "img": "images/settings/run_gun_chalice_grade_required.png",
                 "inherit_codes": false,
                 "codes": "run_gun_chalice_checks,run_gun_chalice_grade_required"
             }
         ]
+    },
+    {
+        "name": "Chess Chalice Checks",
+        "type": "toggle",
+        "img": "images/settings/boss_chalice.png",
+        "codes": "chess_chalice_checks"
     }
 ]

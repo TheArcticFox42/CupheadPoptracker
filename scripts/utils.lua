@@ -50,12 +50,6 @@ function calculate_coin_count(changed_code)
     Tracker:FindObjectForCode("current_coin_count").AcquiredCount = total
 end
 
-function update_chalice_cookie()
-    local chalice_mode = Tracker:FindObjectForCode("chalice_mode").CurrentStage
-    if chalice_mode == 1 and can_access_isle_4() then
-        Tracker:FindObjectForCode("astral_cookie").Active = true
-    end
-end
 
 function deep_copy(tbl)
     local copy = {}
@@ -69,3 +63,84 @@ function deep_copy(tbl)
     return copy
 end
 
+function update_location_mapping()
+	--resetting LOCATION_MAPPING to a clean version
+	LOCATION_MAPPING = deep_copy(BASE_LOCATION_MAPPING)
+
+    --dealing with boss shuffling
+	local boss_indices = {}
+
+	for i = 0, 17 do
+		table.insert(boss_indices, i)
+	end
+
+	for i = 100, 104 do
+		table.insert(boss_indices, i)
+	end
+
+    for _, original_boss_index in ipairs(boss_indices) do
+    	local new_boss_index = LEVEL_MAP[tostring(original_boss_index)]
+
+   		if new_boss_index then
+        	local original_boss_complete_code = BOSS_COMPLETE_MAP_CODES[original_boss_index]
+			local original_boss_top_grade_code = BOSS_TOP_GRADE_MAP_CODES[original_boss_index]
+			local original_boss_chaliced_code = BOSS_CHALICED_MAP_CODES[original_boss_index]
+
+        	-- Normal completion shuffle
+        	local new_boss_complete_id = BOSS_COMPLETE_IDS[new_boss_index]
+        	table.insert(LOCATION_MAPPING[new_boss_complete_id], { original_boss_complete_code })
+
+        	-- Top grade shuffle
+        	local new_boss_top_grade_id = BOSS_TOP_GRADE_IDS[new_boss_index]
+        	table.insert(LOCATION_MAPPING[new_boss_top_grade_id], { original_boss_top_grade_code })
+
+			-- Chalice completion shuffle
+        	local new_boss_chaliced_id = BOSS_CHALICED_IDS[new_boss_index]
+        	table.insert(LOCATION_MAPPING[new_boss_chaliced_id], { original_boss_chaliced_code })
+		end
+    end
+
+	--dealing with run 'n gun shuffling
+	for original_rungun_index = 28, 33 do
+    	local new_rungun_index = LEVEL_MAP[tostring(original_rungun_index)]
+
+   		if new_rungun_index then
+        	local original_rungun_complete_code = RUNGUN_COMPLETE_MAP_CODES[original_rungun_index]
+			local original_rungun_top_grade_code = RUNGUN_TOP_GRADE_MAP_CODES[original_rungun_index]
+			local original_rungun_chaliced_code = RUNGUN_CHALICED_MAP_CODES[original_rungun_index]
+
+        	-- Normal completion shuffle
+        	local new_rungun_complete_id = RUNGUN_COMPLETE_IDS[new_rungun_index]
+        	table.insert(LOCATION_MAPPING[new_rungun_complete_id], { original_rungun_complete_code })
+
+        	-- Top grade shuffle
+			for i = 1, 2 do
+        	local new_rungun_top_grade_id = RUNGUN_TOP_GRADE_IDS[new_rungun_index][i]
+        	table.insert(LOCATION_MAPPING[new_rungun_top_grade_id], { original_rungun_top_grade_code })
+			end
+
+        	-- Chalice completion shuffle
+        	local new_rungun_chaliced_id = RUNGUN_CHALICED_IDS[new_rungun_index]
+        	table.insert(LOCATION_MAPPING[new_rungun_chaliced_id], { original_rungun_chaliced_code })
+
+			-- Coin shuffle
+			for i = 1, 5 do
+				local new_rungun_coin_id = RUNGUN_COIN_IDS[new_rungun_index][i]
+				local original_rungun_coin_code = RUNGUN_COIN_MAP_CODES[original_rungun_index][i]
+				table.insert(LOCATION_MAPPING[new_rungun_coin_id], { original_rungun_coin_code }) 
+			end
+		end
+    end
+end
+
+function countSetBits(num)
+    local count = 0
+    -- Clear the top 32 signed bits (if there are any) so that we get the number as unsigned
+    num = num & 0xFFFFFFFF
+    while num > 0 do
+        --Remove the least significant set bit
+        num = num & (num - 1)
+        count = count + 1
+    end
+    return count
+end

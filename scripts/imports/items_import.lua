@@ -1,2 +1,5 @@
     Tracker:AddItems("items/items.jsonc")
     Tracker:AddItems("items/slot_data_items.jsonc")
+    Tracker:AddItems("items/logic_items.json")
+    Tracker:AddItems("items/settings_items.json")
+    Tracker:AddItems("items/data_storage_items.json")

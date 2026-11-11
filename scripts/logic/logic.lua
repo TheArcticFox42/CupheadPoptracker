@@ -81,6 +81,8 @@ LEVEL_MAP = {
     ["104"] = 104
 }
 
+
+
     -- Default Values
 	CONTRACT_REQUIREMENT_ISLE_2 = 5
 	CONTRACT_REQUIREMENT_ISLE_3 = 10
@@ -247,6 +249,14 @@ end
 function can_beat_chess_boss(level_index)
     if can_access_chess_level(level_index) then
         return Tracker:FindObjectForCode(CHESS_BOSSES_COMPLETE_SUMMARY_CODES[tonumber(level_index)]).AccessibilityLevel
+    else
+        return AccessibilityLevel["None"]
+    end
+end
+
+function can_chalice_chess_boss(level_index)
+    if can_access_chess_level(level_index) then
+        return Tracker:FindObjectForCode(CHESS_BOSSES_CHALICED_SUMMARY_CODES[tonumber(level_index)]).AccessibilityLevel
     else
         return AccessibilityLevel["None"]
     end
@@ -481,11 +491,13 @@ function can_complete_barbershop_quest()
 end
 
 function can_complete_silverworth_quest()
-    return false
+    local silverworth_quest_progress_amount = Tracker:FindObjectForCode("silverworth_quest_progress").AcquiredCount
+    return can_access_isle("3") and silverworth_quest_progress_amount == 15
 end
 
 function can_complete_tully_quest()
-    return false
+    local tully_quest_progress_amount = Tracker:FindObjectForCode("tully_quest_progress").AcquiredCount
+    return can_access_isle("3") and tully_quest_progress_amount == 6
 end
 
 function can_access_buckley()
@@ -493,7 +505,8 @@ function can_access_buckley()
 end
 
 function can_complete_senita_quest()
-    return false
+    local senita_quest_progress_amount = Tracker:FindObjectForCode("senita_quest_progress").AcquiredCount
+    return can_access_isle("4") and senita_quest_progress_amount == 25
 end
 
 function can_access_shop(shop_index)

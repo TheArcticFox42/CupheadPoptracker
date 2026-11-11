@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Allow Super II Abuse",
+        "type": "toggle",
+        "img": "images/settings/super_2_ool.png",
+        "codes": "super_2_ool"
+    },
+    {
+        "name": "Mark Hard Logic As Out Of Logic",
+        "type": "toggle",
+        "img": "images/settings/hard_logic_ool.png",
+        "codes": "hard_logic_ool"
+    },
+    {
+        "name": "Allow Ignoring Abilities",
+        "type": "toggle",
+        "img": "images/settings/ignore_abilities_ool.png",
+        "codes": "ignore_abilities_ool"
+    },
+    {
+        "name": "Allow Coffee + EX/Super As Weapon",
+        "type": "toggle",
+        "img": "images/settings/coffee_ool.png",
+        "codes": "coffee_ool"
+    },
+    {
+        "name": "Allow Damage Tanks",
+        "type": "toggle",
+        "img": "images/settings/damage_tanks_ool.png",
+        "codes": "damage_tanks_ool"
+    },
+    {
+        "name": "Allow P. Sugar Instead Of Parry",
+        "type": "toggle",
+        "img": "images/settings/p_sugar_ool.png",
+        "codes": "p_sugar_ool"
+    }
+]

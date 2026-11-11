@@ -133,18 +133,14 @@
         "h_alignment": "center",
         "rows": [
           [
-            "expert_mode",
-            "boss_grade_checks",
-            "run_n_gun_grade_checks",
-            "boss_chalice_checks",
-            "run_gun_chalice_checks",
             "boat",
             "coin",
             "contract",
-            "ingredient"
-            // ,"kings_leap"
-            // ,"use_dlc"
-            // ,"chalice_mode"
+            "ingredient",
+            "silverworth_quest_progress",
+            "tully_quest_progress",
+            "senita_quest_progress",
+            "deaths_left"
           ]
         ]
       }
@@ -195,6 +191,127 @@
           ],
           [
             "collect_ingredients"
+          ]
+        ]
+      }
+    ]
+  },
+      "Checks": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "boss_grade_checks",
+            "run_n_gun_grade_checks",
+            "boss_chalice_checks",
+            "run_gun_chalice_checks",
+            "kings_leap",
+            "chess_chalice_checks",
+            "boss_secret_checks"
+          ]
+        ]
+      }
+    ]
+  },
+      "Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "randomize_abilities",
+            "chalice_mode",
+            "logic_mode",
+            "freemove_isles",
+            "kings_leap_p_sugar",
+            "expert_mode",
+            "ducklock_platdrop"
+          ]
+        ]
+      }
+    ]
+  },
+        "Deathlink": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "deathlink"
+          ]
+        ]
+      }
+    ]
+  },
+        "Quests": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "silverworth_quest",
+            "pacifist_quest",
+            "cactus_girl_quest"
+          ]
+        ]
+      }
+    ]
+  },
+    "Logic Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "hard_logic_ool",
+            "p_sugar_ool",
+            "ignore_abilities_ool",
+            "coffee_ool",
+            "super_2_ool",
+            "damage_tanks_ool"
+          ]
+        ]
+      }
+    ]
+  },
+  "Other Settings": {
+    "type": "array",
+    "orientation": "horizontal",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "10,10",
+        "h_alignment": "left",
+        "rows": [
+          [
+            "auto_tab_mode"
           ]
         ]
       }

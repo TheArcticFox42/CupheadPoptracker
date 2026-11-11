@@ -5,9 +5,10 @@
       {
         "name": "Forest Follies Top Grade",
         "access_rules": [
-          "[dash],p_grade,@Parry or P.Sugar",
+          "dash,p_grade,@Parry or P.Sugar",
+          "[],damage_tanks_ool,p_grade,@Parry or P.Sugar",
           "@Forest Follies Summary/Forest Follies Complete/,@Can Top Grade Rungun,@Parry or P.Sugar",
-          "hard_logic,@Forest Follies Summary/Forest Follies Complete/,@Can Top Grade Rungun,@Parry or P.Sugar"
+          "@Hard Logic,@Forest Follies Summary/Forest Follies Complete/,@Can Top Grade Rungun,@Parry or P.Sugar"
         ],
         "sections": [
           {}
@@ -59,7 +60,8 @@
       {
         "name": "Forest Follies Complete",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]",
+          "@Has Rungun Weapon,dash",
+          "[],damage_tanks_ool,@Has Rungun Weapon",
           "@Forest Follies Summary/Forest Follies Top Grade/"
         ],
         "sections": [
@@ -135,7 +137,8 @@
       {
         "name": "Forest Follies Coin 3",
         "access_rules": [
-          "@Parry or P.Sugar"
+          "@Parry or P.Sugar",
+          "[],damage_tanks_ool"
         ],
         "sections": [
           {}
@@ -162,7 +165,8 @@
       {
         "name": "Forest Follies Coin 4",
         "access_rules": [
-          "[dash]"
+          "dash",
+          "[],damage_tanks_ool"
         ],
         "sections": [
           {}
@@ -189,7 +193,8 @@
       {
         "name": "Forest Follies Coin 5",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]"
+          "@Has Rungun Weapon,dash",
+          "[],damage_tanks_ool,@Has Rungun Weapon"
         ],
         "sections": [
           {}
@@ -222,7 +227,9 @@
         "name": "Treetop Trouble Top Grade",
         "access_rules": [
           "@Has Rungun Weapon,[dash],@Can Top Grade Rungun",
-          "p_grade,[dash]"
+          "p_grade,dash",
+          "[],ignore_abilities_ool,p_grade",
+          "[],ignore_abilities_ool,@Has Rungun Weapon,@Can Top Grade Rungun"
         ],
         "sections": [
           {}
@@ -274,7 +281,8 @@
       {
         "name": "Treetop Trouble Complete",
         "access_rules": [
-          "@Has Rungun Weapon,[dash]",
+          "@Has Rungun Weapon,dash",
+          "[],ignore_abilities_ool,@Has Rungun Weapon",
           "@Treetop Trouble Summary/Treetop Trouble Top Grade"
         ],
         "sections": [
@@ -302,7 +310,7 @@
         "access_rules": [
           "@Parry or P.Sugar",
           "@Can Double Jump",
-          "[],super_2"
+          "[],super_2_ool,super_2"
         ],
         "sections": [
           {}
@@ -406,7 +414,8 @@
       {
         "name": "Treetop Trouble Coin 5",
         "access_rules": [
-          "[dash]"
+          "dash",
+          "[],ignore_abilities_ool"
         ],
         "sections": [
           {}
@@ -495,11 +504,11 @@
       {
         "name": "Funfair Fever Complete",
         "access_rules": [
-          "hard_logic,@Has Rungun Weapon,@Parry or P.Sugar",
-          "hard_logic,@Has Rungun Weapon,@Can Double Jump",
+          "@Hard Logic,@Has Rungun Weapon,@Parry or P.Sugar",
+          "@Hard Logic,@Has Rungun Weapon,@Can Double Jump",
           "@Has Rungun Weapon,@Parry or P.Sugar,dash",
           "@Has Rungun Weapon,@Can Double Jump,dash",
-          "[],coffee,super_2"
+          "[],super_2_ool,coffee,super_2"
         ],
         "sections": [
           {}
@@ -882,7 +891,7 @@
         "access_rules": [
           "@Perilous Piers Summary/Perilous Piers Complete/",
           "p_grade,parry,dash",
-          "[hard_logic],p_grade,p_sugar,dash"
+          "@Hard Logic,p_grade,p_sugar,dash"
         ],
         "sections": [
           {}
@@ -935,7 +944,7 @@
         "name": "Perilous Piers Complete",
         "access_rules": [
           "@Has Rungun Weapon,parry,dash",
-          "[hard_logic],@Has Rungun Weapon,p_sugar,dash",
+          "@Hard Logic,@Has Rungun Weapon,p_sugar,dash",
           "@Perilous Piers Summary/Perilous Piers Top Grade"
         ],
         "sections": [
@@ -963,7 +972,7 @@
         "access_rules": [
           "@Has Rungun Weapon,@Dash or Parry or P.Sugar",
           "[],@Has Rungun Weapon,@Can Double Jump",
-          "[],super_2"
+          "[],super_2_ool,super_2"
         ],
         "sections": [
           {}
@@ -1045,8 +1054,8 @@
         "name": "Perilous Piers Coin 4",
         "access_rules": [
           "@Has Rungun Weapon,parry",
-          "[hard_logic],@Has Rungun Weapon,p_sugar,dash",
-          "[],super_2"
+          "@Hard Logic,@Has Rungun Weapon,p_sugar,dash",
+          "[],super_2_ool,super_2"
         ],
         "sections": [
           {}

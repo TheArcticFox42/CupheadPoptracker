@@ -8,7 +8,7 @@
       {
         "name": "The Pawns Complete",
         "access_rules": [
-          "@Parry Logic"
+          "@Kings Leap Parry"
         ],
         "sections": [
           {}
@@ -17,16 +17,37 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1088,
+            "x": 1118,
             "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Pawns Chaliced",
+        "access_rules": [
+          "@Can Chalice Chess Boss"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1073,
+            "y": 887,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 28,
+            "shape": "trapezoid"
           }
         ]
       },
       {
         "name": "The Knight Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@Hard Logic, @Kings Leap Parry",
+          "parry"
         ],
         "sections": [
           {}
@@ -35,15 +56,36 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1288,
+            "x": 1318,
             "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Knight Chaliced",
+        "access_rules": [
+          "@Can Chalice Chess Boss,chalice_double_jump"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1273,
+            "y": 887,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 28,
+            "shape": "trapezoid"
           }
         ]
       },
       {
         "name": "The Bishop Complete",
         "access_rules": [
-          "@Parry Logic"
+          "@Kings Leap Parry"
         ],
         "sections": [
           {}
@@ -52,15 +94,36 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1488,
+            "x": 1513,
             "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Bishop Chaliced",
+        "access_rules": [
+          "@Can Chalice Chess Boss"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1473,
+            "y": 887,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 28,
+            "shape": "trapezoid"
           }
         ]
       },
       {
         "name": "The Rook Complete",
         "access_rules": [
-          "@Parry Logic"
+          "@Kings Leap Parry"
         ],
         "sections": [
           {}
@@ -69,15 +132,36 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1688,
+            "x": 1713,
             "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Rook Chaliced",
+        "access_rules": [
+          "@Can Chalice Chess Boss"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1673,
+            "y": 887,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 28,
+            "shape": "trapezoid"
           }
         ]
       },
       {
         "name": "The Queen Complete",
         "access_rules": [
-          "@Parry Logic"
+          "@Kings Leap Parry"
         ],
         "sections": [
           {}
@@ -86,16 +170,48 @@
           {
             "map": "summary_dlc",
             "size": 28,
-            "x": 1888,
+            "x": 1913,
             "y": 887
+          }
+        ]
+      },
+      {
+        "name": "The Queen Chaliced",
+        "access_rules": [
+          "@Can Chalice Chess Boss"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "summary_dlc",
+            "x": 1873,
+            "y": 887,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 28,
+            "shape": "trapezoid"
           }
         ]
       },
       {
         "name": "The Gauntlet Complete",
         "access_rules": [
-          "parry",
-          "[],p_sugar"
+          "@The King's Leap Summary/The Knight Complete"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {}
+        ]
+      },
+      {
+        "name": "The Gauntlet Chaliced",
+        "access_rules": [
+          "@The King's Leap Summary/The Knight Chaliced"
         ],
         "sections": [
           {}

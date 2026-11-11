@@ -5,14 +5,13 @@ Work in progress version of a poptracker for cuphead. this is my first time maki
 Notes:
 - Sequence break logic was manually created by me and so it may have flaws. If you find any sequence break logic then you can let me know and I will add it once I get to it.
 - The logic system was recently overhauled so some logic may be wrong. please let me know if you find any incorrect logic.
-- Due to some current limitations both quests on isle 3 and the cactus girl quest on isle 4 appear on the map even if they are disabled, and are always marked as inaccessible.
 - Buying items from the shop sometimes marks off the location of a different shop.
 - Some maps can slightly cut off when using the vertical variant 
 
 ### Requirements
 
 - [Poptracker](https://github.com/black-sliver/PopTracker) version 0.35.1 or higher
-- Your game must be generated with [Cuphead APworld alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a) or higher (for games generated with alpha02 check v1.1.0 in releases)
+- Your game must be generated with [Cuphead APworld alpha03a](https://github.com/JKLeckr/Archipelago-cuphead/releases/tag/alpha03a) or higher (for games generated with alpha02 check v1.1.0 in releases). Additionally some features won't work without the latest version of the client mod.
 
 ### Installation
 
@@ -39,3 +38,13 @@ For shop checks, if they are blue that means you can view them but don't have en
 ### The Summary Page
 - The summary page has the same key as the map with the addition of secret phase checks being marked under their respective boss with a trapezoid. 
 - This page shows which checks are possible to beat regardless of whether or not you can access them on the map.
+
+### The Settings Page
+- To open the settings page you need to press the button with the three lines and cogwheel in the top left. This page has 2 sections:
+    - The first section shows you the slot data of your slot once you connect. This page is for information and the things in the page shouldn't be pressed
+    - The second section has toggleable settings for the tracker. The logic settings effect which custom logic is enabled and showed as yellow if possible. The auto-tab mode effects how the tracker automatically changes map pages: 
+        - If no tabbing is chosen the page will never change
+        - If no summary tabbing is chosen then the tracker will change between the different maps when you enter their isle
+        - If full tabbing is chosen then the tracker will change between the different maps when you enter them and will also tab to the summary page when you enter a boss and tab back to the map when you leave
+
+        The settings chosen in this page remain between relaunches of the tracker but if you use the "Reload Pack" button it will reset your settings and you will have to reselect them.

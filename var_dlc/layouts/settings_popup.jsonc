@@ -1,0 +1,149 @@
+{
+    "settings_popup": {
+        "type": "container",
+        "background": "#877373",
+        "content": [
+            {
+                "type": "tabbed",
+                "tabs": [
+                    {
+                        "title": "Slot Data",
+                        "content": {
+                            "type": "dock",
+                            "dropshadow": true,
+                            "item_h_alignment": "stretch",
+                            "content": [
+                                {
+                                    "type": "dock",
+                                    "dock": "bottom",
+                                    "v_alignment": "stretch",
+                                    "content": [
+                                        {
+                                            "type": "dock",
+                                            "dock": "left",
+                                            "content": [
+                                                {
+                                                    "type": "group",
+                                                    "header": "Goals",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Goals"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "group",
+                                                    "header": "Settings",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Settings"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "group",
+                                                    "header": "Checks",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Checks"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "dock",
+                                            "dock": "right",
+                                            "content": [
+                                                {
+                                                    "type": "group",
+                                                    "header": "Quests",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Quests"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "group",
+                                                    "header": "Deathlink",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Deathlink"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "title": "Tracker Settings",
+                        "content": {
+                            "type": "dock",
+                            "dropshadow": true,
+                            "item_h_alignment": "stretch",
+                            "content": [
+                                {
+                                    "type": "dock",
+                                    "dock": "bottom",
+                                    "v_alignment": "stretch",
+                                    "content": [
+                                        {
+                                            "type": "dock",
+                                            "dock": "left",
+                                            "content": [
+                                                {
+                                                    "type": "group",
+                                                    "header": "Logic Settings",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Logic Settings"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "group",
+                                                    "header": "Other Settings",
+                                                    "dock": "top",
+                                                    "margin": "0,0,3,0",
+                                                    "content": {
+                                                        "type": "layout",
+                                                        "h_alignment": "center",
+                                                        "v_alignment": "center",
+                                                        "key": "Other Settings"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -97,13 +97,61 @@ function incrementItem(item_code, item_type, multiplier)
 	end
 end
 
+function getAutoTabDataStorageKeys()
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getAutoTabDataStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+	local auto_tab_keys = { "current_level", "current_map" }
+	for i, key in ipairs(auto_tab_keys) do
+		auto_tab_keys[i] = string.format("Slot:%s:%s", Archipelago.PlayerNumber, key)
+	end
+
+	return auto_tab_keys
+end
+
+function getDeathlinkDataStorageKey()
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getAutoTabDataStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+	local deathlink_key = string.format("Slot:%s:deathlink_grace_count", Archipelago.PlayerNumber)
+	return deathlink_key
+end
+
+function getQuestDataStorageKeys()
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getAutoTabDataStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+	local quest_keys = { "agrade_levels", "pacifist_levels", "dlc_chaliced_levels_p1", "dlc_chaliced_levels_p2" }
+	for i, key in ipairs(quest_keys) do
+		quest_keys[i] = string.format("Slot:%s:%s", Archipelago.PlayerNumber, key)
+	end
+
+	return quest_keys
+end
+
+function getMapsVisitedDataStorageKey()
+	if AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or Archipelago.PlayerNumber == nil or Archipelago.PlayerNumber == -1 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call getAutoTabDataStorageKeys while not connect to AP server")
+		end
+		return nil
+	end
+	local maps_visited_key = string.format("Slot:%s:maps_visited", Archipelago.PlayerNumber)
+	return maps_visited_key
+end
+
 -- apply everything needed from slot_data, called from onClear
 function apply_slot_data(slot_data)
 	-- put any code here that slot_data should affect (toggling setting items for example)
-
-
-
-	-- print(dump_table(slot_data))
 
 	-- setting the goal
 	local goal_handlers = {
@@ -153,10 +201,39 @@ function apply_slot_data(slot_data)
 	Tracker:FindObjectForCode("expert_mode").Active = slot_data["expert_mode"]
 	Tracker:FindObjectForCode("hard_logic").Active = slot_data["logic_mode"]
 	Tracker:FindObjectForCode("freemove_isles").Active = slot_data["freemove_isles"]
+	Tracker:FindObjectForCode("kings_leap_p_sugar").Active = slot_data["dlc_kingsleap_psugar"]
+		Tracker:FindObjectForCode("chess_chalice_checks").Active = slot_data["dlc_chess_chalice_checks"]
 
-	if slot_data["dlc_chalice"] == 1 then
-		Tracker:FindObjectForCode("astral_cookie").Active = true
-	end 
+	if not (slot_data["deathlink"] == 0) then
+		Tracker:FindObjectForCode("deathlink").AcquiredCount = slot_data["deathlink_grace_count"]
+	end
+
+	-- Inferring settings based on existing location
+	local checked_locations = Archipelago.CheckedLocations
+	local missing_locations = Archipelago.MissingLocations
+
+	local IDs = {
+		28005,
+		28004,
+		10040000,
+		30000
+	}
+
+	local idToItemCode = {
+    	[28005] = "silverworth_quest",
+    	[28004] = "pacifist_quest",
+    	[10040000] = "cactus_girl_quest",
+    	[30000] = "boss_secret_checks"
+	}
+
+	for _, id in ipairs(IDs) do
+		if table_contains_value(checked_locations,id) or table_contains_value(missing_locations,id) then
+			local item_code = idToItemCode[id]
+			if item_code then
+				Tracker:FindObjectForCode(item_code).Active = true
+			end
+		end
+	end
 
 	local kings_leap_mode = slot_data["dlc_kingsleap"]
 	local kings_leap_obj = Tracker:FindObjectForCode("kings_leap")
@@ -178,9 +255,12 @@ function apply_slot_data(slot_data)
 		chalice_mode_obj.CurrentStage = 1
 		Tracker:FindObjectForCode("astral_cookie").Active = true
 	elseif chalice_mode == 2 then
-		chalice_mode_obj.CurrentStage = 1
-	else
 		chalice_mode_obj.CurrentStage = 2
+		if can_access_isle("4") then
+			Tracker:FindObjectForCode("astral_cookie").Active = true
+		end
+	else
+		chalice_mode_obj.CurrentStage = 3
 	end
 
 	local boss_chalice_checks_mode = slot_data["dlc_boss_chalice_checks"]
@@ -205,7 +285,7 @@ function apply_slot_data(slot_data)
 
 	local abilities = {
 		"dash",
-		"duck",
+		"crouch",
 		"parry",
 		"plane_parry",
 		"plane_shrink",
@@ -216,6 +296,8 @@ function apply_slot_data(slot_data)
 		for _, ability in ipairs(abilities) do
 			Tracker:FindObjectForCode(ability).Active = true
 		end
+	else
+		Tracker:FindObjectForCode("randomize_abilities").Active = true
 	end
 
 	-- checking whether the starting weapon is excepted
@@ -273,86 +355,28 @@ function apply_slot_data(slot_data)
 		run_n_gun_grade_checks.CurrentStage = slot_data["rungun_grade_checks"]
 	end
 
-	--resetting LOCATION_MAPPING to a clean version
-	LOCATION_MAPPING = deep_copy(BASE_LOCATION_MAPPING)
-
-	--dealing with boss shuffling
-	local boss_indices = {}
-
-	for i = 0, 17 do
-		table.insert(boss_indices, i)
-	end
-
-	if Tracker:FindObjectForCode("use_dlc").Active then
-		for i = 100, 104 do
-			table.insert(boss_indices, i)
-		end
-	end
-
 	-- if the root pack is shuffled then level shuffle must be on
 	if slot_data["level_map"]["0"] then
 		LEVEL_MAP = slot_data["level_map"]
 	end
 
-	for _, original_boss_index in ipairs(boss_indices) do
-    	local new_boss_index = LEVEL_MAP[tostring(original_boss_index)]
+	-- if king dice isn't randomized (which he currently can't be) he doesn't appear in level_map and gets overwritten by the previous if statement
+	if not LEVEL_MAP["17"] then
+		LEVEL_MAP["17"] = 17
+	end
 
-   		if new_boss_index then
-        	local original_boss_complete_code = BOSS_COMPLETE_MAP_CODES[original_boss_index]
-			local original_boss_top_grade_code = BOSS_TOP_GRADE_MAP_CODES[original_boss_index]
-			local original_boss_chaliced_code = BOSS_CHALICED_MAP_CODES[original_boss_index]
-
-        	-- Normal completion shuffle
-        	local new_boss_complete_id = BOSS_COMPLETE_IDS[new_boss_index]
-        	table.insert(LOCATION_MAPPING[new_boss_complete_id], { original_boss_complete_code })
-
-        	-- Top grade shuffle
-        	local new_boss_top_grade_id = BOSS_TOP_GRADE_IDS[new_boss_index]
-        	table.insert(LOCATION_MAPPING[new_boss_top_grade_id], { original_boss_top_grade_code })
-
-			-- Chalice completion shuffle
-        	local new_boss_chaliced_id = BOSS_CHALICED_IDS[new_boss_index]
-        	table.insert(LOCATION_MAPPING[new_boss_chaliced_id], { original_boss_chaliced_code })
-		end
-    end
-
-	--dealing with run 'n gun shuffling
-	for original_rungun_index = 28, 33 do
-    	local new_rungun_index = LEVEL_MAP[tostring(original_rungun_index)]
-
-   		if new_rungun_index then
-        	local original_rungun_complete_code = RUNGUN_COMPLETE_MAP_CODES[original_rungun_index]
-			local original_rungun_top_grade_code = RUNGUN_TOP_GRADE_MAP_CODES[original_rungun_index]
-			local original_rungun_chaliced_code = RUNGUN_CHALICED_MAP_CODES[original_rungun_index]
-
-        	-- Normal completion shuffle
-        	local new_rungun_complete_id = RUNGUN_COMPLETE_IDS[new_rungun_index]
-        	table.insert(LOCATION_MAPPING[new_rungun_complete_id], { original_rungun_complete_code })
-
-        	-- Top grade shuffle
-			for i = 1, 2 do
-        	local new_rungun_top_grade_id = RUNGUN_TOP_GRADE_IDS[new_rungun_index][i]
-        	table.insert(LOCATION_MAPPING[new_rungun_top_grade_id], { original_rungun_top_grade_code })
-			end
-
-        	-- Chalice completion shuffle
-        	local new_rungun_chaliced_id = RUNGUN_CHALICED_IDS[new_rungun_index]
-        	table.insert(LOCATION_MAPPING[new_rungun_chaliced_id], { original_rungun_chaliced_code })
-
-			-- Coin shuffle
-			for i = 1, 5 do
-				local new_rungun_coin_id = RUNGUN_COIN_IDS[new_rungun_index][i]
-				local original_rungun_coin_code = RUNGUN_COIN_MAP_CODES[original_rungun_index][i]
-				table.insert(LOCATION_MAPPING[new_rungun_coin_id], { original_rungun_coin_code }) 
-			end
-		end
-    end
+	update_location_mapping()
 
 	CONTRACT_REQUIREMENT_ISLE_2 = slot_data["contract_requirements"][2]
 	CONTRACT_REQUIREMENT_ISLE_3 = slot_data["contract_requirements"][3]
 	CONTRACT_REQUIREMENT_KING_DICE = slot_data["contract_requirements"][1]
 
+	-- this variable is used for auto-tabbing. this is the default value
+	CURRENT_MAP = 0
+
 end
+
+
 
 -- called right after an AP slot is connected
 function onClear(slot_data)
@@ -423,8 +447,23 @@ function onClear(slot_data)
 		"collect_ingredients",
 		"use_dlc",
 		"expert_mode",
+		"logic_mode",
+		"deathlink",
+		"ducklock_platdrop",
+		"randomize_abilities",
+		"start_maxhealth_p1",
+		"start_maxhealth_p2",
+		"silverworth_quest",
+		"pacifist_quest",
+		"cactus_girl_quest",
+		"boss_secret_checks",
+		"chalice_mode",
+		"freemove_isles",
 		"boss_grade_checks",
 		"run_n_gun_grade_checks",
+		"boss_chalice_checks",
+		"run_gun_chalice_checks",
+		"kings_leap",
 		"progressive_peashooter",
 		"progressive_spread",
 		"progressive_chaser",
@@ -441,16 +480,22 @@ function onClear(slot_data)
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	-- setup data storage tracking for hint tracking
-	local data_strorage_keys = {}
+	local data_storage_keys = {}
 	if PopVersion >= "0.32.0" then
-		data_strorage_keys = { getHintDataStorageKey() }
+		data_storage_keys = { getHintDataStorageKey(), getDeathlinkDataStorageKey(), getMapsVisitedDataStorageKey() }
+		for _, key in ipairs(getAutoTabDataStorageKeys()) do
+			table.insert(data_storage_keys,key)
+		end
+		for _, key in ipairs(getQuestDataStorageKeys()) do
+			table.insert(data_storage_keys,key)
+		end
 	end
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
-	Archipelago:SetNotify(data_strorage_keys)
+	Archipelago:SetNotify(data_storage_keys)
 	-- gets the current value for the data storage keys
 	-- triggers callback in the Retrieved handler when result is received
-	Archipelago:Get(data_strorage_keys)
+	Archipelago:Get(data_storage_keys)
 	Tracker.BulkUpdate = false
 end
 
@@ -587,6 +632,18 @@ function onDataStorageUpdate(key, value, oldValue)
 	--if you plan to only use the hints key, you can remove this if
 	if key == getHintDataStorageKey() then
 		onHintsUpdate(value)
+	elseif table_contains_value(getAutoTabDataStorageKeys(),key) then
+		applyAutoTab(key,value)
+	elseif key == getDeathlinkDataStorageKey() then
+		updateGraceCount(value)
+	elseif table_contains_value(getQuestDataStorageKeys(),key) then
+		updateQuests(key,value)
+	elseif key == getMapsVisitedDataStorageKey() then
+		updateCookie(value)
+	else
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("key: %s doesn't exist", key)
+		end
 	end
 end
 
@@ -670,6 +727,66 @@ function updateHint(hint, sections_to_update)
 			end
 		end
 	end
+end
+
+function applyAutoTab(key,value)
+	local auto_tab_key_indices = {
+		["current_level"] = 1,
+		["current_map"] = 2
+	}
+	local auto_tab_keys = getAutoTabDataStorageKeys()
+	local key_values_to_tab_names = {
+		[0] = "Isle I",
+		[1] = "Isle II",
+		[2] = "Isle III",
+		[3] = "Inkwell Hell",
+		[4] = "Isle IV"
+	}
+	if (key == auto_tab_keys[auto_tab_key_indices["current_level"]]) and 
+	(Tracker:FindObjectForCode("auto_tab_mode").CurrentStage == 2) then
+		if value == -1 then
+			Tracker:UiHint("ActivateTab", key_values_to_tab_names[CURRENT_MAP])
+		else
+		Tracker:UiHint("ActivateTab", "Summary")
+		end
+	elseif key == auto_tab_keys[auto_tab_key_indices["current_map"]] then
+		CURRENT_MAP = value
+		if Tracker:FindObjectForCode("auto_tab_mode").CurrentStage ~= 0 then
+			Tracker:UiHint("ActivateTab", key_values_to_tab_names[value])
+		end
+	else 
+	end
+end
+
+function updateGraceCount(value)
+	local deathlink_item = Tracker:FindObjectForCode("deaths_left")
+	deathlink_item.AcquiredCount = value + 1
+end
+
+function updateQuests(key,value)
+	local quest_key_indices = {
+		["agrade_levels"] = 1,
+		["pacifist_levels"] = 2,
+		["dlc_chaliced_levels_p1"] = 3,
+		["dlc_chaliced_levels_p2"] = 4
+	}
+	local quest_keys = getQuestDataStorageKeys()
+	if (key == quest_keys[quest_key_indices["agrade_levels"]]) then
+		Tracker:FindObjectForCode("silverworth_quest_progress").AcquiredCount = countSetBits(value)
+	elseif (key == quest_keys[quest_key_indices["pacifist_levels"]]) then
+		Tracker:FindObjectForCode("tully_quest_progress").AcquiredCount = countSetBits(value)
+	elseif (key == quest_keys[quest_key_indices["dlc_chaliced_levels_p1"]]) then
+		Tracker:FindObjectForCode("senita_quest_progress").AcquiredCount = countSetBits(value)
+	else
+	end
+end
+
+function updateCookie(value)
+	local chalice_mode_item = Tracker:FindObjectForCode("chalice_mode")
+	-- Check if the cookie hasn't been acquired, chalice mode is vanilla and map 4 (Isle IV) has been visited
+	if (chalice_mode_item.CurrentStage == 2) and (((value >> 4) & 1) == 1) then
+		Tracker:FindObjectForCode("astral_cookie").Active = true
+	end		
 end
 
 -- add AP callbacks

@@ -1,0 +1,28 @@
+    [
+        {
+            "name": "Auto-Tab Mode",
+            "type": "progressive",
+            "allow_disabled": false,
+            "initial_stage_idx": 2,
+            "stages": [
+                {
+                    "name": "No Tabbing",
+                    "img": "images/settings/no_summary_tabbing.png",
+                    "img_mods": "@disabled",
+                    "codes": "auto_tab_mode,no_tabbing"
+                },
+                {
+                    "name": "No Summary Tabbing",
+                    "img": "images/settings/no_summary_tabbing.png",
+                    "inherit_codes": false,
+                    "codes": "auto_tab_mode,no_summary_tabbing"
+                },
+                {
+                    "name": "Full Tabbing",
+                    "img": "images/settings/full_tabbing.png",
+                    "inherit_codes": false,
+                    "codes": "auto_tab_mode,full_tabbing"
+                }
+            ]
+        }
+    ]

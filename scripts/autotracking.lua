@@ -38,14 +38,5 @@ ScriptHost:AddOnLocationSectionChangedHandler("coin_handler",
                 calculate_coin_count()
             end
 )
-ScriptHost:AddWatchForCode("boat_watcher","boat",
-            function()
-                update_chalice_cookie()
-            end
-            )
-ScriptHost:AddOnLocationSectionChangedHandler("mausoleum_handler",
-            function()
-                update_chalice_cookie()
-            end
-)
+
 

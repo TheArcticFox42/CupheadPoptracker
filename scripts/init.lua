@@ -20,6 +20,7 @@ require("scripts/imports/items_import")
 Tracker:AddLayouts("layouts/items.jsonc")
 Tracker:AddLayouts("layouts/tracker.jsonc")
 Tracker:AddLayouts("layouts/broadcast.jsonc")
+Tracker:AddLayouts("layouts/settings_popup.jsonc")
 
 -- AutoTracking for Poptracker
 if PopVersion and PopVersion >= "0.18.0" then

@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Deaths Until Deathlink",
+        "type": "consumable",
+        "img": "images/settings/deathlink.png",
+        "min_quantity": 0,
+        "initial_quantity": 0,
+        "overlay_font_size": 15,
+        "codes": "deaths_left"
+    },
+    {
+        "name": "Silverworth Quest Progress",
+        "type": "consumable",
+        "img": "images/settings/silverworth_quest.png",
+        "min_quantity": 0,
+        "max_quantity": 15,
+        "initial_quantity": 0,
+        "overlay_font_size": 15,
+        "codes": "silverworth_quest_progress"
+    },
+    {
+        "name": "Tully Quest Progress",
+        "type": "consumable",
+        "img": "images/settings/tully_quest.png",
+        "min_quantity": 0,
+        "max_quantity": 6,
+        "initial_quantity": 0,
+        "overlay_font_size": 15,
+        "codes": "tully_quest_progress"
+    },
+    {
+        "name": "Senita Quest Progress",
+        "type": "consumable",
+        "img": "images/settings/senita_quest.png",
+        "min_quantity": 0,
+        "max_quantity": 25,
+        "initial_quantity": 0,
+        "overlay_font_size": 15,
+        "codes": "senita_quest_progress"
+    }
+]

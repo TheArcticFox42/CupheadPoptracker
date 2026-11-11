@@ -84,6 +84,9 @@
         "access_rules": [
           "@The Root Pack Summary/The Root Pack Complete"
         ],
+        "visibility_rules": [
+          "boss_secret_checks"
+        ],
         "map_locations": [
           {
             "map": "summary",
@@ -112,7 +115,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[@Crouch or Dash]"
+          "@Has Weapon,@Crouch or Dash",
+          "[],ignore_abilities_ool,@Has Weapon"
         ],
         "map_locations": [
           {
@@ -346,7 +350,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[@Parry or P.Sugar]"
+          "@Has Weapon,@Parry or P.Sugar",
+          "[],ignore_abilities_ool,@Has Weapon"
         ],
         "map_locations": [
           {
@@ -424,8 +429,9 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,[@Dash or Parry]",
-          "@Has Weapon,[p_sugar]"
+          "@Has Weapon,@Dash or Parry",
+          "[],ignore_abilities_ool,@Has Weapon,",
+          "[],p_sugar_ool,@Has Weapon,p_sugar"
         ],
         "map_locations": [
           {
@@ -503,7 +509,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon",
+          "@Hard Logic,@Has Weapon",
           "@Has Weapon,dash",
           "@Has Weapon,@Can Double Jump"
         ],
@@ -526,7 +532,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Hard Logic,@Has Weapon,@Can Top Grade",
           "@Has Weapon,dash,@Can Top Grade",
           "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
         ],
@@ -585,7 +591,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon",
+          "@Hard Logic,@Has Weapon",
           "@Has Weapon,@Dash or Double Jump"
         ],
         "map_locations": [
@@ -609,7 +615,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Hard Logic,@Has Weapon,@Can Top Grade",
           "@Has Weapon,dash,@Can Top Grade",
           "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
         ],
@@ -667,7 +673,8 @@
         ],
         "access_rules": [
           "@Has Weapon,crouch",
-          "@Has Weapon,[dash],parry"
+          "@Has Weapon,parry",
+          "[],ignore_abilities_ool,@Has Weapon,,parry"
         ],
         "map_locations": [
           {
@@ -746,8 +753,9 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,crouch,[@Parry or P.Sugar]",
-          "@Has Weapon,crouch,[dash,smoke_bomb]"
+          "@Has Weapon,crouch,@Parry or P.Sugar",
+          "[],@Has Weapon,crouch,dash,smoke_bomb",
+          "[],ignore_abilities_ool,@Has Weapon,crouch"
         ],
         "map_locations": [
           {
@@ -828,7 +836,7 @@
         "access_rules": [
           "@Has Weapon,parry",
           "@Has Weapon,@Chalice Dodge Roll",
-          "[],@Has Weapon,p_sugar",
+          "[],p_sugar_ool,@Has Weapon,p_sugar",
           "[],@Has Weapon,smoke_bomb,dash"
         ],
         "map_locations": [
@@ -853,7 +861,7 @@
         ],
         "access_rules": [
           "@Has Weapon,parry,@Can Top Grade",
-          "[],@Has Weapon,p_sugar,@Can Top Grade",
+          "[],p_sugar_ool,@Has Weapon,p_sugar,@Can Top Grade",
           "[],@Has Weapon,smoke_bomb,dash,@Can Top Grade",
           "boss_chalice_disabled,@Has Weapon,@Chalice Dodge Roll,@Chalice Parry,@Can Top Grade"
         ],
@@ -908,7 +916,10 @@
         ],
         "access_rules": [
           "@Has Weapon,parry",
-          "[],@Has Weapon,p_sugar"
+          "[],p_sugar_ool,@Has Weapon,p_sugar"
+        ],
+        "visibility_rules": [
+          "boss_secret_checks"
         ],
         "map_locations": [
           {
@@ -939,7 +950,7 @@
         ],
         "access_rules": [
           "@Has Weapon,parry",
-          "[],@Has Weapon,p_sugar"
+          "[],p_sugar_ool,@Has Weapon,p_sugar"
         ],
         "map_locations": [
           {
@@ -991,7 +1002,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Phantom Express Summary/Phantom Express Complete,@Can Chalice Boss With Parry",
+          "@Hard Logic,@Phantom Express Summary/Phantom Express Complete,@Can Chalice Boss With Parry",
           "@Phantom Express Summary/Phantom Express Complete,@Can Chalice Boss With Parry,chalice_double_jump"
         ],
         "map_locations": [
@@ -1018,7 +1029,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,@Parry or P.Sugar,@Has Plane Weapon,[dash],parry"
+          "@Has Weapon,@Parry or P.Sugar,@Has Plane Weapon,parry",
+          "[],ignore_abilities_ool,@Has Weapon,@Parry or P.Sugar,@Has Plane Weapon,parry"
         ],
         "map_locations": [
           {
@@ -1249,6 +1261,9 @@
         "access_rules": [
           "@Djimmi The Great Summary/Djimmi The Great Complete,plane_shrink"
         ],
+        "visibility_rules": [
+          "boss_secret_checks"
+        ],
         "map_locations": [
           {
             "map": "summary",
@@ -1277,7 +1292,7 @@
           {}
         ],
         "access_rules": [
-          "[hard_logic],@Has Plane Weapon",
+          "@Hard Logic,@Has Plane Weapon",
           "@Has Plane Weapon,plane_bombs"
         ],
         "map_locations": [
@@ -1434,7 +1449,7 @@
           {}
         ],
         "access_rules": [
-          "@Has Plane Weapon"
+          "@Has Plane Weapon,plane_parry"
         ],
         "map_locations": [
           {
@@ -1575,7 +1590,8 @@
           {}
         ],
         "access_rules": [
-          "@Has Weapon,crouch,[parry]"
+          "@Has Weapon,crouch,parry",
+          "[],ignore_abilities_ool,@Has Weapon,crouch"
         ],
         "map_locations": [
           {
@@ -1639,7 +1655,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon",
+          "@Hard Logic,@Has Weapon",
           "@Has Weapon,$normal_difficulty",
           "@Has Weapon,@Can Double Jump",
           "@Has Weapon,dash"
@@ -1659,7 +1675,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Has Weapon,@Can Top Grade",
+          "@Hard Logic,@Has Weapon,@Can Top Grade",
           "@Has Weapon,$normal_difficulty,@Can Top Grade",
           "@Has Weapon,dash,@Can Top Grade",
           "boss_chalice_disabled,@Has Weapon,@Can Double Jump,@Chalice Parry,@Can Top Grade"
@@ -1682,7 +1698,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@Mortimer Freeze Summary/Mortimer Freeze Complete,@Can Chalice Boss",
+          "@Hard Logic,@Mortimer Freeze Summary/Mortimer Freeze Complete,@Can Chalice Boss",
           "@Mortimer Freeze Summary/Mortimer Freeze Complete,@Can Chalice Boss,chalice_double_jump"
         ],
         "map_locations": [
@@ -1746,7 +1762,7 @@
           {}
         ],
         "access_rules": [
-          "hard_logic,@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,@Crouch Or Dash",
+          "@Hard Logic,@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,@Crouch or Dash",
           "@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,crouch",
           "@The Howling Aces Summary/The Howling Aces Complete,@Can Chalice Boss,dash,chalice_double_jump"
         ],
@@ -1770,6 +1786,9 @@
         ],
         "access_rules": [
           "@The Howling Aces Summary/The Howling Aces Complete"
+        ],
+        "visibility_rules": [
+          "boss_secret_checks"
         ],
         "map_locations": [
           {

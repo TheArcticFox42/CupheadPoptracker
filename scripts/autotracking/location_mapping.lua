@@ -405,6 +405,15 @@ CHESS_BOSSES_COMPLETE_SUMMARY_CODES = {
     [112] = "@The King's Leap Summary/The Gauntlet Complete"
 }
 
+CHESS_BOSSES_CHALICED_SUMMARY_CODES = {
+    [107] = "@The King's Leap Summary/The Pawns Chaliced",
+    [108] = "@The King's Leap Summary/The Knight Chaliced",
+    [109] = "@The King's Leap Summary/The Bishop Chaliced",
+    [110] = "@The King's Leap Summary/The Rook Chaliced",
+    [111] = "@The King's Leap Summary/The Queen Chaliced",
+    [112] = "@The King's Leap Summary/The Gauntlet Chaliced"
+}
+
 
 SHOP_WEAPON_CODES = {
  "@Shop Weapon 1/",
@@ -710,3 +719,4 @@ BASE_LOCATION_MAPPING = {
 }
 
 LOCATION_MAPPING = {}
+update_location_mapping()

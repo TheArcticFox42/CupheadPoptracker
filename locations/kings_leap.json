@@ -24,6 +24,28 @@
         ]
       },
       {
+        "name": "The Pawns Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|107"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 31,
+            "y": 223,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 9,
+            "shape": "trapezoid",
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
         "name": "The Knight Complete",
         "access_rules": [
           "^$can_beat_chess_boss|108"
@@ -37,6 +59,28 @@
             "x": 51,
             "y": 173,
             "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Knight Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|108"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 51,
+            "y": 223,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 9,
+            "shape": "trapezoid",
             "border_thickness": 3
           }
         ]
@@ -60,6 +104,28 @@
         ]
       },
       {
+        "name": "The Bishop Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|109"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 71,
+            "y": 223,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 9,
+            "shape": "trapezoid",
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
         "name": "The Rook Complete",
         "access_rules": [
           "^$can_beat_chess_boss|110"
@@ -73,6 +139,28 @@
             "x": 31,
             "y": 191,
             "size": 9,
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
+        "name": "The Rook Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|110"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 31,
+            "y": 241,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 9,
+            "shape": "trapezoid",
             "border_thickness": 3
           }
         ]
@@ -96,6 +184,28 @@
         ]
       },
       {
+        "name": "The Queen Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|111"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 51,
+            "y": 241,
+            "restrict_visibility_rules": [
+              "chess_chalice_checks"
+            ],
+            "size": 9,
+            "shape": "trapezoid",
+            "border_thickness": 3
+          }
+        ]
+      },
+      {
         "name": "The Gauntlet Complete",
         "access_rules": [
           "^$can_beat_chess_boss|112"
@@ -110,6 +220,27 @@
             "y": 191,
             "restrict_visibility_rules": [
               "gauntlet_enabled"
+            ],
+            "size": 12,
+            "shape": "diamond"
+          }
+        ]
+      },
+      {
+        "name": "The Gauntlet Chaliced",
+        "access_rules": [
+          "^$can_chalice_chess_boss|112"
+        ],
+        "sections": [
+          {}
+        ],
+        "map_locations": [
+          {
+            "map": "isle_4",
+            "x": 71,
+            "y": 241,
+            "restrict_visibility_rules": [
+              "gauntlet_enabled,chess_chalice_checks"
             ],
             "size": 12,
             "shape": "diamond"
